@@ -1,0 +1,163 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Add 2 new fonts : heading and body
+@font-face {
+
+} */
+
+
+:root {
+    --light-text-color: #FFF;
+    --dark-text-color: #000;
+    --background-light-color: #f1eadd;
+    --background-dark-color: #1C2228;
+    --button-color: #B7ACA2;
+    --border-colors: #E9E7E3;
+    /*     
+    --font-heading-family: "XX", sans-serif;
+    --font-body-family: "XX", sans-serif; 
+    */
+}
+
+/* Global - Fonts */
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading-family);
+}
+
+p,
+a,
+button {
+    font-family: var(--font-body-family);
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button {
+    color: var(--dark-text-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light-color);
+    border-bottom: 2px solid var(--border-colors);
+
+    section {
+        padding: 8px 0;
+        border: 1px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        h1 {
+            display: none;
+        }
+    }
+
+    nav {
+        padding: 8px 0;
+        border: 1px solid orange;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+                transition: 0.3s;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {}
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (width>992px) {
+    header {
+        flex-direction: row;
+
+        section {
+            h1 {
+                display: block;
+            }
+        }
+    }
+}
+
+/* Main */
+
+/* A mettre dans des fichiers séparés ? */
+
+/* Footer */
+
+footer {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-light-color);
+    border-top: 2px solid var(--border-colors);
+
+    #footer-legals {
+        display: flex;
+        flex-direction: column;
+
+        p,
+        a {
+            text-decoration: none;
+            padding: 8px;
+        }
+    }
+
+    #icon-container {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: auto 8px;
+        }
+    }
+}
+
+@media screen and (width>992px) {
+    footer {
+
+        #footer-legals {
+            width: 80%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
