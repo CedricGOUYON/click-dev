@@ -61,6 +61,11 @@ button {
 /* Header */
 
 header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     padding: 0 16px;
     display: flex;
     flex-direction: column;
@@ -69,11 +74,14 @@ header {
 
     section {
         padding: 8px 0;
-        border: 1px solid green;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 16px;
+
+        img {
+            border: 1px solid black;
+        }
 
         h1 {
             display: none;
@@ -82,7 +90,6 @@ header {
 
     nav {
         padding: 8px 0;
-        border: 1px solid orange;
 
         ul {
             display: flex;
@@ -90,19 +97,38 @@ header {
             justify-content: space-around;
             list-style: none;
 
-            li {
+            .nav-item {
+                position: relative;
                 transition: 0.3s;
+
+                /* A garder ?
+                &:hover {
+                    transform: scale(1.0);
+                } 
+                */
 
                 a {
                     text-decoration: none;
 
-                    &:hover {}
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        bottom: -2px;
+                        width: 0;
+                        height: 1px;
+                        background-color: var(--dark-text-color);
+                        transition: 0.3s width;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        left: 0;
+                    }
                 }
             }
         }
     }
-
-
 }
 
 @media screen and (width>992px) {
@@ -114,10 +140,32 @@ header {
                 display: block;
             }
         }
+
+        nav {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            .nav-item {
+                margin: 0 32px;
+            }
+        }
     }
 }
 
 /* Main */
+
+main {
+    margin: 80px auto 0;
+}
+
+@media screen and (width>992px) {
+    main {
+        margin: 50px auto 0;
+    }
+}
+
+
 
 /* A mettre dans des fichiers séparés ? */
 
@@ -139,6 +187,18 @@ footer {
             text-decoration: none;
             padding: 8px;
         }
+
+        p {
+            order: 5;
+        }
+
+        a {
+            transition: 0.2s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
 
     #icon-container {
@@ -147,6 +207,29 @@ footer {
 
         a {
             margin: auto 8px;
+            transition: 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .github-link {
+                fill: var(--dark-text-color);
+            }
+
+            .wild-link {
+                .cls-1 {
+                    fill: none;
+                }
+
+                .cls-2 {
+                    clip-path: url(#clip-path);
+                }
+
+                .cls-3 {
+                    fill: var(--dark-text-color);
+                }
+            }
         }
     }
 }
@@ -158,6 +241,10 @@ footer {
             width: 80%;
             flex-direction: row;
             justify-content: space-between;
+
+            p {
+                order: 0;
+            }
         }
     }
 }
