@@ -13,22 +13,25 @@ body {
 
 /* 
 Add 2 new fonts : heading and body
+ */
 @font-face {
-
-} */
-
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: "./asset/fonts/BaiJamjuree-Regular.ttf";
+}
 
 :root {
-    --light-text-color: #FFF;
-    --dark-text-color: #000;
-    --background-light-color: #f1eadd;
-    --background-dark-color: #1C2228;
-    --button-color: #B7ACA2;
-    --border-colors: #E9E7E3;
-    /*     
-    --font-heading-family: "XX", sans-serif;
-    --font-body-family: "XX", sans-serif; 
-    */
+    --light-text-color: rgba(255, 255, 255, 1);
+    --dark-text-color: rgba(0, 0, 0, 1);
+    --background-light-color: rgba(241, 234, 221, 1);
+    --background-dark-color: rgba(30, 30, 30, 0.95);
+    --main-bloc-light-color: rgba(241, 234, 221, 0.4);
+    --main-bloc-light-border-color: rgba(241, 234, 221, 1);
+    --main-bloc-dark-color: rgba(30, 30, 30, 0.6);
+    --main-bloc-dark-border-color: rgba(30, 30, 30, 1);
+    --font-heading-family: "Bai Jamjuree", sans-serif;
+    --font-body-family: "Bai Jamjuree", sans-serif;
 }
 
 /* Global - Fonts */
@@ -79,8 +82,8 @@ header {
         align-items: center;
         gap: 16px;
 
-        img {
-            border: 1px solid black;
+        .logo-clicdev {
+            fill: var(--dark-text-color);
         }
 
         h1 {
@@ -154,20 +157,19 @@ header {
 }
 
 /* Main */
+/* A mettre dans les fichiers séparés */
 
+/* 
 main {
-    margin: 80px auto 0;
+    margin: 111.2px auto 0;
 }
 
 @media screen and (width>992px) {
     main {
-        margin: 50px auto 0;
+        margin: 76px auto 0;
     }
 }
-
-
-
-/* A mettre dans des fichiers séparés ? */
+ */
 
 /* Footer */
 
