@@ -1,0 +1,80 @@
+/* Main */
+
+main {
+    margin: 111.2px auto 0;
+    max-width: 600px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .question-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        p {
+            max-width: 65ch;
+        }
+    }
+
+    .answer-container {
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+
+        /* 
+        legend {
+            margin: 0 auto;
+        }
+        */
+
+        .answer-button {
+            margin: 4px;
+            width: 100%;
+            height: 80px;
+            font-size: 24px;
+            background-color: rgba(241, 234, 221, 0.4);
+            /* A modifier en rgb dans roots puis : rgba( var(--background-light-color), 0.4) */
+            border: 1px solid var(--background-light-color);
+            border-radius: 16px;
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    #next-button {
+        margin-left: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 25px;
+        border: none;
+        transition: 0.2s;
+        background-color: #d1fadf;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            filter: grayscale();
+            transform: scale(0.95);
+            background-color: transparent;
+        }
+
+        &:not(:disabled):hover {
+            transform: scale(1.05);
+
+        }
+    }
+}
+
+@media screen and (width>992px) {
+    main {
+        margin: 76px auto 0;
+    }
+}
