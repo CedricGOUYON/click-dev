@@ -1,0 +1,252 @@
+/* Global */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Add 2 new fonts : heading and body
+ */
+@font-face {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: "./asset/fonts/BaiJamjuree-Regular.ttf";
+}
+
+:root {
+    --light-text-color: rgba(255, 255, 255, 1);
+    --dark-text-color: rgba(0, 0, 0, 1);
+    --background-light-color: rgba(241, 234, 221, 1);
+    --background-dark-color: rgba(30, 30, 30, 0.95);
+    --main-bloc-light-color: rgba(241, 234, 221, 0.4);
+    --main-bloc-light-border-color: rgba(241, 234, 221, 1);
+    --main-bloc-dark-color: rgba(30, 30, 30, 0.6);
+    --main-bloc-dark-border-color: rgba(30, 30, 30, 1);
+    --font-heading-family: "Bai Jamjuree", sans-serif;
+    --font-body-family: "Bai Jamjuree", sans-serif;
+}
+
+/* Global - Fonts */
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading-family);
+}
+
+p,
+a,
+button {
+    font-family: var(--font-body-family);
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button {
+    color: var(--dark-text-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light-color);
+    border-bottom: 2px solid var(--border-colors);
+
+    section {
+        padding: 8px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        .logo-clicdev {
+            fill: var(--dark-text-color);
+        }
+
+        h1 {
+            display: none;
+        }
+    }
+
+    nav {
+        padding: 8px 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+
+            .nav-item {
+                position: relative;
+                transition: 0.3s;
+
+                /* A garder ?
+                &:hover {
+                    transform: scale(1.0);
+                } 
+                */
+
+                a {
+                    text-decoration: none;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        bottom: -2px;
+                        width: 0;
+                        height: 1px;
+                        background-color: var(--dark-text-color);
+                        transition: 0.3s width;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width>992px) {
+    header {
+        flex-direction: row;
+
+        section {
+            h1 {
+                display: block;
+            }
+        }
+
+        nav {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            .nav-item {
+                margin: 0 32px;
+            }
+        }
+    }
+}
+
+/* Main */
+/* A mettre dans les fichiers séparés */
+
+/* 
+main {
+    margin: 111.2px auto 0;
+}
+
+@media screen and (width>992px) {
+    main {
+        margin: 76px auto 0;
+    }
+}
+ */
+
+/* Footer */
+
+footer {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-light-color);
+    border-top: 2px solid var(--border-colors);
+
+    #footer-legals {
+        display: flex;
+        flex-direction: column;
+
+        p,
+        a {
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        p {
+            order: 5;
+        }
+
+        a {
+            transition: 0.2s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    #icon-container {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: auto 8px;
+            transition: 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .github-link {
+                fill: var(--dark-text-color);
+            }
+
+            .wild-link {
+                .cls-1 {
+                    fill: none;
+                }
+
+                .cls-2 {
+                    clip-path: url(#clip-path);
+                }
+
+                .cls-3 {
+                    fill: var(--dark-text-color);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width>992px) {
+    footer {
+
+        #footer-legals {
+            width: 80%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                order: 0;
+            }
+        }
+    }
+}
