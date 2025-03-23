@@ -1,44 +1,214 @@
 // Declare questions/answers
 
+/* 
 const quizHtmlBasic = [
     "HTML Basics",
     {
-        rank: 1,
-        statement: "Le logo de la Wild est vert.",
-        answers: ["Vrai", "Faux"],
-        correctAnswer: "Faux"
+        statement: "Que signifie HTML ?",
+        answers: ["High Transmission Mail List", "HighTide Mixed Literacy", "HyperText Markup Language", "Hello To My Lawyer"],
+        correctAnswer: "HyperText Markup Language"
     },
     {
-        rank: 2,
-        statement: "HTML signifie HyperText Markup Language.",
-        answers: ["Vrai"],
-        correctAnswer: "Vrai"
+        statement: "Citez un attribut HTML lié aux images",
+        answers: ["class", "href", "src", "img"],
+        correctAnswer: "src"
     },
     {
-        rank: 3,
-        statement: "Nos profs sont Michel et Jean-François.",
-        answers: ["Vrai", "Faux", "Maybe"],
-        correctAnswer: "Faux"
-    },
-    {
-        rank: 4,
         statement: "Anthony est supporter du PSG.",
         answers: ["Vrai", "Faux", "Maybe", "On parle de foot?"],
         correctAnswer: "Faux"
     },
     {
-        rank: 5,
         statement: "La plupart de notre promo vient de l'Ouest de la France.",
         answers: ["Vrai", "Faux"],
         correctAnswer: "Vrai"
     },
     {
-        rank: 6,
         statement: "Le chien de mon voisin s'appelle Saturnin",
         answers: ["Vrai", "Faux", "Je ne sais pas"],
         correctAnswer: "Je ne sais pas"
     }
-]
+];
+*/
+
+const quizHtmlBasic = [
+    "HTML Basics",
+    {
+        statement: "Que signifie HTML ?",
+        answers: ["High Transmission Mail List", "HighTide Mixed Literacy", "HyperText Markup Language", "Hello To My Lawyer"],
+        correctAnswer: "HyperText Markup Language"
+    },
+    {
+        statement: "Citez un attribut HTML lié aux images",
+        answers: ["class", "href", "src", "img"],
+        correctAnswer: "src"
+    },
+    {
+        statement: "Quelle est la balise racine d'un document HTML ?",
+        answers: ["&lt;body&gt;", "&lt;head&gt;", "&lt;html&gt;", "&lt;!DOCTYPE&gt;"],
+        correctAnswer: "&lt;html&gt;"
+    },
+    {
+        statement: "Quel élément crée un saut de ligne ?",
+        answers: ["&lt;lb&gt;", "&lt;break&gt;", "&lt;br&gt;", "&lt;newline&gt;"],
+        correctAnswer: "&lt;br&gt;"
+    },
+    {
+        statement: "Quelle balise est utilisée pour une liste non ordonnée ?",
+        answers: ["&lt;ul&gt;", "&lt;ol&gt;", "&lt;li&gt;", "&lt;list&gt;"],
+        correctAnswer: "&lt;ul&gt;"
+    },
+    {
+        statement: "Quel attribut est obligatoire pour les balises &lt;img&gt; ?",
+        answers: ["title", "src", "link", "name"],
+        correctAnswer: "src"
+    },
+    {
+        statement: "Quelle balise contient le contenu principal visible d'une page ?",
+        answers: ["&lt;main&gt;", "&lt;head&gt;", "&lt;body&gt;", "&lt;content&gt;"],
+        correctAnswer: "&lt;body&gt;"
+    },
+    {
+        statement: "Comment créer un lien vers une autre page ?",
+        answers: ["&lt;a&gt;", "&lt;link&gt;", "&lt;href&gt;", "&lt;url&gt;"],
+        correctAnswer: "&lt;a&gt;"
+    },
+    {
+        statement: "Quelle syntaxe est correcte pour un commentaire HTML ?",
+        answers: ["// Commentaire", "&lt;!-- Commentaire --&gt;", "/* Commentaire */", "** Commentaire **"],
+        correctAnswer: "&lt;!-- Commentaire --&gt;"
+    },
+    {
+        statement: "Quel élément HTML5 spécifie un contenu autonome ?",
+        answers: ["&lt;div&gt;", "&lt;article&gt;", "&lt;section&gt;", "&lt;content&gt;"],
+        correctAnswer: "&lt;article&gt;"
+    },
+    {
+        statement: "Quel élément est utilisé pour un formulaire ?",
+        answers: ["&lt;form&gt;", "&lt;input&gt;", "&lt;submit&gt;", "&lt;action&gt;"],
+        correctAnswer: "&lt;form&gt;"
+    },
+    {
+        statement: "Quel attribut définit le type d'un input ?",
+        answers: ["type", "name", "value", "id"],
+        correctAnswer: "type"
+    },
+    {
+        statement: "Quelle balise crée un en-tête de niveau 1 ?",
+        answers: ["&lt;h&gt;", "&lt;header&gt;", "&lt;h1&gt;", "&lt;head1&gt;"],
+        correctAnswer: "&lt;h1&gt;"
+    },
+    {
+        statement: "Quel élément représente une ligne de tableau ?",
+        answers: ["&lt;td&gt;", "&lt;tr&gt;", "&lt;th&gt;", "&lt;row&gt;"],
+        correctAnswer: "&lt;tr&gt;"
+    },
+    {
+        statement: "Quelle balise insère une ligne horizontale ?",
+        answers: ["&lt;line&gt;", "&lt;hr&gt;", "&lt;hl&gt;", "&lt;divider&gt;"],
+        correctAnswer: "&lt;hr&gt;"
+    },
+    {
+        statement: "Quel élément est de type block par défaut ?",
+        answers: ["&lt;span&gt;", "&lt;div&gt;", "&lt;a&gt;", "&lt;em&gt;"],
+        correctAnswer: "&lt;div&gt;"
+    },
+    {
+        statement: "Quelle balise est utilisée pour du code informatique ?",
+        answers: ["&lt;code&gt;", "&lt;pre&gt;", "&lt;console&gt;", "&lt;script&gt;"],
+        correctAnswer: "&lt;code&gt;"
+    },
+    {
+        statement: "Quel attribut lie un label à un input ?",
+        answers: ["id", "class", "for", "name"],
+        correctAnswer: "for"
+    },
+    {
+        statement: "Quel caractère échappe les entités HTML ?",
+        answers: ["!", "#", "&amp;", "*"],
+        correctAnswer: "&amp;"
+    },
+    {
+        statement: "Quelle balise charge un fichier CSS ?",
+        answers: ["&lt;style&gt;", "&lt;css&gt;", "&lt;link&gt;", "&lt;script&gt;"],
+        correctAnswer: "&lt;link&gt;"
+    },
+    {
+        statement: "Quel élément crée un menu déroulant ?",
+        answers: ["&lt;input&gt;", "&lt;select&gt;", "&lt;option&gt;", "&lt;dropdown&gt;"],
+        correctAnswer: "&lt;select&gt;"
+    },
+    {
+        statement: "Quelle est la balise d'une citation courte en ligne ?",
+        answers: ["&lt;quote&gt;", "&lt;blockquote&gt;", "&lt;cite&gt;", "&lt;q&gt;"],
+        correctAnswer: "&lt;q&gt;"
+    },
+    {
+        statement: "Quel élément HTML5 est utilisé pour une navigation ?",
+        answers: ["&lt;nav&gt;", "&lt;menu&gt;", "&lt;ul&gt;", "&lt;navigate&gt;"],
+        correctAnswer: "&lt;nav&gt;"
+    },
+    {
+        statement: "Quel élément est auto-fermant ?",
+        answers: ["&lt;br&gt;", "&lt;div&gt;", "&lt;span&gt;", "&lt;p&gt;"],
+        correctAnswer: "&lt;br&gt;"
+    },
+    {
+        statement: "Quel attribut rend un champ obligatoire ?",
+        answers: ["required", "mandatory", "validate", "necessary"],
+        correctAnswer: "required"
+    },
+    {
+        statement: "Quelle balise représente un pied de page ?",
+        answers: ["&lt;footer&gt;", "&lt;bottom&gt;", "&lt;foot&gt;", "&lt;end&gt;"],
+        correctAnswer: "&lt;footer&gt;"
+    },
+    {
+        statement: "Quel élément stocke des métadonnées ?",
+        answers: ["&lt;meta&gt;", "&lt;head&gt;", "&lt;data&gt;", "&lt;info&gt;"],
+        correctAnswer: "&lt;meta&gt;"
+    },
+    {
+        statement: "Quelle balise crée une liste de définition ?",
+        answers: ["&lt;dl&gt;", "&lt;def&gt;", "&lt;dt&gt;", "&lt;list&gt;"],
+        correctAnswer: "&lt;dl&gt;"
+    },
+    {
+        statement: "Quel élément affiche une image vectorielle ?",
+        answers: ["&lt;img&gt;", "&lt;svg&gt;", "&lt;canvas&gt;", "&lt;vector&gt;"],
+        correctAnswer: "&lt;svg&gt;"
+    },
+    {
+        statement: "Quel attribut image fournit un texte alternatif ?",
+        answers: ["title", "alt", "description", "text"],
+        correctAnswer: "alt"
+    }
+];
+
+// Generate array of questions from the database
+// V1 : clone the original base (minus 1st element), take a random element from the clone, delete it from the clone and push it to a new array (10 times).
+//      Bad performance, need to change the index of all the remaining elements fro mthe clone after each delete !
+// V2 : clone the original base (minus 1st element), shuffle the clone and extract the first (or last) 10 elements.
+//      Simple and faster : shuffle & slice
+
+const shuffleArr = array => {
+    let shuffledArray = array.slice(0, 1);
+    let cloneArray = array.slice(1);
+    // Shuffle : Fisher-Yates (Knuth)
+    for (let i = cloneArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        //console.log("i : " + i);
+        //console.log("j : " + j);
+        [cloneArray[i], cloneArray[j]] = [cloneArray[j], cloneArray[i]];
+        //console.log("clone : " + cloneArray);
+    };
+    shuffledArray = shuffledArray.concat(cloneArray.slice(0, 10));
+    return shuffledArray
+};
+
+const questionSampleArray = shuffleArr(quizHtmlBasic);
+// Check console - To delete in final version
+console.log(questionSampleArray);
 
 // Declare score
 
@@ -49,22 +219,31 @@ let finalScore = 0;
 const rightAnswerColor = "rgba(161, 234, 31, 0.4)";
 const wrongAnswerColor = "rgba(234, 172, 131, 0.4)";
 
-// Declare elements (for next-button event)
+// Declare elements
 
+const quizTitle = document.querySelector("#quiz-title");
 const questionNumber = document.querySelector("#question-number");
 const questionStatement = document.querySelector("#question-statement");
+
+const answerButtons = document.querySelectorAll(".answer-button");
 const answerOne = document.querySelector(".answer1");
 const answerTwo = document.querySelector(".answer2");
 const answerThree = document.querySelector(".answer3");
 const answerFour = document.querySelector(".answer4");
+
+const nextButton = document.querySelector("#next-button");
+
+const endButtons = document.querySelectorAll(".end-button");
+//const tryAnotherButton = document.querySelector(".try-another-button");
+//const retryButton = document.querySelector(".retry-button");
+
 let rk = 0;
 
 // Display Subject
 
-const quizTitle = document.querySelector("#quiz-title");
-quizTitle.innerHTML = quizHtmlBasic[0];
+quizTitle.innerHTML = questionSampleArray[0];
 
-// Function !Disable element (à remplacer par lock/unlock pour gagner en clarté si bug)
+// Function !Disable element (switch to lock/unlock if doesn't work well) TODO?
 
 const disableFunc = elementSelector => {
     const elementsToDisable = document.querySelectorAll(elementSelector);
@@ -78,9 +257,8 @@ const disableFunc = elementSelector => {
 // - Disable all answer-buttons
 // - Display the answer (black border)
 // - Update score
-// - Display right and wrong answers (green/red)
+// - Display right and wrong answers (green/red) - change colors TODO (update with nice colors)
 
-const answerButtons = document.querySelectorAll(".answer-button");
 
 answerButtons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -88,12 +266,12 @@ answerButtons.forEach(btn => {
         disableFunc("#next-button");
         disableFunc(".answer-button");
         // Update score
-        if (btn.innerHTML === (quizHtmlBasic[rk]).correctAnswer) {
+        if (btn.innerHTML === (questionSampleArray[rk]).correctAnswer) {
             finalScore++;
             console.log(`current score is : ${finalScore}`);
         }
         // Display right and wrong answers (green/red)
-        switch ((quizHtmlBasic[rk]).correctAnswer) {
+        switch ((questionSampleArray[rk]).correctAnswer) {
             case answerOne.innerHTML:
                 answerOne.style.backgroundColor = rightAnswerColor;
                 answerTwo.style.backgroundColor = wrongAnswerColor;
@@ -124,46 +302,47 @@ answerButtons.forEach(btn => {
     });
 });
 
-// Function for filling new questions
+// Filling new questions
 
 const fillQuestion = rk => {
     // Question
-    questionNumber.innerText = "Question " + quizHtmlBasic[rk].rank;
+    questionNumber.innerText = "Question " + rk;
     // Statement
-    questionStatement.innerHTML = quizHtmlBasic[rk].statement;
+    questionStatement.innerHTML = questionSampleArray[rk].statement;
     // Answers
-    if (((quizHtmlBasic[rk]).answers)[0]) {
-        answerOne.innerHTML = ((quizHtmlBasic[rk]).answers)[0];
+    if (((questionSampleArray[rk]).answers)[0]) {
+        answerOne.innerHTML = ((questionSampleArray[rk]).answers)[0];
     } else {
         answerOne.innerHTML = "";
     };
-    if (((quizHtmlBasic[rk]).answers)[1]) {
-        answerTwo.innerHTML = ((quizHtmlBasic[rk]).answers)[1];
+    if (((questionSampleArray[rk]).answers)[1]) {
+        answerTwo.innerHTML = ((questionSampleArray[rk]).answers)[1];
     } else {
         answerTwo.innerHTML = "";
     };
-    if (((quizHtmlBasic[rk]).answers)[2]) {
-        answerThree.innerHTML = ((quizHtmlBasic[rk]).answers)[2];
+    if (((questionSampleArray[rk]).answers)[2]) {
+        answerThree.innerHTML = ((questionSampleArray[rk]).answers)[2];
     } else {
         answerThree.innerHTML = "";
     };
-    if (((quizHtmlBasic[rk]).answers)[3]) {
-        answerFour.innerHTML = ((quizHtmlBasic[rk]).answers)[3];
+    if (((questionSampleArray[rk]).answers)[3]) {
+        answerFour.innerHTML = ((questionSampleArray[rk]).answers)[3];
     } else {
         answerFour.innerHTML = "";
     };
-    // Réponses en boucle faisable ? Remplacer answerOne answerTwo avec string "answer"+rk ou autre ...
+    // Possible to use a loop for answers ? Switch from answerOne answerTwo to strings with "answer"+rk or something else ...
     // TODO (optimisation)
+    // Version below doesn't work
     /*
     for (let i = 0; i < 4; i++) {
-        if (((quizHtmlBasic[rk]).answers)[i]) {
-            answerOne.innerHTML = ((quizHtmlBasic[rk]).answers)[i];
+        if (((questionSampleArray[rk]).answers)[i]) {
+            answerOne.innerHTML = ((questionSampleArray[rk]).answers)[i];
         } else {
             answerOne.innerHTML = "";
         }
     }
     */
-}
+};
 
 // Click on next-button :
 // - Increment question rank
@@ -174,18 +353,17 @@ const fillQuestion = rk => {
 // - Only display non-empty answer-buttons
 // - After last question : 
 //          - display final score
-//          - display message TODO
-//          - display 2 buttons (retry & go back to menu) TODO
+//          - display message
+//          - display 2 buttons (retry & go back to menu)
 
-const nextButton = document.querySelector("#next-button");
 
 nextButton.addEventListener("click", () => {
     rk++;
-    if (rk < quizHtmlBasic.length) { // If another question exists
+    if (rk < questionSampleArray.length) { // If another question exists
         fillQuestion(rk);
         disableFunc("#next-button");
         disableFunc(".answer-button");
-        // Reset initial style
+        // Reset initial style of answer-buttons
         answerButtons.forEach(btn => {
             btn.style.border = "1px solid var(--background-light-color)";
             btn.style.backgroundColor = "rgba(241, 234, 221, 0.4)";
@@ -193,9 +371,27 @@ nextButton.addEventListener("click", () => {
         });
     } else { // If it was the last question
         questionNumber.innerText = "";
-        questionStatement.innerHTML = `Score final : ${finalScore}/${rk} <br> blablabla <br> blabla`;
+        const scorePercent = Math.floor(100 * finalScore / rk);
+        if (scorePercent === 100) {
+            questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Un.e vrai.e champion.ne, rien ne t'arrête !`;
+        } else if (scorePercent >= 80) {
+            questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Presque parfait ! Encore un petit effort et ce sera du 100% !`;
+        } else if (scorePercent >= 50) {
+            questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Pas mal ! Tu es à mi-chemin, continue comme ça, tu es sur la bonne voie !`;
+        } else if (scorePercent >= 20) {
+            questionStatement.innerHTML = `Score final : ${scorePercent}% <br> C’est en forgeant qu’on devient forgeron ! Ne lâche rien !`;
+        } else {
+            questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Tous les champions ont commencé quelque part ! Ce n’est qu’un début, tu vas y arriver ! `;
+        };
         answerButtons.forEach(btn => {
             btn.style.display = "none";
         });
+        nextButton.style.display = "none";
+        endButtons.forEach(btn => {
+            btn.style.display = "flex";
+        })
     }
 });
+
+// Try another quizz TODO
+// Lancer un challenge au hasard ? Ou revenir au menu des thématiques ?
