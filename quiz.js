@@ -1,36 +1,5 @@
 // Declare questions/answers
 
-/* 
-const quizHtmlBasic = [
-    "HTML Basics",
-    {
-        statement: "Que signifie HTML ?",
-        answers: ["High Transmission Mail List", "HighTide Mixed Literacy", "HyperText Markup Language", "Hello To My Lawyer"],
-        correctAnswer: "HyperText Markup Language"
-    },
-    {
-        statement: "Citez un attribut HTML lié aux images",
-        answers: ["class", "href", "src", "img"],
-        correctAnswer: "src"
-    },
-    {
-        statement: "Anthony est supporter du PSG.",
-        answers: ["Vrai", "Faux", "Maybe", "On parle de foot?"],
-        correctAnswer: "Faux"
-    },
-    {
-        statement: "La plupart de notre promo vient de l'Ouest de la France.",
-        answers: ["Vrai", "Faux"],
-        correctAnswer: "Vrai"
-    },
-    {
-        statement: "Le chien de mon voisin s'appelle Saturnin",
-        answers: ["Vrai", "Faux", "Je ne sais pas"],
-        correctAnswer: "Je ne sais pas"
-    }
-];
-*/
-
 const quizHtmlBasic = [
     "HTML Basics",
     {
@@ -190,8 +159,9 @@ const quizHtmlBasic = [
 //      Bad performance, need to change the index of all the remaining elements fro mthe clone after each delete !
 // V2 : clone the original base (minus 1st element), shuffle the clone and extract the first (or last) 10 elements.
 //      Simple and faster : shuffle & slice
+//      numb : number of questions you need
 
-const shuffleArr = array => {
+const shuffleArr = (array,numb) => {
     let shuffledArray = array.slice(0, 1);
     let cloneArray = array.slice(1);
     // Shuffle : Fisher-Yates (Knuth)
@@ -202,11 +172,11 @@ const shuffleArr = array => {
         [cloneArray[i], cloneArray[j]] = [cloneArray[j], cloneArray[i]];
         //console.log("clone : " + cloneArray);
     };
-    shuffledArray = shuffledArray.concat(cloneArray.slice(0, 10));
+    shuffledArray = shuffledArray.concat(cloneArray.slice(0, numb));
     return shuffledArray
 };
 
-const questionSampleArray = shuffleArr(quizHtmlBasic);
+const questionSampleArray = shuffleArr(quizHtmlBasic, 10);
 // Check console - To delete in final version
 console.log(questionSampleArray);
 
@@ -271,6 +241,7 @@ answerButtons.forEach(btn => {
             console.log(`current score is : ${finalScore}`);
         }
         // Display right and wrong answers (green/red)
+        /* Version 1 - Doesn't work if multiple correct answers
         switch ((questionSampleArray[rk]).correctAnswer) {
             case answerOne.innerHTML:
                 answerOne.style.backgroundColor = rightAnswerColor;
@@ -299,6 +270,12 @@ answerButtons.forEach(btn => {
             default:
                 console.log(`Right answer not detected !`);
         }
+         */
+        // Version 2 - 4 lines, clear and simple. Works with multiple answers
+        answerOne.style.backgroundColor = (answerOne.innerHTML === (questionSampleArray[rk]).correctAnswer) ? rightAnswerColor : wrongAnswerColor ;
+        answerTwo.style.backgroundColor = (answerTwo.innerHTML === (questionSampleArray[rk]).correctAnswer) ? rightAnswerColor : wrongAnswerColor ;
+        answerThree.style.backgroundColor = (answerThree.innerHTML === (questionSampleArray[rk]).correctAnswer) ? rightAnswerColor : wrongAnswerColor ;
+        answerFour.style.backgroundColor = (answerFour.innerHTML === (questionSampleArray[rk]).correctAnswer) ? rightAnswerColor : wrongAnswerColor ;
     });
 });
 
