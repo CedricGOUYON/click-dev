@@ -287,6 +287,7 @@ const fillQuestion = rk => {
     // Statement
     questionStatement.innerHTML = questionSampleArray[rk].statement;
     // Answers
+    /* Version 1 (too much repeat - V2 simpler)
     if (((questionSampleArray[rk]).answers)[0]) {
         answerOne.innerHTML = ((questionSampleArray[rk]).answers)[0];
     } else {
@@ -307,18 +308,12 @@ const fillQuestion = rk => {
     } else {
         answerFour.innerHTML = "";
     };
-    // Possible to use a loop for answers ? Switch from answerOne answerTwo to strings with "answer"+rk or something else ...
-    // TODO (optimisation)
-    // Version below doesn't work
-    /*
-    for (let i = 0; i < 4; i++) {
-        if (((questionSampleArray[rk]).answers)[i]) {
-            answerOne.innerHTML = ((questionSampleArray[rk]).answers)[i];
-        } else {
-            answerOne.innerHTML = "";
-        }
-    }
     */
+    answerOne.innerHTML = (questionSampleArray[rk].answers[0]) || "";
+    answerTwo.innerHTML = (questionSampleArray[rk].answers[1]) || "";
+    answerThree.innerHTML = (questionSampleArray[rk].answers[2]) || "";
+    answerFour.innerHTML = (questionSampleArray[rk].answers[3]) || "";
+    // Use a loop for answers better/worse performance ?  TODO (optimisation)
 };
 
 // Click on next-button :
