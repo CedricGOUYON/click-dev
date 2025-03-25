@@ -3,6 +3,7 @@
 main {
     margin: 111.2px auto 0;
     max-width: 600px;
+    min-height: calc(100vh - 162.5px - 111.2px);
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -101,5 +102,6 @@ main {
 @media screen and (width>650px) {
     main {
         margin: 76px auto 0;
+        min-height: calc(100vh - 76px - 50px);
     }
 }
