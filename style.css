@@ -134,7 +134,7 @@ header {
     }
 }
 
-@media screen and (width>992px) {
+@media screen and (width>650px) {
     header {
         flex-direction: row;
 
@@ -236,7 +236,7 @@ footer {
     }
 }
 
-@media screen and (width>992px) {
+@media screen and (width>650px) {
     footer {
 
         #footer-legals {
