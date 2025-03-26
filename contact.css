@@ -46,12 +46,13 @@ main h2 {
 
 form h3 {
     display: flex;
-    padding: 0rem 4rem 4rem;
+    padding: 0rem 2rem 2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
 
 }
+
 
 form {
     display: flex;
@@ -63,6 +64,7 @@ form {
 }
 
 @media screen and (min-width: 650px) {
+
     form {
         width: 200%;
         padding: 2rem 8rem 3rem 2rem;
@@ -70,6 +72,10 @@ form {
     }
 
 
+}
+
+p {
+    padding: 1rem 1rem 1rem 0rem;
 }
 
 input {
@@ -83,6 +89,7 @@ input {
 }
 
 @media screen and (min-width: 650px) {
+
     input {
         width: 50%;
     }
