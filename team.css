@@ -11,17 +11,21 @@ main {
     }
 }
     h2 {
-        margin: 30px 0 30px 0;
-        text-decoration: rgb(226, 139, 24);
+        padding: 30px 0 30px 0;
+        text-align: center;
+        background-color: rgb(241, 234, 221);
+        margin: 120px 300px 50px 300px;
     
     
         
     }
 
-    div {
-        display: grid;
-        place-items: center;
-        row-gap: 30px;
+    article {
+        margin: 0 ;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
     }
 
     section {
@@ -33,15 +37,25 @@ main {
     width: 205px; height: 222px;
     }
 
-    p {
+    a {
        padding: 10px;
+       margin: 10px;
+       background-color: rgb(241, 234, 221);
+       text-decoration: none;
+       cursor: pointer;
+    
     }
 
     button{
     margin: 20px; padding: 10px;
     background-color: rgb(198, 186, 163);
-    display: flex;
-    align-items: center;
-    
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    }
+
+    button:hover{
+        opacity: 0.9;
+
     }
 
