@@ -68,6 +68,8 @@ form {
         padding: 2rem 8rem 3rem 2rem;
         margin: 0rem 2rem 2rem 0rem;
     }
+
+
 }
 
 input {
@@ -104,6 +106,8 @@ form section {
     form section {
         justify-content: right;
     }
+
+
 }
 
 button {
@@ -118,9 +122,11 @@ button {
     &:hover {
         transform: scale(1.1);
     }
-
 }
 
+button a {
+    text-decoration: none;
+}
 
 
 @media screen and (min-width: 650px) {
