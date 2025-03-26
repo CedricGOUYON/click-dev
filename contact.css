@@ -27,7 +27,7 @@ main h2 {
     border-radius: 30px;
     justify-content: center;
     text-align: center;
-    background-color: var(--background-light-color);
+    background-color: #f9f7f1;
 }
 
 @media screen and (min-width: 650px) {
@@ -59,7 +59,7 @@ form {
     flex-direction: column;
     margin: 2rem 4rem 2rem 4rem;
     padding: 1rem;
-    background-color: var(--background-light-color);
+    background-color: #f9f7f1;
     border-radius: 30px;
 }
 
