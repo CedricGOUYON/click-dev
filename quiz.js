@@ -31,7 +31,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quel attribut est obligatoire pour les balises &lt;img&gt; ?",
-        answers: ["title", "src", "link", "name"],
+        answers: ["src", "title", "link", "name"],
         correctAnswer: "src"
     },
     {
@@ -51,7 +51,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quel élément HTML5 spécifie un contenu autonome ?",
-        answers: ["&lt;div&gt;", "&lt;article&gt;", "&lt;section&gt;", "&lt;content&gt;"],
+        answers: ["&lt;article&gt;", "&lt;div&gt;", "&lt;section&gt;", "&lt;content&gt;"],
         correctAnswer: "&lt;article&gt;"
     },
     {
@@ -121,7 +121,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quel élément est auto-fermant ?",
-        answers: ["&lt;br&gt;", "&lt;div&gt;", "&lt;span&gt;", "&lt;p&gt;"],
+        answers: ["&lt;div&gt;", "&lt;span&gt;", "&lt;p&gt;", "&lt;br&gt;"],
         correctAnswer: "&lt;br&gt;"
     },
     {
@@ -141,7 +141,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise crée une liste de définition ?",
-        answers: ["&lt;dl&gt;", "&lt;def&gt;", "&lt;dt&gt;", "&lt;list&gt;"],
+        answers: ["&lt;def&gt;", "&lt;dt&gt;", "&lt;list&gt;", "&lt;dl&gt;"],
         correctAnswer: "&lt;dl&gt;"
     },
     {
@@ -156,7 +156,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise permet d'insérer une vidéo dans une page HTML ?",
-        answers: ["&lt;video&gt;", "&lt;media&gt;", "&lt;mp4&gt;", "&lt;vid&gt;"],
+        answers: ["&lt;media&gt;", "&lt;mp4&gt;", "&lt;vid&gt;", "&lt;video&gt;"],
         correctAnswer: "&lt;video&gt;"
     },
     {
@@ -166,7 +166,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise permet d'insérer un fichier audio dans une page HTML ?",
-        answers: ["&lt;audio&gt;", "&lt;sound&gt;", "&lt;music&gt;", "&lt;mp3&gt;"],
+        answers: ["&lt;sound&gt;", "&lt;music&gt;", "&lt;mp3&gt;", "&lt;audio&gt;"],
         correctAnswer: "&lt;audio&gt;"
     },
     {
@@ -191,12 +191,12 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise est utilisée pour définir un texte en exposant ?",
-        answers: ["&lt;sup&gt;", "&lt;sub&gt;", "&lt;exposant&gt;", "&lt;raise&gt;"],
+        answers: ["&lt;sub&gt;", "&lt;exposant&gt;", "&lt;raise&gt;", "&lt;sup&gt;"],
         correctAnswer: "&lt;sup&gt;"
     },
     {
         statement: "Quelle balise est utilisée pour un texte important ?",
-        answers: ["&lt;strong&gt;", "&lt;em&gt;", "&lt;bold&gt;", "&lt;mark&gt;"],
+        answers: ["&lt;em&gt;", "&lt;bold&gt;", "&lt;mark&gt;", "&lt;strong&gt;"],
         correctAnswer: "&lt;strong&gt;"
     },
     {
@@ -216,12 +216,12 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise permet de diviser une page en sections logiques ?",
-        answers: ["&lt;section&gt;", "&lt;div&gt;", "&lt;part&gt;", "&lt;area&gt;"],
+        answers: ["&lt;div&gt;", "&lt;part&gt;", "&lt;area&gt;","&lt;section&gt;"],
         correctAnswer: "&lt;section&gt;"
     },
     {
         statement: "Quelle balise est utilisée pour un bouton dans un formulaire ?",
-        answers: ["&lt;button&gt;", "&lt;input&gt;", "&lt;submit&gt;", "&lt;click&gt;"],
+        answers: ["&lt;input&gt;", "&lt;submit&gt;", "&lt;click&gt;", "&lt;button&gt;"],
         correctAnswer: "&lt;button&gt;"
     },
     {
@@ -236,7 +236,7 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise permet d'inclure une icône de type favicon dans une page HTML ?",
-        answers: ["&lt;link&gt;", "&lt;icon&gt;", "&lt;meta&gt;", "&lt;favicon&gt;"],
+        answers: ["&lt;icon&gt;", "&lt;meta&gt;", "&lt;favicon&gt;", "&lt;link&gt;"],
         correctAnswer: "&lt;link&gt;"
     },
     {
@@ -246,12 +246,12 @@ const quizHtmlBasics = {
     },
     {
         statement: "Quelle balise est utilisée pour définir un élément de légende dans un tableau ?",
-        answers: ["&lt;caption&gt;", "&lt;legend&gt;", "&lt;title&gt;", "&lt;desc&gt;"],
+        answers: ["&lt;legend&gt;", "&lt;title&gt;", "&lt;caption&gt;", "&lt;desc&gt;"],
         correctAnswer: "&lt;caption&gt;"
     },
     {
         statement: "Quel attribut permet de faire défiler automatiquement une vidéo ou un fichier audio ?",
-        answers: ["loop", "repeat", "autoplay", "scroll"],
+        answers: ["repeat", "autoplay", "loop", "scroll"],
         correctAnswer: "loop"
     }    
 ]
@@ -263,22 +263,22 @@ const quizHtmlIntermediate = {
     questions: [
         {
             statement: "Quel élément HTML5 est utilisé pour une barre de progression ?",
-            answers: ["&lt;progress&gt;", "&lt;meter&gt;", "&lt;load&gt;", "&lt;status&gt;"],
+            answers: ["&lt;meter&gt;", "&lt;load&gt;", "&lt;progress&gt;", "&lt;status&gt;"],
             correctAnswer: "&lt;progress&gt;"
         },
         {
             statement: "Quelle API permet le stockage côté client ?",
-            answers: ["Cookies", "LocalStorage", "SessionStorage", "Cache"],
+            answers: ["Cookies", "SessionStorage", "LocalStorage", "Cache"],
             correctAnswer: "LocalStorage"
         },
         {
             statement: "Quel attribut rend le contenu éditable ?",
-            answers: ["editable", "contenteditable", "edit", "modifiable"],
+            answers: ["editable", "edit", "contenteditable", "modifiable"],
             correctAnswer: "contenteditable"
         },
         {
             statement: "Quel élément permet des graphiques via JavaScript ?",
-            answers: ["&lt;svg&gt;", "&lt;canvas&gt;", "&lt;graph&gt;", "&lt;draw&gt;"],
+            answers: ["&lt;svg&gt;", "&lt;graph&gt;", "&lt;canvas&gt;", "&lt;draw&gt;"],
             correctAnswer: "&lt;canvas&gt;"
         },
         {
@@ -293,12 +293,12 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quelle méthode géolocalise l'utilisateur ?",
-            answers: ["getPosition()", "navigator.geolocation", "window.location", "geoFind()"],
+            answers: ["getPosition()", "window.location", "geoFind()", "navigator.geolocation"],
             correctAnswer: "navigator.geolocation"
         },
         {
             statement: "Quel élément crée un tooltip via CSS/HTML ?",
-            answers: ["title", "tooltip", "hover", "data-tip"],
+            answers: ["tooltip", "hover", "title", "data-tip"],
             correctAnswer: "title"
         },
         {
@@ -308,7 +308,7 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quel attribut améliore l'accessibilité des images ?",
-            answers: ["longdesc", "aria-label", "access", "description"],
+            answers: ["longdesc", "access", "description", "aria-label"],
             correctAnswer: "aria-label"
         },
         {
@@ -333,12 +333,12 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quelle balise est utilisée pour les templates ?",
-            answers: ["&lt;template&gt;", "&lt;script type='text/html'&gt;", "&lt;placeholder&gt;", "&lt;ghost&gt;"],
+            answers: ["&lt;script type='text/html'&gt;", "&lt;placeholder&gt;", "&lt;template&gt;", "&lt;ghost&gt;"],
             correctAnswer: "&lt;template&gt;"
         },
         {
             statement: "Quel attribut iframe empêche l'exécution de scripts ?",
-            answers: ["sandbox", "security", "noscript", "safe"],
+            answers: ["security", "noscript", "sandbox", "safe"],
             correctAnswer: "sandbox"
         },
         {
@@ -368,7 +368,7 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quelle API permet le stockage de session ?",
-            answers: ["sessionStorage", "localStorage", "Cookie", "Cache API"],
+            answers: ["localStorage", "Cookie", "sessionStorage", "Cache API"],
             correctAnswer: "sessionStorage"
         },
         {
@@ -403,7 +403,7 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quel élément affiche une barre de mesure scalaire ?",
-            answers: ["&lt;scale&gt;", "&lt;meter&gt;", "&lt;range&gt;", "&lt;progress&gt;"],
+            answers: ["&lt;scale&gt;", "&lt;range&gt;", "&lt;progress&gt;", "&lt;meter&gt;"],
             correctAnswer: "&lt;meter&gt;"
         },
         {
@@ -413,17 +413,17 @@ const quizHtmlIntermediate = {
         },
     {
             statement: "Quel élément HTML est utilisé pour le résumé d'un bloc &lt;details&gt; ?",
-            answers: ["&lt;summary&gt;", "&lt;legend&gt;", "&lt;title&gt;", "&lt;caption&gt;"],
+            answers: ["&lt;legend&gt;", "&lt;title&gt;", "&lt;caption&gt;", "&lt;summary&gt;"],
             correctAnswer: "&lt;summary&gt;"
         },
         {
             statement: "Quel élément est utilisé pour une légende de figure ?",
-            answers: ["&lt;caption&gt;", "&lt;figcaption&gt;", "&lt;legend&gt;", "&lt;description&gt;"],
+            answers: ["&lt;caption&gt;", "&lt;legend&gt;", "&lt;description&gt;", "&lt;figcaption&gt;"],
             correctAnswer: "&lt;figcaption&gt;"
         },
         {
             statement: "Quel attribut améliore le référencement pour les images ?",
-            answers: ["title", "alt", "description", "seo-text"],
+            answers: ["title", "description", "seo-text", "alt"],
             correctAnswer: "alt"
         },
         {
@@ -452,9 +452,9 @@ const quizHtmlIntermediate = {
             correctAnswer: "type='email'"
         },
         {
-            statement: "Quelle balise est obsolète en HTML5 ?",
-            answers: ["&lt;center&gt;", "&lt;div&gt;", "&lt;span&gt;", "&lt;header&gt;"],
-            correctAnswer: "&lt;center&gt;"
+            statement: "Quel attribut d'un élément <img> permet de charger une image différée pour améliorer la performance ?",
+            answers: ["async", "defer", "lazyload", "loading"],
+            correctAnswer: "loading"
         },
         {
             statement: "Comment créer un lien qui ouvre un nouvel onglet ?",
@@ -468,7 +468,7 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quelle balise définit une entrée de données pour &lt;datalist&gt; ?",
-            answers: ["&lt;option&gt;", "&lt;item&gt;", "&lt;datalist&gt;", "&lt;input list&gt;"],
+            answers: ["&lt;item&gt;", "&lt;datalist&gt;", "&lt;input list&gt;", "&lt;option&gt;"],
             correctAnswer: "&lt;option&gt;"
         },
         {
@@ -478,12 +478,12 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quel attribut d'iframe permet d'autoriser l'exécution de scripts dans un contexte sécurisé ?",
-            answers: ["allow-scripts", "sandbox", "unsafe-scripts", "scriptable"],
+            answers: ["sandbox", "unsafe-scripts", "scriptable", "allow-scripts"],
             correctAnswer: "allow-scripts"
         },
         {
             statement: "Comment définir une langue pour un élément ?",
-            answers: ["lang='fr'", "xml:lang='fr'", "hreflang='fr'", "language='fr'"],
+            answers: ["xml:lang='fr'", "hreflang='fr'", "language='fr'", "lang='fr'"],
             correctAnswer: "lang='fr'"
         },
         {
@@ -503,7 +503,7 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quel attribut d'un `&lt;form&gt;` permet de spécifier où envoyer les données lors de la soumission ?",
-            answers: ["action", "target", "method", "submit"],
+            answers: ["target", "method", "submit", "action"],
             correctAnswer: "action"
         },
         {
@@ -513,7 +513,7 @@ const quizHtmlIntermediate = {
         },
         {
             statement: "Quel attribut contrôle si une vidéo est lue automatiquement après son chargement ?",
-            answers: ["autoplay", "play", "auto", "start"],
+            answers: ["play", "auto", "start", "autoplay"],
             correctAnswer: "autoplay"
         }
     ]
@@ -530,7 +530,7 @@ const quizCssBasics = {
     },
     {
         statement: "Comment centrer horizontalement un élément bloc ?",
-        answers: ["margin: auto", "align: center", "position: middle", "center: true"],
+        answers: ["align: center", "position: middle", "center: true", "margin: auto"],
         correctAnswer: "margin: auto"
     },
     {
@@ -560,7 +560,7 @@ const quizCssBasics = {
     },
     {
         statement: "Quelle propriété contrôle l'épaisseur de la police ?",
-        answers: ["font-weight", "text-bold", "font-size", "weight"],
+        answers: ["text-bold", "font-size", "weight", "font-weight"],
         correctAnswer: "font-weight"
     },
     {
@@ -575,12 +575,12 @@ const quizCssBasics = {
     },
     {
         statement: "Quelle propriété ajoute une ombre à une boîte ?",
-        answers: ["box-shadow", "text-shadow", "shadow-effect", "element-shadow"],
+        answers: ["text-shadow", "shadow-effect", "element-shadow", "box-shadow"],
         correctAnswer: "box-shadow"
     },
     {
         statement: "Comment styliser la première lettre d'un paragraphe ?",
-        answers: [":first-letter", "::first-letter", ":start-letter", "::initial"],
+        answers: ["::first-letter", ":start-letter", "::initial", ":first-letter"],
         correctAnswer: "::first-letter"
     },
     {
@@ -590,22 +590,22 @@ const quizCssBasics = {
     },
     {
         statement: "Quelle valeur de display masque l'élément ?",
-        answers: ["none", "hidden", "invisible", "transparent"],
+        answers: ["hidden", "invisible", "transparent", "none"],
         correctAnswer: "none"
     },
     {
         statement: "Comment définir une image de fond ?",
-        answers: ["background-image", "image-source", "bg-image", "background-src"],
+        answers: ["image-source", "bg-image", "background-src", "background-image"],
         correctAnswer: "background-image"
     },
     {
         statement: "Quelle propriété contrôle l'espace entre les lignes ?",
-        answers: ["line-height", "text-spacing", "spacing", "vertical-space"],
+        answers: ["text-spacing", "spacing", "vertical-space", "line-height"],
         correctAnswer: "line-height"
     },
     {
         statement: "Quelle propriété arrondit les coins d'un élément ?",
-        answers: ["border-radius", "corner-radius", "round-edge", "border-circle"],
+        answers: ["corner-radius", "round-edge", "border-circle", "border-radius"],
         correctAnswer: "border-radius"
     },
     {
@@ -615,7 +615,7 @@ const quizCssBasics = {
     },
     {
         statement: "Quelle propriété aligne le texte à gauche ?",
-        answers: ["text-align: left", "align: start", "text-position: left", "direction: ltr"],
+        answers: ["align: start", "text-position: left", "direction: ltr", "text-align: left"],
         correctAnswer: "text-align: left"
     },
     {
@@ -625,22 +625,22 @@ const quizCssBasics = {
     },
     {
         statement: "Comment souligner un texte ?",
-        answers: ["text-decoration: underline", "font-style: underline", "underline: true", "text-line: under"],
+        answers: ["font-style: underline", "underline: true", "text-line: under", "text-decoration: underline"],
         correctAnswer: "text-decoration: underline"
     },
     {
         statement: "Quelle propriété contrôle l'ordre d'empilement ?",
-        answers: ["z-index", "stack-order", "layer", "position-index"],
+        answers: ["stack-order", "layer", "position-index", "z-index"],
         correctAnswer: "z-index"
     },
     {
         statement: "Quelle valeur de position est par défaut ?",
-        answers: ["static", "relative", "absolute", "fixed"],
+        answers: ["relative", "absolute", "fixed", "static"],
         correctAnswer: "static"
     },
     {
         statement: "Comment cibler un élément avec la classe 'menu' ?",
-        answers: [".menu", "#menu", "class='menu'", "menu"],
+        answers: [".menu", "class='menu'", "#menu", "menu"],
         correctAnswer: ".menu"
     },
     {
@@ -680,7 +680,7 @@ const quizCssBasics = {
     },
     {
         statement: "Comment cibler tous les éléments &lt;p&gt; dans un conteneur #main ?",
-        answers: ["p#main", "#main p", "#main &gt; p", "#main + p"],
+        answers: ["p#main", "#main &gt; p", "#main p", "#main + p"],
         correctAnswer: "#main p"
     },
     {
@@ -690,7 +690,7 @@ const quizCssBasics = {
     },
     {
         statement: "Quelle valeur de display crée un conteneur flex ?",
-        answers: ["block", "flex", "grid", "inline-flex"],
+        answers: ["block", "grid", "flex", "inline-flex"],
         correctAnswer: "flex"
     },
     {
@@ -705,22 +705,22 @@ const quizCssBasics = {
     },
     {
         statement: "Comment cacher un élément tout en conservant son espace ?",
-        answers: ["display: none", "visibility: hidden", "opacity: 0", "hidden: true"],
+        answers: ["display: none", "opacity: 0", "visibility: hidden", "hidden: true"],
         correctAnswer: "visibility: hidden"
     },
     {
         statement: "Quelle propriété ajoute une marge extérieure gauche ?",
-        answers: ["padding-left", "margin-left", "spacing-left", "left-margin"],
+        answers: ["padding-left", "spacing-left", "margin-left", "left-margin"],
         correctAnswer: "margin-left"
     },
     {
         statement: "Comment centrer verticalement un texte dans un conteneur ?",
         answers: ["vertical-align: middle", "text-align: center", "align-items: center", "line-height: height"],
-        correctAnswer: "line-height: [hauteur_du_conteneur]"
+        correctAnswer: "align-items: center"
     },
     {
         statement: "Quelle propriété transforme le texte en italique ?",
-        answers: ["font-italic", "font-style: italic", "text-style: italic", "italic: true"],
+        answers: ["font-italic", "text-style: italic", "font-style: italic", "italic: true"],
         correctAnswer: "font-style: italic"
     },
     {
@@ -792,7 +792,7 @@ const quizCssIntermediate = {
     },
     {
         statement: "Quelle règle permet des requêtes média pour mobile ?",
-        answers: ["@mobile", "@media (max-width: 768px)", "@responsive", "@breakpoint"],
+        answers: ["@mobile", "@responsive", "@breakpoint", "@media (max-width: 768px)"],
         correctAnswer: "@media (max-width: 768px)"
     },
     {
@@ -808,16 +808,16 @@ const quizCssIntermediate = {
     {
         statement: "Comment créer un dégradé linéaire de gauche à droite ?",
         answers: [
-            "background: linear-gradient(to right, red, blue)",
             "background: gradient(left, red, blue)",
             "background: linear-gradient(90deg, red, blue)",
-            "background: horizontal-gradient(red, blue)"
+            "background: horizontal-gradient(red, blue)",
+            "background: linear-gradient(to right, red, blue)"
         ],
         correctAnswer: "background: linear-gradient(to right, red, blue)"
     },
     {
         statement: "Quelle propriété contrôle l'ordre des éléments flex ?",
-        answers: ["flex-order", "order", "flex-index", "z-index"],
+        answers: ["flex-order", "flex-index", "order", "z-index"],
         correctAnswer: "order"
     },
     {
@@ -832,76 +832,76 @@ const quizCssIntermediate = {
     },
     {
         statement: "Comment utiliser une variable CSS personnalisée ?",
-        answers: ["var(--color)", "$color", "variable(--color)", "@color"],
+        answers: ["$color", "var(--color)", "variable(--color)", "@color"],
         correctAnswer: "var(--color)"
     },
     {
         statement: "Quelle propriété anime un élément avec @keyframes ?",
-        answers: ["transition", "animate", "animation", "keyframe"],
+        answers: ["transition", "animation", "keyframe", "animate"],
         correctAnswer: "animation"
     },
     {
         statement: "Comment cibler chaque 3ème élément d'une liste ?",
-        answers: [":nth-child(3n)", ":every(3)", ":child(3)", ":nth(3)"],
+        answers: [":every(3)", ":child(3)", ":nth(3)", ":nth-child(3n)"],
         correctAnswer: ":nth-child(3n)"
     },
     {
         statement: "Quelle propriété gère l'empilement des contextes ?",
-        answers: ["stack", "z-index", "layer", "position"],
+        answers: ["stack", "layer", "position", "z-index"],
         correctAnswer: "z-index"
     },
     {
         statement : "Quelle propriété Flexbox permet de gérer l'espace entre les éléments ?",
-        answers : ["gap", "space-between", "justify-items", "align-items"],
+        answers : ["space-between", "gap", "justify-items", "align-items"],
         correctAnswer : "gap"
     },
     {
         statement: "Quelle pseudo-classe cible un élément vide ?",
-        answers: [":blank", ":void", ":empty", ":no-content"],
+        answers: [":blank", ":void", ":no-content", ":empty"],
         correctAnswer: ":empty"
     },
     {
         statement: "Comment appliquer un style d'impression spécifique ?",
         answers: [
-            "@media print",
             "@media screen",
             "&lt;link media='print'&gt;",
-            "@print"
+            "@print",
+            "@media print"
         ],
         correctAnswer: "@media print"
     },
     {
         statement: "Quelle propriété contrôle l'aspect ratio ?",
-        answers: ["aspect-ratio", "ratio", "size-ratio", "proportion"],
+        answers: ["ratio", "aspect-ratio", "size-ratio", "proportion"],
         correctAnswer: "aspect-ratio"
     },
     {
         statement: "Comment créer un masque de découpe circulaire ?",
         answers: [
-            "clip-path: circle(50%)",
             "mask: circle",
+            "clip-path: circle(50%)",
             "border-radius: 50%",
-            "shape-outside: circle"
+            "shape-outside: circle",
         ],
         correctAnswer: "clip-path: circle(50%)"
     },
     {
         statement: "Quelle propriété optimise le rendu des polices ?",
-        answers: ["font-smoothing", "text-rendering", "antialiased", "font-weight"],
+        answers: ["font-smoothing", "antialiased", "font-weight", "text-rendering"],
         correctAnswer: "text-rendering"
     },
     {
         statement: "Quelle valeur de 'white-space' empêche le retour à la ligne ?",
-        answers: ["nowrap", "pre", "no-wrap", "inline"],
+        answers: ["pre", "nowrap", "no-wrap", "inline"],
         correctAnswer: "nowrap"
     },
     {
         statement: "Comment créer un conteneur grid à 12 colonnes égales ?",
         answers: [
-            "grid-template-columns: repeat(12, 1fr)",
             "grid: 12 columns",
+            "grid-template-columns: repeat(12, 1fr)",
             "grid-columns: 12",
-            "grid-template: 12"
+            "grid-template: 12",
         ],
         correctAnswer: "grid-template-columns: repeat(12, 1fr)"
     },
@@ -912,21 +912,21 @@ const quizCssIntermediate = {
     },
     {
         statement: "Comment flouter un élément ?",
-        answers: ["filter: blur(5px)", "blur: 5px", "effect: blur", "transform: blur(5px)"],
+        answers: ["blur: 5px", "effect: blur", "transform: blur(5px)", "filter: blur(5px)"],
         correctAnswer: "filter: blur(5px)"
     },
     {
         statement: "Quelle propriété permet un débordement scrollable ?",
-        answers: ["overflow: auto", "scroll: enable", "overflow-y: scroll", "scrollable: true"],
+        answers: ["scroll: enable", "overflow-y: scroll", "scrollable: true", "overflow: auto"],
         correctAnswer: "overflow: auto"
     },
     {
         statement: "Que fait 'will-change: transform' ?",
         answers: [
             "Applique une transformation immédiate",
-            "Optimise les performances pour les animations",
             "Force le recalcul du layout",
-            "Déclenche un reflow"
+            "Déclenche un reflow",
+            "Optimise les performances pour les animations"
         ],
         correctAnswer: "Optimise les performances pour les animations"
     },
@@ -934,8 +934,8 @@ const quizCssIntermediate = {
         statement: "Comment créer une grille CSS avec un espace de 20px entre les colonnes ?",
         answers: [
             "grid-gap: 20px;",
-            "column-gap: 20px;",
             "grid-template-columns: gap(20px);",
+            "column-gap: 20px;",
             "spacing: 20px;"
         ],
         correctAnswer: "column-gap: 20px;"
@@ -948,10 +948,10 @@ const quizCssIntermediate = {
     {
         statement: "Comment centrer un élément absolu ?",
         answers: [
-            "top: 50%; left: 50%; transform: translate(-50%, -50%)",
             "margin: auto",
             "position: center",
-            "center: true"
+            "center: true",
+            "top: 50%; left: 50%; transform: translate(-50%, -50%)"
         ],
         correctAnswer: "top: 50%; left: 50%; transform: translate(-50%, -50%)"
     },
@@ -977,7 +977,7 @@ const quizCssIntermediate = {
     },
     {
         statement: "Comment forcer l'héritage d'une propriété ?",
-        answers: ["inherit", "initial", "unset", "revert"],
+        answers: ["initial", "unset", "inherit", "revert"],
         correctAnswer: "inherit"
     },
     {
@@ -997,7 +997,7 @@ const quizCssIntermediate = {
     },
 {
         statement: "Quelle propriété permet de redimensionner un élément ?",
-        answers: ["resize", "scale", "transform", "size"],
+        answers: ["scale", "transform", "resize", "size"],
         correctAnswer: "resize"
     },
     {
@@ -1022,7 +1022,7 @@ const quizCssIntermediate = {
     },
     {
         statement: "Quel format d'image permet la transparence et une meilleure compression que PNG ?",
-        answers: ["JPEG", "GIF", "SVG", "WebP"],
+        answers: ["JPEG", "GIF", "WebP", "SVG"],
         correctAnswer: "WebP"
     },
     {
@@ -1037,16 +1037,16 @@ const quizCssIntermediate = {
     },
     {
         statement: "Quelle propriété contrôle la vitesse d'une animation ?",
-        answers: ["animation-speed", "animation-duration", "animation-timing", "transition-speed"],
+        answers: ["animation-speed", "animation-timing", "transition-speed", "animation-duration"],
         correctAnswer: "animation-duration"
     },
     {
         statement: "Comment cibler les navigateurs Firefox uniquement ?",
         answers: [
             "@-firefox url()",
-            "@supports (-moz-appearance:none)",
             "@browser (type=firefox-disp)",
-            "Impossible"
+            "Impossible",
+            "@supports (-moz-appearance:none)"
         ],
         correctAnswer: "@supports (-moz-appearance:none)"
     },
@@ -1089,22 +1089,22 @@ const quizJsBasics = {
     questions: [
         {
             statement: "Comment déclarer une variable constante ?",
-            answers: ["const x = 5", "let x = 5", "var x = 5", "constant x = 5"],
+            answers: ["let x = 5", "var x = 5", "constant x = 5", "const x = 5"],
             correctAnswer: "const x = 5"
         },
         {
             statement: "Quelle méthode affiche un message dans la console ?",
-            answers: ["console.log()", "alert()", "print()", "log()"],
+            answers: ["alert()", "print()", "log()", "console.log()"],
             correctAnswer: "console.log()"
         },
         {
             statement: "Quel opérateur vérifie l'égalité de valeur ET type ?",
-            answers: ["==", "===", "=", "!=="],
+            answers: ["===", "==", "=", "!=="],
             correctAnswer: "==="
         },
         {
             statement: "Comment convertir une chaîne en nombre entier en précisant la base ?",
-            answers: ["Number()", "parseInt()", "String.toNumber()", "Math.floor()"],
+            answers: ["Number()", "String.toNumber()", "Math.floor()", "parseInt()"],
             correctAnswer: "parseInt()"
         },
         {
@@ -1119,17 +1119,17 @@ const quizJsBasics = {
         },
         {
             statement: "Quelle méthode ajoute un élément à la fin d'un tableau ?",
-            answers: ["push()", "pop()", "shift()", "unshift()"],
+            answers: ["pop()", "shift()", "unshift()", "push()"],
             correctAnswer: "push()"
         },
         {
             statement: "Comment créer une fonction nommée ?",
-            answers: ["function myFunc() {}", "() =&gt; {}", "const myFunc = function() {}", "def myFunc() {}"],
+            answers: ["() =&gt; {}", "const myFunc = function() {}", "def myFunc() {}", "function myFunc() {}"],
             correctAnswer: "function myFunc() {}"
         },
         {
             statement: "Quel objet représente la fenêtre du navigateur ?",
-            answers: ["document", "window", "global", "navigator"],
+            answers: ["document", "global", "navigator", "window"],
             correctAnswer: "window"
         },
         {
@@ -1145,10 +1145,10 @@ const quizJsBasics = {
         {
             statement: "Quelle est la syntaxe correcte d'une boucle for ?",
             answers: [
-                "for (let i = 0; i &lt; 10; i++)",
                 "for (i = 0; i &lt; 10; i++)",
                 "for (let i &lt; 10; i++)",
-                "for (let i = 0; i &lt; 10)"
+                "for (let i = 0; i &lt; 10)",
+                "for (let i = 0; i &lt; 10; i++)"
             ],
             correctAnswer: "for (let i = 0; i &lt; 10; i++)"
         },
@@ -1164,7 +1164,7 @@ const quizJsBasics = {
         },
         {
             statement: "Comment ajouter un écouteur d'événement ?",
-            answers: ["addEventListener()", "onEvent()", "attachEvent()", "listen()"],
+            answers: ["onEvent()", "attachEvent()", "listen()", "addEventListener()"],
             correctAnswer: "addEventListener()"
         },
         {
@@ -1175,46 +1175,46 @@ const quizJsBasics = {
         {
             statement: "Que fait '!!x' ?",
             answers: [
-                "Convertit en booléen",
                 "Double négation",
                 "Crée une copie de x",
-                "Erreur de syntaxe"
+                "Erreur de syntaxe",
+                "Convertit en booléen"
             ],
             correctAnswer: "Convertit en booléen"
         },
         {
             statement: "Quelle est une différence entre switch et if...else ?",
             answers: [
-                "switch est plus performant que if...else dans tous les cas",
                 "if...else ne peut comparer que des nombres",
                 "switch ne fonctionne qu'avec des chaînes de caractères",
-                "switch est utile quand il y a plusieurs cas à comparer"
+                "switch est utile quand il y a plusieurs cas à comparer",
+                "switch est plus performant que if...else dans tous les cas"
             ],
             correctAnswer: "switch est utile quand il y a plusieurs cas à comparer"
         },
         {
             statement: "Quelle méthode crée un élément HTML ?",
-            answers: ["createElement()", "makeElement()", "new Element()", "document.build()"],
+            answers: ["makeElement()", "new Element()", "document.build()", "createElement()"],
             correctAnswer: "createElement()"
         },
         {
             statement: "Quel mot-clé retourne une valeur de fonction ?",
-            answers: ["return", "break", "exit", "end"],
+            answers: ["break", "exit", "end", "return"],
             correctAnswer: "return"
         },
         {
             statement: "Comment obtenir la longueur d'une chaîne ?",
-            answers: ["str.length", "str.count", "str.size", "length(str)"],
+            answers: ["str.count", "str.length", "str.size", "length(str)"],
             correctAnswer: "str.length"
         },
         {
             statement: "Quelle méthode appelle une fonction après un délai ?",
-            answers: ["setTimeout()", "delay()", "wait()", "setInterval()"],
+            answers: ["delay()", "setTimeout()", "wait()", "setInterval()"],
             correctAnswer: "setTimeout()"
         },
         {
             statement: "Que retourne [1, 2][3] ?",
-            answers: ["undefined", "null", "Erreur", "3"],
+            answers: ["null", "undefined", "Erreur", "3"],
             correctAnswer: "undefined"
         },
         {
@@ -1234,12 +1234,12 @@ const quizJsBasics = {
         },
         {
             statement: "Quelle syntaxe crée une fonction fléchée ?",
-            answers: ["() =&gt; {}", "function =&gt; {}", "() -&gt; {}", "arrow function() {}"],
+            answers: ["function =&gt; {}", "() =&gt; {}", "() -&gt; {}", "arrow function() {}"],
             correctAnswer: "() =&gt; {}"
         },
         {
             statement: "Que fait Math.floor(3.9) ?",
-            answers: ["3", "4", "3.9", "Error"],
+            answers: ["3.9", "4", "3", "Error"],
             correctAnswer: "3"
         },
         {
@@ -1249,7 +1249,7 @@ const quizJsBasics = {
         },
         {
             statement: "Quelle méthode transforme une chaîne en tableau ?",
-            answers: ["split()", "join()", "explode()", "toArray()"],
+            answers: ["join()", "explode()", "split()", "toArray()"],
             correctAnswer: "split()"
         },
         {
@@ -1259,7 +1259,7 @@ const quizJsBasics = {
         },
         {
             statement: "Quelle méthode supprime des éléments d'un tableau ?",
-            answers: ["splice()", "slice()", "cut()", "remove()"],
+            answers: ["slice()", "cut()", "splice()", "remove()"],
             correctAnswer: "splice()"
         },
         {
@@ -1280,9 +1280,9 @@ const quizJsBasics = {
         {
             statement: "Que fait 'use strict' ?",
             answers: [
-                "Active le mode strict",
                 "Désactive les erreurs",
                 "Optimise les performances",
+                "Active le mode strict",
                 "Autorise la casse"
             ],
             correctAnswer: "Active le mode strict"
@@ -1294,7 +1294,7 @@ const quizJsBasics = {
         },
         {
             statement: "Quelle méthode supprime le premier élément d'un tableau ?",
-            answers: ["shift()", "pop()", "removeFirst()", "splice(0,1)"],
+            answers: ["pop()", "removeFirst()", "shift()", "splice(0,1)"],
             correctAnswer: "shift()"
         },
         {
@@ -1305,14 +1305,14 @@ const quizJsBasics = {
                 "Date.create('2023-01-01')",
                 "new Date(2023, 1, 1)"
             ],
-            correctAnswer: "Les deux réponses"
+            correctAnswer: "new Date(2023, 0, 1)"
         },
         {
             statement: "Comment empêcher la modification d'un objet ?",
             answers: [
-                "Object.freeze(obj)",
                 "Object.protect(obj)",
                 "obj.lock()",
+                "Object.freeze(obj)",
                 "const obj"
             ],
             correctAnswer: "Object.freeze(obj)"
@@ -1325,9 +1325,9 @@ const quizJsBasics = {
         {
             statement: "Quelle méthode convertit un objet JavaScript en JSON ?",
             answers: [
-                "JSON.stringify(obj)",
                 "JSON.toText(obj)",
                 "obj.toJSON()",
+                "JSON.stringify(obj)",
                 "serialize(obj)"
             ],
             correctAnswer: "JSON.stringify(obj)"
@@ -1421,7 +1421,7 @@ const quizJsIntermediate = {
         },
         {
             statement: "Comment gérer une promesse réussie ?",
-            answers: [".then()", ".catch()", ".finally()", ".resolve()"],
+            answers: [".catch()", ".finally()", ".resolve()", ".then()"],
             correctAnswer: ".then()"
         },
         {
@@ -1431,7 +1431,7 @@ const quizJsIntermediate = {
         },
         {
             statement: "Comment créer un objet avec un prototype spécifique ?",
-            answers: ["Object.create()", "new Prototype()", "{}", "class"],
+            answers: ["new Prototype()", "{}", "class", "Object.create()"],
             correctAnswer: "Object.create()"
         },
         {
@@ -1447,21 +1447,21 @@ const quizJsIntermediate = {
         {
             statement: "Qu'est-ce que le hoisting ?",
             answers: [
-                "Le déplacement des variables en haut du scope",
                 "Une fonction récursive",
                 "L'optimisation du compilateur",
-                "Un design pattern"
+                "Un design pattern",
+                "Le déplacement des variables en haut du scope"
             ],
             correctAnswer: "Le déplacement des variables en haut du scope"
         },
         {
             statement: "Quelle syntaxe gère les erreurs ?",
-            answers: ["try/catch", "error()", "handleError()", ".catch()"],
+            answers: ["error()", "handleError()", ".catch()", "try/catch"],
             correctAnswer: "try/catch"
         },
         {
             statement: "Comment créer une classe en ES6 ?",
-            answers: ["class MyClass {}", "function Class() {}", "new Class {}", "createClass()"],
+            answers: ["function Class() {}", "new Class {}", "createClass()", "class MyClass {}"],
             correctAnswer: "class MyClass {}"
         },
         {
@@ -1482,20 +1482,20 @@ const quizJsIntermediate = {
         {
             statement: "Comment utiliser await ?",
             answers: [
-                "Dans une fonction async",
                 "Avec .then()",
                 "Dans une boucle for",
-                "Sans mot-clé particulier"
+                "Sans mot-clé particulier",
+                "Dans une fonction async"
             ],
             correctAnswer: "Dans une fonction async"
         },
         {
             statement: "Qu'est-ce que l'event bubbling ?",
             answers: [
-                "La propagation des événements du parent à l'enfant",
                 "La propagation des événements de l'enfant au parent",
                 "Un type d'événement personnalisé",
-                "Une erreur JavaScript"
+                "Une erreur JavaScript",
+                "La propagation des événements du parent à l'enfant"
             ],
             correctAnswer: "La propagation des événements de l'enfant au parent"
         },
@@ -1511,7 +1511,7 @@ const quizJsIntermediate = {
         },
         {
             statement: "Quelle méthode HTTP utilise fetch() par défaut ?",
-            answers: ["GET", "POST", "PUT", "HEAD"],
+            answers: ["POST", "PUT", "HEAD", "GET"],
             correctAnswer: "GET"
         },
         {
@@ -1520,27 +1520,27 @@ const quizJsIntermediate = {
                 "headers: { 'Cache-Control': 'no-cache' }",
                 "cache: 'reload'",
                 "cache: 'no-store'",
-                "Aucune de ces réponses"
+                "cache: 'force-cache'"
             ],
             correctAnswer: "cache: 'no-store'"
         },
         {
             statement: "Qu'est-ce qu'un IIFE ?",
             answers: [
-                "Une fonction immédiatement invoquée",
                 "Un design pattern",
                 "Un module ES6",
-                "Une fonction fléchée"
+                "Une fonction fléchée",
+                "Une fonction immédiatement invoquée"
             ],
             correctAnswer: "Une fonction immédiatement invoquée"
         },
         {
             statement: "Comment vérifier si une propriété est énumérable ?",
             answers: [
-                "propertyIsEnumerable()",
                 "hasOwnProperty()",
                 "Object.keys()",
-                "in operator"
+                "in operator",
+                "propertyIsEnumerable()"
             ],
             correctAnswer: "propertyIsEnumerable()"
         },
@@ -1552,8 +1552,8 @@ const quizJsIntermediate = {
         {
             statement: "Quel opérateur permet d'accéder à une propriété optionnelle sans erreur ?",
             answers: [
-                "?.",
                 "??",
+                "?.",
                 "&&",
                 "!== undefined"
             ],
@@ -1562,8 +1562,8 @@ const quizJsIntermediate = {
         {
             statement: "Quelle est la meilleure façon de comparer deux objets en JavaScript ?",
             answers: [
-                "JSON.stringify(obj1) === JSON.stringify(obj2)",
                 "obj1 == obj2",
+                "JSON.stringify(obj1) === JSON.stringify(obj2)",
                 "obj1 === obj2",
                 "Object.compare(obj1, obj2)"
             ],
@@ -1577,8 +1577,8 @@ const quizJsIntermediate = {
         {
             statement: "Comment créer un Web Worker ?",
             answers: [
-                "new Worker('script.js')",
                 "worker.create()",
+                "new Worker('script.js')",
                 "navigator.worker()",
                 "Thread.start()"
             ],
@@ -1587,8 +1587,8 @@ const quizJsIntermediate = {
         {
             statement: "Qu'est-ce qu'un WeakMap ?",
             answers: [
-                "Un Map avec des clés faibles",
                 "Un tableau associatif",
+                "Un Map avec des clés faibles",
                 "Une structure de données immutable",
                 "Un Map non ordonné"
             ],
@@ -1597,8 +1597,8 @@ const quizJsIntermediate = {
         {
             statement: "Comment gérer les dépendances circulaires ?",
             answers: [
-                "Avec des modules ES6",
                 "En utilisant require()",
+                "Avec des modules ES6",
                 "C'est impossible",
                 "Avec des design patterns"
             ],
@@ -1606,7 +1606,7 @@ const quizJsIntermediate = {
         },
         {
             statement: "Quelle méthode trie un tableau sur place ?",
-            answers: ["sort()", "sorted()", "order()", "arrange()"],
+            answers: ["sorted()", "order()", "sort()", "arrange()"],
             correctAnswer: "sort()"
         },
         {
@@ -1622,24 +1622,24 @@ const quizJsIntermediate = {
         {
             statement: "Qu'est-ce que le Temporal Dead Zone (TDZ) ?",
             answers: [
-                "La période avant la déclaration d'une variable let/const",
                 "Une erreur de référence",
                 "Un bug de navigateur",
+                "La période avant la déclaration d'une variable let/const",
                 "Un état du garbage collector"
             ],
             correctAnswer: "La période avant la déclaration d'une variable let/const"
         },
         {
             statement: "Comment créer un proxy en ES6 ?",
-            answers: ["new Proxy()", "Proxy.create()", "Object.proxy()", "createProxy()"],
+            answers: ["Proxy.create()", "Object.proxy()", "new Proxy()", "createProxy()"],
             correctAnswer: "new Proxy()"
         },
         {
             statement: "Que fait Object.freeze() ?",
             answers: [
-                "Rend l'objet immuable",
                 "Clone l'objet",
                 "Supprime les propriétés",
+                "Rend l'objet immuable",
                 "Active le mode strict"
             ],
             correctAnswer: "Rend l'objet immuable"
@@ -1647,9 +1647,9 @@ const quizJsIntermediate = {
         {
             statement: "Comment utiliser les modules ES6 dans le navigateur ?",
             answers: [
-                "&lt;script type='module'&gt;",
                 "&lt;script module&gt;",
                 "import.meta",
+                "&lt;script type='module'&gt;",
                 "Node.js uniquement"
             ],
             correctAnswer: "&lt;script type='module'&gt;"
@@ -1657,24 +1657,24 @@ const quizJsIntermediate = {
         {
             statement: "Quelle méthode permet de regrouper des éléments d'un tableau par clé ?",
             answers: [
-                "array.reduce()",
                 "array.regroup()",
                 "array.map()",
+                "array.reduce()",
                 "array.sort()"
             ],
             correctAnswer: "array.reduce()"
         },
         {
             statement: "Quelle API permet de manipuler l'historique ?",
-            answers: ["History API", "window.location", "navigator.history", "URLSearchParams"],
+            answers: ["window.location", "navigator.history", "History API", "URLSearchParams"],
             correctAnswer: "History API"
         },
         {
             statement: "Comment annuler une requête fetch() ?",
             answers: [
-                "Avec AbortController",
                 "fetch.cancel()",
                 "XMLHttpRequest uniquement",
+                "Avec AbortController",
                 "Impossible"
             ],
             correctAnswer: "Avec AbortController"
@@ -1682,9 +1682,9 @@ const quizJsIntermediate = {
         {
             statement: "Quelle méthode crée une promesse ?",
             answers: [
-                "new Promise((resolve, reject) =&gt; {})",
                 "Promise.create()",
                 "async function() {}",
+                "new Promise((resolve, reject) =&gt; {})",
                 "fetch()"
             ],
             correctAnswer: "new Promise((resolve, reject) =&gt; {})"
@@ -1692,9 +1692,9 @@ const quizJsIntermediate = {
         {
             statement: "Qu'est-ce qu'un generator function ?",
             answers: [
-                "Une fonction avec yield",
                 "Une fonction asynchrone",
                 "Une fonction récursive",
+                "Une fonction avec yield",
                 "Une IIFE"
             ],
             correctAnswer: "Une fonction avec yield"
@@ -1707,20 +1707,20 @@ const quizJsIntermediate = {
         {
             statement: "Comment créer une fonction à mémoire (memoization) ?",
             answers: [
-                "Avec un cache interne utilisant un objet ou Map",
                 "En déclarant une variable globale",
                 "Avec une closure mais sans cache",
-                "Avec une classe"
+                "Avec une classe",
+                "Avec un cache interne utilisant un objet ou Map"
             ],
             correctAnswer: "Avec un cache interne utilisant un objet ou Map"
         },
         {
             statement: "Qu'est-ce que le currying ?",
             answers: [
-                "Transformer une fonction à plusieurs arguments en fonctions imbriquées",
                 "Une erreur de syntaxe",
                 "Un design pattern de classe",
-                "Une méthode de tableau"
+                "Une méthode de tableau",
+                "Transformer une fonction à plusieurs arguments en fonctions imbriquées"
             ],
             correctAnswer: "Transformer une fonction à plusieurs arguments en fonctions imbriquées"
         },
@@ -1863,22 +1863,22 @@ const quizGitGithubBasics = {
         },
         {
             statement: "Quelle commande initialise un nouveau dépôt Git ?",
-            answers: ["git start", "git init", "git new", "git create"],
+            answers: ["git start", "git new", "git init", "git create"],
             correctAnswer: "git init"
         },
         {
             statement: "Que fait 'git clone https://url.com' ?",
             answers: [
                 "Crée un nouveau dépôt",
-                "Copie un dépôt distant en local",
                 "Duplique un commit",
-                "Envoie une copie de nos fichiers locaux sur gitHub"
+                "Envoie une copie de nos fichiers locaux sur gitHub",
+                "Copie un dépôt distant en local"
             ],
             correctAnswer: "Copie un dépôt distant en local"
         },
         {
             statement: "Quelle commande ajoute un fichier à la zone de staging ?",
-            answers: ["git save", "git add", "git stage", "git commit"],
+            answers: ["git save", "git stage", "git add", "git commit"],
             correctAnswer: "git add"
         },
         {
@@ -1903,17 +1903,17 @@ const quizGitGithubBasics = {
         },
         {
             statement: "Comment voir l'historique des commits ?",
-            answers: ["git log", "git history", "git timeline", "git commits"],
+            answers: ["git history", "git timeline", "git log", "git commits"],
             correctAnswer: "git log"
         },
         {
             statement: "Quelle commande crée simplement une nouvelle branche ?",
-            answers: ["git branch &lt;nom&t;", "git new &lt;nom&t;", "git checkout -b &lt;nom&t;", "git create &lt;nom&t;"],
+            answers: ["git new &lt;nom&t;", "git checkout -b &lt;nom&t;", "git branch &lt;nom&t;", "git create &lt;nom&t;"],
             correctAnswer: "git branch &lt;nom&t;"
         },
         {
             statement: "Comment basculer sur une branche existante ?",
-            answers: ["git switch &lt;nom&t;", "git checkout -b &lt;nom&t;", "git move &lt;nom&t;", "git branch -d &lt;nom&t;"],
+            answers: ["git checkout -b &lt;nom&t;", "git move &lt;nom&t;", "git switch &lt;nom&t;", "git branch -d &lt;nom&t;"],
             correctAnswer: "git switch &lt;nom&t;"
         },
         {
@@ -1929,9 +1929,9 @@ const quizGitGithubBasics = {
         {
             statement: "À quoi sert 'git remote' ?",
             answers: [
-                "Gérer les dépôts distants",
                 "Supprimer des fichiers",
                 "Annuler un commit",
+                "Gérer les dépôts distants",
                 "Modifier l'historique"
             ],
             correctAnswer: "Gérer les dépôts distants"
@@ -1939,30 +1939,30 @@ const quizGitGithubBasics = {
         {
             statement: "Que fait 'git pull' ?",
             answers: [
-                "Télécharge les modifications du dépôt distant et les fusionne",
                 "Envoie les commits locaux",
                 "Crée une pull request",
+                "Télécharge les modifications du dépôt distant et les fusionne",
                 "Affiche les différences"
             ],
             correctAnswer: "Télécharge les modifications du dépôt distant et les fusionne"
         },
         {
             statement: "Comment envoyer des commits vers un dépôt distant ?",
-            answers: ["git push", "git upload", "git send", "git deploy"],
+            answers: ["git upload", "git send", "git push", "git deploy"],
             correctAnswer: "git push"
         },
         {
             statement: "Quel fichier spécifie les fichiers à ignorer ?",
-            answers: [".gitignore", ".gitconfig", "ignore.txt", "git-exclude"],
+            answers: [".gitconfig", "ignore.txt", ".gitignore", "git-exclude"],
             correctAnswer: ".gitignore"
         },
         {
             statement: "Que montre 'git diff' ?",
             answers: [
-                "Les différences entre les fichiers modifiés et la dernière version",
                 "La liste des branches",
                 "Les clés SSH configurées",
-                "Les utilisateurs GitHub"
+                "Les utilisateurs GitHub",
+                "Les différences entre les fichiers modifiés et la dernière version"
             ],
             correctAnswer: "Les différences entre les fichiers modifiés et la dernière version"
         },
@@ -1970,9 +1970,9 @@ const quizGitGithubBasics = {
             statement: "Comment annuler des modifications non commitées dans un fichier ?",
             answers: [
                 "git undo &lt;fichier&t;",
-                "git checkout -- &lt;fichier&t;",
                 "git reset &lt;fichier&t;",
-                "git remove &lt;fichier&t;"
+                "git remove &lt;fichier&t;",
+                "git checkout -- &lt;fichier&t;",
             ],
             correctAnswer: "git checkout -- &lt;fichier&t;"
         },
@@ -1981,8 +1981,8 @@ const quizGitGithubBasics = {
             answers: [
                 "Un alias pour le dernier commit",
                 "Un tag système",
-                "La branche actuellement active",
-                "Un outil de fusion"
+                "Un outil de fusion",
+                "La branche actuellement active"
             ],
             correctAnswer: "La branche actuellement active"
         },
@@ -2008,7 +2008,7 @@ const quizGitGithubBasics = {
         },
         {
             statement: "Quelle commande met à jour les références distantes sans fusion ?",
-            answers: ["git fetch", "git pull", "git sync", "git refresh"],
+            answers: ["git pull", "git sync", "git fetch", "git refresh"],
             correctAnswer: "git fetch"
         },
         {
@@ -2024,51 +2024,51 @@ const quizGitGithubBasics = {
         {
             statement: "Qu'est-ce qu'un conflit de fusion ?",
             answers: [
-                "Quand Git ne peut pas fusionner des modifications automatiquement",
                 "Une erreur de syntaxe",
                 "Un problème réseau",
-                "Un dépôt corrompu"
+                "Un dépôt corrompu",
+                "Quand Git ne peut pas fusionner des modifications automatiquement"
             ],
             correctAnswer: "Quand Git ne peut pas fusionner des modifications automatiquement"
         },
         {
             statement: "Comment ajouter un dépôt distant nommé 'origin' ?",
             answers: [
-                "git remote add origin &lt;url&t;",
                 "git origin &lt;url&t;",
                 "git add origin &lt;url&t;",
-                "git connect origin &lt;url&t;"
+                "git connect origin &lt;url&t;",
+                "git remote add origin &lt;url&t;"
             ],
             correctAnswer: "git remote add origin &lt;url&t;"
         },
         {
             statement: "Que fait 'git branch -d &lt;branche&t;' ?",
             answers: [
-                "Supprime une branche",
                 "Compare deux branches",
                 "Renomme une branche",
-                "Affiche l'historique"
+                "Affiche l'historique",
+                "Supprime une branche"
             ],
             correctAnswer: "Supprime une branche"
         },
         {
             statement: "À quoi sert 'git stash' ?",
             answers: [
-                "Enregistrer des modifications temporairement sans commiter",
                 "Supprimer l'historique",
                 "Créer un tag",
-                "Gérer les clés SSH"
+                "Gérer les clés SSH",
+                "Enregistrer des modifications temporairement sans commiter"
             ],
             correctAnswer: "Enregistrer des modifications temporairement sans commiter"
         },
     {
             statement: "Quelle commande montre les différences entre deux branches ?",
-            answers: ["git diff", "git compare", "git branch-diff", "git log"],
+            answers: ["git compare", "git branch-diff", "git log", "git diff"],
             correctAnswer: "git diff"
         },
         {
             statement: "Comment supprimer une branche locale ?",
-            answers: ["git branch -d", "git delete", "git remove", "git branch --remove"],
+            answers: ["git delete", "git remove", "git branch --remove", "git branch -d"],
             correctAnswer: "git branch -d"
         },
         {
@@ -2099,10 +2099,10 @@ const quizGitGithubBasics = {
         {
             statement: "Comment annuler le dernier commit sans perdre les modifications ?",
             answers: [
-                "git reset --soft HEAD~1",
                 "git undo",
                 "git revert HEAD",
-                "git rollback"
+                "git rollback",
+                "git reset --soft HEAD~1"
             ],
             correctAnswer: "git reset --soft HEAD~1"
         },
@@ -2225,7 +2225,7 @@ const quizGitGithubIntermediate = {
     questions: [
         {
             statement: "Quelle commande permet de réécrire l'historique des commits interactivement ?",
-            answers: ["git rebase -i", "git amend", "git reset --hard", "git reflog"],
+            answers: ["git amend", "git rebase -i", "git reset --hard", "git reflog"],
             correctAnswer: "git rebase -i"
         },
         {
@@ -2266,8 +2266,8 @@ const quizGitGithubIntermediate = {
         {
             statement: "Qu'est-ce qu'un hook Git ?",
             answers: [
-                "Un crochet pour accrocher des scripts personnalisés avant/après des actions Git",
                 "Un outil de fusion",
+                "Un crochet pour accrocher des scripts personnalisés avant/après des actions Git",
                 "Une commande pour récupérer des commits",
                 "Une interface graphique"
             ],
@@ -2276,8 +2276,8 @@ const quizGitGithubIntermediate = {
         {
             statement: "Quelle commande permet de voir les commits d’une branche spécifique ?",
             answers: [
-                "git log &lt;branche&gt;",
                 "git branch --log &lt;branche&gt;",
+                "git log &lt;branche&gt;",
                 "git show-branch &lt;branche&gt;",
                 "git history &lt;branche&gt;"
             ],
@@ -2286,8 +2286,8 @@ const quizGitGithubIntermediate = {
         {
             statement: "Qu'est-ce qu'un submodule Git ?",
             answers: [
-                "Un sous-répertoire lié à un autre dépôt Git",
                 "Un module externe non versionné",
+                "Un sous-répertoire lié à un autre dépôt Git",
                 "Un type de tag",
                 "Une branche secondaire"
             ],
@@ -2296,9 +2296,9 @@ const quizGitGithubIntermediate = {
         {
             statement: "omment signer un commit avec GPG en ligne de commande ?",
             answers: [
-                "git commit -S -m 'Message'",
                 "git gpg-sign 'Message'",
                 "git sign --gpg",
+                "git commit -S -m 'Message'",
                 "Configurer GitHub uniquement"
             ],
             correctAnswer: "git commit -S -m 'Message'"
@@ -2306,24 +2306,24 @@ const quizGitGithubIntermediate = {
         {
             statement: "Que fait 'git blame' ?",
             answers: [
-                "Affiche les auteurs de chaque ligne d'un fichier",
                 "Annule un commit",
                 "Gère les conflits",
+                "Affiche les auteurs de chaque ligne d'un fichier",
                 "Supprime les modifications non suivies"
             ],
             correctAnswer: "Affiche les auteurs de chaque ligne d'un fichier"
         },
         {
             statement: "Quelle commande GitHub CLI crée une pull request ?",
-            answers: ["gh pr create", "gh create pr", "github pr", "gh request"],
+            answers: ["gh create pr", "github pr", "gh pr create", "gh request"],
             correctAnswer: "gh pr create"
         },
         {
             statement: "Qu'est-ce qu'un fichier .gitkeep ?",
             answers: [
-                "Un fichier pour forcer Git à suivre un dossier vide",
                 "Une alternative à .gitignore",
                 "Un hook personnalisé",
+                "Un fichier pour forcer Git à suivre un dossier vide",
                 "Un tag système"
             ],
             correctAnswer: "Un fichier pour forcer Git à suivre un dossier vide"
@@ -2331,9 +2331,9 @@ const quizGitGithubIntermediate = {
         {
             statement: "Comment configurer Git pour ignorer les changements de permissions ?",
             answers: [
-                "git config core.fileMode false",
                 "Ajouter * dans .gitignore",
                 "Utiliser chmod",
+                "git config core.fileMode false",
                 "Impossible"
             ],
             correctAnswer: "git config core.fileMode false"
@@ -2341,9 +2341,9 @@ const quizGitGithubIntermediate = {
         {
             statement: "Qu'est-ce qu'un 'stash' non appliqué ?",
             answers: [
-                "Des modifications temporaires non commitées",
                 "Un commit non poussé",
                 "Une branche supprimée",
+                "Des modifications temporaires non commitées",
                 "Un conflit non résolu"
             ],
             correctAnswer: "Des modifications temporaires non commitées"
@@ -2351,9 +2351,9 @@ const quizGitGithubIntermediate = {
         {
             statement: "Comment lister toutes les branches distantes supprimées localement ?",
             answers: [
-                "git fetch --prune",
                 "git branch -r",
                 "git remote update",
+                "git fetch --prune",
                 "git ls -branch"
             ],
             correctAnswer: "git fetch --prune"
@@ -2376,9 +2376,9 @@ const quizGitGithubIntermediate = {
         {
             statement: "À quoi sert 'git reflog' ?",
             answers: [
-                "Afficher l'historique des références (commits, branches, etc.)",
                 "Lister les fichiers ignorés",
                 "Gérer les tags",
+                "Afficher l'historique des références (commits, branches, etc.)",
                 "Restaurer automatiquement un commit supprimé"
             ],
             correctAnswer: "Afficher l'historique des références (commits, branches, etc.)"
@@ -2396,80 +2396,80 @@ const quizGitGithubIntermediate = {
         {
             statement: "Comment créer un tag pour un commit spécifique ?",
             answers: [
-                "git tag v1.0 &lt;commit-hash&gt;",
                 "git tag --commit &lt;commit-hash&gt;",
                 "git mark v1.0 &lt;commit-hash&gt;",
-                "git release &lt;commit-hash&gt;"
+                "git release &lt;commit-hash&gt;",
+                "git tag v1.0 &lt;commit-hash&gt;"
             ],
             correctAnswer: "git tag v1.0 &lt;commit-hash&gt;"
         },
         {
             statement: "Que fait 'git stash pop' ?",
             answers: [
-                "Applique et supprime le dernier stash",
                 "Affiche la liste des stashes",
                 "Crée un nouveau stash",
-                "Annule le dernier commit"
+                "Annule le dernier commit",
+                "Applique et supprime le dernier stash"
             ],
             correctAnswer: "Applique et supprime le dernier stash"
         },
         {
             statement: "Comment empêcher Git de suivre un fichier déjà versionné ?",
             answers: [
-                "git rm --cached &lt;fichier&gt;",
                 "Ajouter le fichier à .gitignore",
                 "git untrack &lt;fichier&gt;",
-                "git remove-tracking &lt;fichier&gt;"
+                "git remove-tracking &lt;fichier&gt;",
+                "git rm --cached &lt;fichier&gt;"
             ],
             correctAnswer: "git rm --cached &lt;fichier&gt;"
         },
         {
             statement: "Qu'est-ce qu'un 'hook' pre-commit ?",
             answers: [
-                "Un script exécuté avant chaque commit",
                 "Un outil de fusion",
                 "Un type de branche",
-                "Un fichier de configuration Git"
+                "Un fichier de configuration Git",
+                "Un script exécuté avant chaque commit"
             ],
             correctAnswer: "Un script exécuté avant chaque commit"
         },
         {
             statement: "Comment résoudre un conflit de fusion après un git pull ?",
             answers: [
-                "Modifier les fichiers, puis git add et git commit",
                 "git abort",
                 "git reset --hard",
-                "git auto-resolve"
+                "git auto-resolve",
+                "Modifier les fichiers, puis git add et git commit"
             ],
             correctAnswer: "Modifier les fichiers, puis git add et git commit"
         },
         {
             statement: "Comment afficher uniquement les fichiers modifiés entre deux commits ?",
             answers: [
-                "git diff --name-only &lt;commit1&gt; &lt;commit2&gt;",
                 "git log --stat &lt;commit1&gt; &lt;commit2&gt;",
                 "git show --files &lt;commit1&gt; &lt;commit2&gt;",
-                "git list-changes &lt;commit1&gt; &lt;commit2&gt;"
+                "git list-changes &lt;commit1&gt; &lt;commit2&gt;",
+                "git diff --name-only &lt;commit1&gt; &lt;commit2&gt;"
             ],
             correctAnswer: "git diff --name-only &lt;commit1&gt; &lt;commit2&gt;"
         },
         {
             statement: "Comment supprimer une branche distante ?",
             answers: [
-                "git push origin --delete &lt;branche&gt;",
                 "git branch -d origin/&lt;branche&gt;",
                 "git remote remove &lt;branche&gt;",
-                "git delete &lt;branche&gt;"
+                "git delete &lt;branche&gt;",
+                "git push origin --delete &lt;branche&gt;"
             ],
             correctAnswer: "git push origin --delete &lt;branche&gt;"
         },
         {
             statement: "Quelle commande convertit un dépôt en bare repository ?",
             answers: [
-                "git config --bool core.bare true",
                 "git bare-init",
                 "git convert --bare",
-                "git init --bare"
+                "git init --bare",
+                "git config --bool core.bare true"
             ],
             correctAnswer: "git config --bool core.bare true"
         },
@@ -2481,20 +2481,20 @@ const quizGitGithubIntermediate = {
         {
             statement: "Comment lister tous les alias Git configurés ?",
             answers: [
-                "git config --get-regexp alias",
                 "git alias --list",
                 "git list-aliases",
-                "git help aliases"
+                "git help aliases",
+                "git config --get-regexp alias",
             ],
             correctAnswer: "git config --get-regexp alias"
         },
         {
             statement: "Comment vérifier si une branche a été fusionnée dans la branche actuelle ?",
             answers: [
-                "git branch --merged",
                 "git branch --list",
                 "git merge --check",
-                "git check-merged"
+                "git check-merged",
+                "git branch --merged"
             ],
             correctAnswer: "git branch --merged"
         },
@@ -2651,6 +2651,13 @@ const quizGitGithubIntermediate = {
 
     ]
 };
+
+//To check repartition of correct answer index :
+/* 
+let positions = tableau.map(q => q.answers.indexOf(q.correctAnswer));
+let occurrences = countOccurrences(positions);
+console.log(occurrences);
+ */
 
 // Generate random array of numb questions from the database
 
