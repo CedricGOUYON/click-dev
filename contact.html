@@ -126,14 +126,16 @@
 
                 <input type="text" placeholder="Nom" name="nom" id="name" required>
                 <input type="email" placeholder="Example@mail.com" name="mail" id="mail" required>
-                <input type="number" placeholder="Téléphone (facultatif)" name="téléphone" id="phone">
+                <input type="number" placeholder="Téléphone (facultatif)" name="telephone" id="phone">
                 <input type="text" placeholder="Entreprise (facultatif)" name="entreprise" id="Compagny">
-                <input class="input" type="text" placeholder="Votre message" name="message" id="message" required>
-                <section>
-                    <button><a href="#">Envoyer</a></button>
+                <textarea class="input" type="text" placeholder="Votre message" name="message" id="message"
+                    required></textarea>
+                <section class="button">
+                    <button type="button">Envoyer</button>
                 </section>
+            </form>
         </section>
-        </form>
+
 
     </main>
 
@@ -195,6 +197,7 @@
             </a>
         </section>
     </footer>
+    <script>src = "contact-script.js"</script>
 </body>
 
 </html>
