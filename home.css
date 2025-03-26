@@ -12,6 +12,21 @@
   padding: 0px;
 } */
 
+.dark-mode {
+  main {
+    background-color: var(--background-dark-color);
+    h2,
+    a,
+    p {
+      color: var(--light-text-color);
+    }
+    cards,
+    article {
+      background-color: var(--main-bloc-dark-color);
+    }
+  }
+}
+
 main {
   margin: 111.2px auto 0;
 
@@ -64,19 +79,19 @@ main {
     width: 350px;
     padding: 20px;
   }
-  cards > a > img {
-    margin-top: 10px;
-    width: 64px;
-    height: 64px;
-  }
+}
+cards > a > img {
+  margin-top: 10px;
+  width: 64px;
+  height: 64px;
+}
 
-  cards > a {
-    text-decoration: none;
-  }
+cards > a {
+  text-decoration: none;
+}
 
-  cards > h2 {
-    text-align: center;
-  }
+cards > h2 {
+  text-align: center;
 }
 
 @media screen and (width>650px) {
