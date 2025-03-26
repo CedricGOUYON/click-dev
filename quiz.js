@@ -1,8 +1,8 @@
 // Declare quiz DB
 
 const quizHtmlBasics = {
-    title : "HTML Débutant",
-    level : "Novice",
+    title: "HTML Débutant",
+    level: "novice",
     questions: [
     {
         statement: "Que signifie HTML ?",
@@ -258,9 +258,9 @@ const quizHtmlBasics = {
 };
 
 const quizHtmlIntermediate = {
-    title : "HTML Intermédiaire",
-    level : "Intermediate",
-    questions : [
+    title: "HTML Intermédiaire",
+    level: "intermediate",
+    questions: [
         {
             statement: "Quel élément HTML5 est utilisé pour une barre de progression ?",
             answers: ["&lt;progress&gt;", "&lt;meter&gt;", "&lt;load&gt;", "&lt;status&gt;"],
@@ -520,9 +520,9 @@ const quizHtmlIntermediate = {
 };
 
 const quizCssBasics = {
-    title : "CSS Débutant",
-    level : "Novice",
-    questions : [
+    title: "CSS Débutant",
+    level: "novice",
+    questions: [
     {
         statement: "Quelle propriété change la couleur du texte ?",
         answers: ["text-color", "font-color", "color", "text-style"],
@@ -776,11 +776,10 @@ const quizCssBasics = {
 ]
 };
 
-// Change questions with "les deux" - doesn't work with Duo/Carré TODO
 const quizCssIntermediate = {
-    title : "CSS Intermédiaire",
-    level : "Intermediate",
-    questions : [
+    title: "CSS Intermédiaire",
+    level: "intermediate",
+    questions: [
     {
         statement: "Quelle propriété permet des transitions fluides ?",
         answers: ["animation", "transform", "transition", "keyframes"],
@@ -932,14 +931,14 @@ const quizCssIntermediate = {
         correctAnswer: "Optimise les performances pour les animations"
     },
     {
-        statement: "Comment cibler les navigateurs WebKit ?",
+        statement: "Comment créer une grille CSS avec un espace de 20px entre les colonnes ?",
         answers: [
-            "@media (-webkit-min-device-pixel-ratio: 2)",
-            "::-webkit-scrollbar",
-            "@supports (-webkit-appearance:none)",
-            "Toutes ces réponses"
+            "grid-gap: 20px;",
+            "column-gap: 20px;",
+            "grid-template-columns: gap(20px);",
+            "spacing: 20px;"
         ],
-        correctAnswer: "Toutes ces réponses"
+        correctAnswer: "column-gap: 20px;"
     },
     {
         statement: "Quelle propriété crée un reflet CSS ?",
@@ -1013,8 +1012,8 @@ const quizCssIntermediate = {
     },
     {
         statement: "Comment appliquer un style aux éléments impairs d'une liste ?",
-        answers: [":nth-child(2n+1)", ":odd", ":nth-child(odd)", "Les deux premières réponses"],
-        correctAnswer: "Les deux premières réponses"
+        answers: [":nth-child(2n)", ":odd", ":nth-child(odd)", ":impair-style"],
+        correctAnswer: ":odd"
     },
     {
         statement: "Quelle propriété contrôle la perspective en 3D ?",
@@ -1022,14 +1021,9 @@ const quizCssIntermediate = {
         correctAnswer: "perspective"
     },
     {
-        statement: "Comment utiliser une police Google Fonts ?",
-        answers: [
-            "@import url('https://fonts.googleapis.com/css...');",
-            "&lt;link href='https://fonts.googleapis.com/css...'&gt;",
-            "Les deux réponses",
-            "Aucune"
-        ],
-        correctAnswer: "Les deux réponses"
+        statement: "Quel format d'image permet la transparence et une meilleure compression que PNG ?",
+        answers: ["JPEG", "GIF", "SVG", "WebP"],
+        correctAnswer: "WebP"
     },
     {
         statement: "Quelle propriété mélange les arrière-plans ?",
@@ -1037,14 +1031,9 @@ const quizCssIntermediate = {
         correctAnswer: "background-blend-mode"
     },
     {
-        statement: "Comment créer un effet de parallaxe ?",
-        answers: [
-            "perspective et translateZ",
-            "background-attachment: fixed",
-            "Les deux réponses",
-            "Aucune"
-        ],
-        correctAnswer: "Les deux réponses"
+        statement: "Quelle propriété CSS permet de gérer la casse du texte ?",
+        answers: ["text-transform", "text-case", "font-style", "letter-spacing"],
+        correctAnswer: "text-transform"
     },
     {
         statement: "Quelle propriété contrôle la vitesse d'une animation ?",
@@ -1054,12 +1043,12 @@ const quizCssIntermediate = {
     {
         statement: "Comment cibler les navigateurs Firefox uniquement ?",
         answers: [
-            "@-moz-document url-prefix()",
+            "@-firefox url()",
             "@supports (-moz-appearance:none)",
-            "Les deux réponses",
+            "@browser (type=firefox-disp)",
             "Impossible"
         ],
-        correctAnswer: "Les deux réponses"
+        correctAnswer: "@supports (-moz-appearance:none)"
     },
     {
         statement: "Quelle propriété permet un défilement fluide ?",
@@ -1070,11 +1059,11 @@ const quizCssIntermediate = {
         statement: "Comment créer un effet de fondu en entrée ?",
         answers: [
             "@keyframes fadeIn { from { opacity: 0; } }",
-            "transition: opacity 1s",
-            "Les deux réponses",
-            "Aucune"
+            "transition: smooth 1s",
+            "opacity-transition: 1s ease-in",
+            "fade-effect: true"
         ],
-        correctAnswer: "Les deux réponses"
+        correctAnswer: "@keyframes fadeIn { from { opacity: 0; } }"
     },
     {
         statement: "Quelle propriété CSS Grid aligne le contenu verticalement ?",
@@ -1082,20 +1071,779 @@ const quizCssIntermediate = {
         correctAnswer: "align-content"
     },
     {
-        statement: "Quelle valeur de position permet un élément collant ?",
+        statement: "Quelle valeur positionne un élément de façon à ce qu'il reste visible lorsqu'on scrolle vers le bas ?",
         answers: ["sticky", "fixed", "relative", "static"],
         correctAnswer: "sticky"
     },
     {
-        statement: "Comment optimiser les performances des animations ?",
-        answers: [
-            "Utiliser transform et opacity",
-            "Éviter les modifications de layout",
-            "Les deux réponses",
-            "Aucune"
-        ],
-        correctAnswer: "Les deux réponses"
+        statement: "Quelle propriété CSS permet de limiter le nombre de caractères par ligne pour améliorer la lisibilité ?",
+        answers: ["max-width", "text-overflow", "ch", "line-clamp"],
+        correctAnswer: "ch"
     }
+    ]
+};
+
+const quizJsBasics = {
+    title: "JavaScript Débutant",
+    level: "novice",
+    questions: [
+        {
+            statement: "Comment déclarer une variable constante ?",
+            answers: ["const x = 5", "let x = 5", "var x = 5", "constant x = 5"],
+            correctAnswer: "const x = 5"
+        },
+        {
+            statement: "Quelle méthode affiche un message dans la console ?",
+            answers: ["console.log()", "alert()", "print()", "log()"],
+            correctAnswer: "console.log()"
+        },
+        {
+            statement: "Quel opérateur vérifie l'égalité de valeur ET type ?",
+            answers: ["==", "===", "=", "!=="],
+            correctAnswer: "==="
+        },
+        {
+            statement: "Comment convertir une chaîne en nombre entier en précisant la base ?",
+            answers: ["Number()", "parseInt()", "String.toNumber()", "Math.floor()"],
+            correctAnswer: "parseInt()"
+        },
+        {
+            statement: "Quelle boucle parcourt un tableau ?",
+            answers: ["for...in", "while", "for...of", "do...while"],
+            correctAnswer: "for...of"
+        },
+        {
+            statement: "Comment vérifier si une variable est un tableau ?",
+            answers: ["typeof x === 'array'", "x.isArray()", "Array.isArray(x)", "x instanceof array"],
+            correctAnswer: "Array.isArray(x)"
+        },
+        {
+            statement: "Quelle méthode ajoute un élément à la fin d'un tableau ?",
+            answers: ["push()", "pop()", "shift()", "unshift()"],
+            correctAnswer: "push()"
+        },
+        {
+            statement: "Comment créer une fonction nommée ?",
+            answers: ["function myFunc() {}", "() =&gt; {}", "const myFunc = function() {}", "def myFunc() {}"],
+            correctAnswer: "function myFunc() {}"
+        },
+        {
+            statement: "Quel objet représente la fenêtre du navigateur ?",
+            answers: ["document", "window", "global", "navigator"],
+            correctAnswer: "window"
+        },
+        {
+            statement: "Quelle méthode permet de sélectionner tous les éléments d'une classe ?",
+            answers: ["document.querySelector()", "document.getElementById()", "document.getElementsByClassName()", "document.find('.class')"],
+            correctAnswer: "document.getElementsByClassName()"
+        },
+        {
+            statement: "Que retourne '2' + 2 ?",
+            answers: ["4", "'22'", "NaN", "TypeError"],
+            correctAnswer: "'22'"
+        },
+        {
+            statement: "Quelle est la syntaxe correcte d'une boucle for ?",
+            answers: [
+                "for (let i = 0; i &lt; 10; i++)",
+                "for (i = 0; i &lt; 10; i++)",
+                "for (let i &lt; 10; i++)",
+                "for (let i = 0; i &lt; 10)"
+            ],
+            correctAnswer: "for (let i = 0; i &lt; 10; i++)"
+        },
+        {
+            statement: "Quelle méthode enlève le dernier élément d'un tableau ?",
+            answers: ["shift()", "pop()", "slice()", "removeLast()"],
+            correctAnswer: "pop()"
+        },
+        {
+            statement: "Quelle instruction arrête une boucle ?",
+            answers: ["exit", "stop", "break", "return"],
+            correctAnswer: "break"
+        },
+        {
+            statement: "Comment ajouter un écouteur d'événement ?",
+            answers: ["addEventListener()", "onEvent()", "attachEvent()", "listen()"],
+            correctAnswer: "addEventListener()"
+        },
+        {
+            statement: "Quelle méthode transforme un tableau en chaîne de caractères ?",
+            answers: ["string()", "join()", "split()", "concat()"],
+            correctAnswer: "join()"
+        },
+        {
+            statement: "Que fait '!!x' ?",
+            answers: [
+                "Convertit en booléen",
+                "Double négation",
+                "Crée une copie de x",
+                "Erreur de syntaxe"
+            ],
+            correctAnswer: "Convertit en booléen"
+        },
+        {
+            statement: "Quelle est une différence entre switch et if...else ?",
+            answers: [
+                "switch est plus performant que if...else dans tous les cas",
+                "if...else ne peut comparer que des nombres",
+                "switch ne fonctionne qu'avec des chaînes de caractères",
+                "switch est utile quand il y a plusieurs cas à comparer"
+            ],
+            correctAnswer: "switch est utile quand il y a plusieurs cas à comparer"
+        },
+        {
+            statement: "Quelle méthode crée un élément HTML ?",
+            answers: ["createElement()", "makeElement()", "new Element()", "document.build()"],
+            correctAnswer: "createElement()"
+        },
+        {
+            statement: "Quel mot-clé retourne une valeur de fonction ?",
+            answers: ["return", "break", "exit", "end"],
+            correctAnswer: "return"
+        },
+        {
+            statement: "Comment obtenir la longueur d'une chaîne ?",
+            answers: ["str.length", "str.count", "str.size", "length(str)"],
+            correctAnswer: "str.length"
+        },
+        {
+            statement: "Quelle méthode appelle une fonction après un délai ?",
+            answers: ["setTimeout()", "delay()", "wait()", "setInterval()"],
+            correctAnswer: "setTimeout()"
+        },
+        {
+            statement: "Que retourne [1, 2][3] ?",
+            answers: ["undefined", "null", "Erreur", "3"],
+            correctAnswer: "undefined"
+        },
+        {
+            statement: "Comment cloner superficiellement un tableau ?",
+            answers: ["[...arr]", "arr.clone()", "Array.copy(arr)", "arr.slice(0)"],
+            correctAnswer: "arr.slice(0)"
+        },
+        {
+            statement: "Quel opérateur vérifie une inégalité stricte ?",
+            answers: ["!=", "!==", "not", "&gt;&lt;"],
+            correctAnswer: "!=="
+        },
+        {
+            statement: "Comment concaténer deux tableaux ?",
+            answers: ["arr1 + arr2", "arr1.concat(arr2)", "arr1.join(arr2)", "concat(arr1, arr2)"],
+            correctAnswer: "arr1.concat(arr2)"
+        },
+        {
+            statement: "Quelle syntaxe crée une fonction fléchée ?",
+            answers: ["() =&gt; {}", "function =&gt; {}", "() -&gt; {}", "arrow function() {}"],
+            correctAnswer: "() =&gt; {}"
+        },
+        {
+            statement: "Que fait Math.floor(3.9) ?",
+            answers: ["3", "4", "3.9", "Error"],
+            correctAnswer: "3"
+        },
+        {
+            statement: "Comment accéder au premier élément d'un tableau ?",
+            answers: ["arr[1]", "arr[0]", "arr.first", "arr.start"],
+            correctAnswer: "arr[0]"
+        },
+        {
+            statement: "Quelle méthode transforme une chaîne en tableau ?",
+            answers: ["split()", "join()", "explode()", "toArray()"],
+            correctAnswer: "split()"
+        },
+        {
+            statement: "Comment vérifier si une variable est NaN ?",
+            answers: ["isNaN()", "NaN()", "Number.isNaN()", "x === NaN"],
+            correctAnswer: "Number.isNaN()"
+        },
+        {
+            statement: "Quelle méthode supprime des éléments d'un tableau ?",
+            answers: ["splice()", "slice()", "cut()", "remove()"],
+            correctAnswer: "splice()"
+        },
+        {
+            statement: "Quel opérateur logique retourne vrai si les deux opérandes sont vrais ?",
+            answers: ["||", "&&", "??", "!"],
+            correctAnswer: "&&"
+        },
+        {
+            statement: "Quelle syntaxe utilise correctement l'opérateur ternaire ?",
+        answers: [
+            "let result = (x &gt; 10) ? 'Grand' : 'Petit';",
+            "let result = if (x &gt; 10) then 'Grand' else 'Petit';",
+            "let result = x &gt; 10 : 'Grand' ? 'Petit';",
+            "let result = x ? (x &gt; 10, 'Grand', 'Petit');"
+        ],
+        correctAnswer: "let result = (x &gt; 10) ? 'Grand' : 'Petit';"
+        },
+        {
+            statement: "Que fait 'use strict' ?",
+            answers: [
+                "Active le mode strict",
+                "Désactive les erreurs",
+                "Optimise les performances",
+                "Autorise la casse"
+            ],
+            correctAnswer: "Active le mode strict"
+        },
+        {
+            statement: "Comment supprimer une propriété d'un objet en JavaScript ?",
+            answers: ["delete obj.prop", "obj.remove('prop')", "obj.prop = null", "drop obj.prop"],
+            correctAnswer: "delete obj.prop"
+        },
+        {
+            statement: "Quelle méthode supprime le premier élément d'un tableau ?",
+            answers: ["shift()", "pop()", "removeFirst()", "splice(0,1)"],
+            correctAnswer: "shift()"
+        },
+        {
+            statement: "Comment créer une date représentant le 1er janvier 2023 ?",
+            answers: [
+                "new Date(2023, 0, 1)",
+                "new Day('01-01-2023')",
+                "Date.create('2023-01-01')",
+                "new Date(2023, 1, 1)"
+            ],
+            correctAnswer: "Les deux réponses"
+        },
+        {
+            statement: "Comment empêcher la modification d'un objet ?",
+            answers: [
+                "Object.freeze(obj)",
+                "Object.protect(obj)",
+                "obj.lock()",
+                "const obj"
+            ],
+            correctAnswer: "Object.freeze(obj)"
+        },
+        {
+            statement: "Que retourne Boolean('0') ?",
+            answers: ["false", "true", "0", "Error"],
+            correctAnswer: "true"
+        },
+        {
+            statement: "Quelle méthode convertit un objet JavaScript en JSON ?",
+            answers: [
+                "JSON.stringify(obj)",
+                "JSON.toText(obj)",
+                "obj.toJSON()",
+                "serialize(obj)"
+            ],
+            correctAnswer: "JSON.stringify(obj)"
+        },
+        {
+            statement: "Quelle méthode vérifie si un tableau contient un élément ?",
+            answers: [
+                "includes()",
+                "has()",
+                "find()",
+                "exists()"
+            ],
+            correctAnswer: "includes()"
+        },
+        {
+            statement: "Quelle méthode fusionne deux objets ?",
+            answers: [
+                "Object.assign({}, obj1, obj2)",
+                "Object.merge(obj1, obj2)",
+                "obj1 + obj2",
+                "combine(obj1, obj2)"
+            ],
+            correctAnswer: "Object.assign({}, obj1, obj2)"
+        },
+        {
+            statement: "Que fait isNaN('123') ?",
+            answers: ["true", "false", "Erreur", "null"],
+            correctAnswer: "false"
+        },
+        {
+            statement: "Comment générer un nombre aléatoire entre 1 et 10 ?",
+            answers: [
+                "Math.floor(Math.random() * 10) + 1",
+                "random(1, 10)",
+                "Math.random(1, 10)",
+                "getRandomNumber(1, 10)"
+            ],
+            correctAnswer: "Math.floor(Math.random() * 10) + 1"
+        },
+        {
+            statement: "Quelle méthode exécute une fonction après 2 secondes ?",
+            answers: ["setTimeout(func, 2000)", "delay(2000).then(func)", "wait(2, func)", "func(2s, parameter)"],
+            correctAnswer: "setTimeout(func, 2000)"
+        },
+        {
+            statement: "Comment vérifier si une chaîne commence par un certain mot ?",
+            answers: [
+                "str.startsWith('mot')",
+                "str.beginsWith('mot')",
+                "str.hasPrefix('mot')",
+                "str.indexOf('mot') === 0"
+            ],
+            correctAnswer: "str.startsWith('mot')"
+        },
+        {
+            statement: "Quelle méthode convertit une chaîne en minuscules ?",
+            answers: ["toLowerCase()", "lowerCase()", "convertCase('lower')", "lower('case')"],
+            correctAnswer: "toLowerCase()"
+        },
+        {
+            statement: "Comment fusionner deux tableaux en JavaScript ?",
+            answers: [
+                "[...arr1, ...arr2]",
+                "arr1 + arr2",
+                "arr1.join(arr2)",
+                "merge(arr1, arr2)"
+            ],
+            correctAnswer: "[...arr1, ...arr2]"
+        },
+        {
+            statement: "Quelle méthode supprime/ajoute des éléments dans un tableau ?",
+            answers: ["splice()", "slice()", "cut()", "remove()"],
+            correctAnswer: "splice()"
+        }
+    ]
+};
+
+const quizJsIntermediate = {
+    title: "JavaScript Intermédiaire",
+    level: "intermediate",
+    questions: [
+        {
+            statement: "Qu'est-ce qu'une closure ?",
+            answers: [
+                "Une fonction anonyme",
+                "Une fonction avec accès à son scope parent",
+                "Un callback asynchrone",
+                "Un objet littéral"
+            ],
+            correctAnswer: "Une fonction avec accès à son scope parent"
+        },
+        {
+            statement: "Comment gérer une promesse réussie ?",
+            answers: [".then()", ".catch()", ".finally()", ".resolve()"],
+            correctAnswer: ".then()"
+        },
+        {
+            statement: "Que retourne 'typeof null' ?",
+            answers: ["'null'", "'object'", "'undefined'", "'NaN'"],
+            correctAnswer: "'object'"
+        },
+        {
+            statement: "Comment créer un objet avec un prototype spécifique ?",
+            answers: ["Object.create()", "new Prototype()", "{}", "class"],
+            correctAnswer: "Object.create()"
+        },
+        {
+            statement: "Quelle méthode JavaScript permet de détecter si un objet est un proxy ?",
+            answers: [
+                "Proxy.isProxy(obj)",
+                "Reflect.isProxy(obj)",
+                "Object.isProxy(obj)",
+                "Aucune méthode native"
+            ],
+            correctAnswer: "Aucune méthode native"
+        },
+        {
+            statement: "Qu'est-ce que le hoisting ?",
+            answers: [
+                "Le déplacement des variables en haut du scope",
+                "Une fonction récursive",
+                "L'optimisation du compilateur",
+                "Un design pattern"
+            ],
+            correctAnswer: "Le déplacement des variables en haut du scope"
+        },
+        {
+            statement: "Quelle syntaxe gère les erreurs ?",
+            answers: ["try/catch", "error()", "handleError()", ".catch()"],
+            correctAnswer: "try/catch"
+        },
+        {
+            statement: "Comment créer une classe en ES6 ?",
+            answers: ["class MyClass {}", "function Class() {}", "new Class {}", "createClass()"],
+            correctAnswer: "class MyClass {}"
+        },
+        {
+            statement: "Quel mot-clé crée un contexte privé dans une classe ?",
+            answers: ["private", "#", "protected", "_"],
+            correctAnswer: "#"
+        },
+        {
+            statement: "Que fait Array.prototype.reduce() ?",
+            answers: [
+                "Filtre les éléments",
+                "Réduit le tableau à une valeur unique",
+                "Clone le tableau",
+                "Modifie chaque élément"
+            ],
+            correctAnswer: "Réduit le tableau à une valeur unique"
+        },
+        {
+            statement: "Comment utiliser await ?",
+            answers: [
+                "Dans une fonction async",
+                "Avec .then()",
+                "Dans une boucle for",
+                "Sans mot-clé particulier"
+            ],
+            correctAnswer: "Dans une fonction async"
+        },
+        {
+            statement: "Qu'est-ce que l'event bubbling ?",
+            answers: [
+                "La propagation des événements du parent à l'enfant",
+                "La propagation des événements de l'enfant au parent",
+                "Un type d'événement personnalisé",
+                "Une erreur JavaScript"
+            ],
+            correctAnswer: "La propagation des événements de l'enfant au parent"
+        },
+        {
+            statement: "Comment empêcher l'ajout de nouvelles propriétés à un objet ?",
+            answers: [
+                "Object.freeze(obj)",
+                "Object.seal(obj)",
+                "Object.preventExtensions(obj)",
+                "delete obj.prototype"
+            ],
+            correctAnswer: "Object.preventExtensions(obj)"
+        },
+        {
+            statement: "Quelle méthode HTTP utilise fetch() par défaut ?",
+            answers: ["GET", "POST", "PUT", "HEAD"],
+            correctAnswer: "GET"
+        },
+        {
+            statement: "Comment désactiver le cache avec fetch() ?",
+            answers: [
+                "headers: { 'Cache-Control': 'no-cache' }",
+                "cache: 'reload'",
+                "cache: 'no-store'",
+                "Aucune de ces réponses"
+            ],
+            correctAnswer: "cache: 'no-store'"
+        },
+        {
+            statement: "Qu'est-ce qu'un IIFE ?",
+            answers: [
+                "Une fonction immédiatement invoquée",
+                "Un design pattern",
+                "Un module ES6",
+                "Une fonction fléchée"
+            ],
+            correctAnswer: "Une fonction immédiatement invoquée"
+        },
+        {
+            statement: "Comment vérifier si une propriété est énumérable ?",
+            answers: [
+                "propertyIsEnumerable()",
+                "hasOwnProperty()",
+                "Object.keys()",
+                "in operator"
+            ],
+            correctAnswer: "propertyIsEnumerable()"
+        },
+        {
+            statement: "Quelle méthode retourne les clés d'un objet ?",
+            answers: ["Object.keys()", "Object.values()", "Object.entries()", "for...in"],
+            correctAnswer: "Object.keys()"
+        },
+        {
+            statement: "Quel opérateur permet d'accéder à une propriété optionnelle sans erreur ?",
+            answers: [
+                "?.",
+                "??",
+                "&&",
+                "!== undefined"
+            ],
+            correctAnswer: "?."
+        },
+        {
+            statement: "Quelle est la meilleure façon de comparer deux objets en JavaScript ?",
+            answers: [
+                "JSON.stringify(obj1) === JSON.stringify(obj2)",
+                "obj1 == obj2",
+                "obj1 === obj2",
+                "Object.compare(obj1, obj2)"
+            ],
+            correctAnswer: "JSON.stringify(obj1) === JSON.stringify(obj2)"
+        },
+        {
+            statement: "Quelle API permet le stockage persistant ?",
+            answers: ["sessionStorage", "localStorage", "Cookie", "Cache"],
+            correctAnswer: "localStorage"
+        },
+        {
+            statement: "Comment créer un Web Worker ?",
+            answers: [
+                "new Worker('script.js')",
+                "worker.create()",
+                "navigator.worker()",
+                "Thread.start()"
+            ],
+            correctAnswer: "new Worker('script.js')"
+        },
+        {
+            statement: "Qu'est-ce qu'un WeakMap ?",
+            answers: [
+                "Un Map avec des clés faibles",
+                "Un tableau associatif",
+                "Une structure de données immutable",
+                "Un Map non ordonné"
+            ],
+            correctAnswer: "Un Map avec des clés faibles"
+        },
+        {
+            statement: "Comment gérer les dépendances circulaires ?",
+            answers: [
+                "Avec des modules ES6",
+                "En utilisant require()",
+                "C'est impossible",
+                "Avec des design patterns"
+            ],
+            correctAnswer: "Avec des modules ES6"
+        },
+        {
+            statement: "Quelle méthode trie un tableau sur place ?",
+            answers: ["sort()", "sorted()", "order()", "arrange()"],
+            correctAnswer: "sort()"
+        },
+        {
+            statement: "Comment vérifier si un tableau contient ou non un objet spécifique en JavaScript ?",
+            answers: [
+                "array.find(obj)",
+                "array.has(obj)",
+                "array.some(el =&gt; el === obj)",
+                "array.contains(obj)"
+            ],
+            correctAnswer: "array.some(el =&gt; el === obj)"
+        },
+        {
+            statement: "Qu'est-ce que le Temporal Dead Zone (TDZ) ?",
+            answers: [
+                "La période avant la déclaration d'une variable let/const",
+                "Une erreur de référence",
+                "Un bug de navigateur",
+                "Un état du garbage collector"
+            ],
+            correctAnswer: "La période avant la déclaration d'une variable let/const"
+        },
+        {
+            statement: "Comment créer un proxy en ES6 ?",
+            answers: ["new Proxy()", "Proxy.create()", "Object.proxy()", "createProxy()"],
+            correctAnswer: "new Proxy()"
+        },
+        {
+            statement: "Que fait Object.freeze() ?",
+            answers: [
+                "Rend l'objet immuable",
+                "Clone l'objet",
+                "Supprime les propriétés",
+                "Active le mode strict"
+            ],
+            correctAnswer: "Rend l'objet immuable"
+        },
+        {
+            statement: "Comment utiliser les modules ES6 dans le navigateur ?",
+            answers: [
+                "&lt;script type='module'&gt;",
+                "&lt;script module&gt;",
+                "import.meta",
+                "Node.js uniquement"
+            ],
+            correctAnswer: "&lt;script type='module'&gt;"
+        },
+        {
+            statement: "Quelle méthode permet de regrouper des éléments d'un tableau par clé ?",
+            answers: [
+                "array.reduce()",
+                "array.regroup()",
+                "array.map()",
+                "array.sort()"
+            ],
+            correctAnswer: "array.reduce()"
+        },
+        {
+            statement: "Quelle API permet de manipuler l'historique ?",
+            answers: ["History API", "window.location", "navigator.history", "URLSearchParams"],
+            correctAnswer: "History API"
+        },
+        {
+            statement: "Comment annuler une requête fetch() ?",
+            answers: [
+                "Avec AbortController",
+                "fetch.cancel()",
+                "XMLHttpRequest uniquement",
+                "Impossible"
+            ],
+            correctAnswer: "Avec AbortController"
+        },
+        {
+            statement: "Quelle méthode crée une promesse ?",
+            answers: [
+                "new Promise((resolve, reject) =&gt; {})",
+                "Promise.create()",
+                "async function() {}",
+                "fetch()"
+            ],
+            correctAnswer: "new Promise((resolve, reject) =&gt; {})"
+        },
+        {
+            statement: "Qu'est-ce qu'un generator function ?",
+            answers: [
+                "Une fonction avec yield",
+                "Une fonction asynchrone",
+                "Une fonction récursive",
+                "Une IIFE"
+            ],
+            correctAnswer: "Une fonction avec yield"
+        },
+    {
+            statement: "Quelle méthode permet de fusionner deux tableaux immuablement ?",
+            answers: ["concat()", "push()", "merge()", "spread operator [...arr1, ...arr2]"],
+            correctAnswer: "spread operator [...arr1, ...arr2]"
+        },
+        {
+            statement: "Comment créer une fonction à mémoire (memoization) ?",
+            answers: [
+                "Avec un cache interne utilisant un objet ou Map",
+                "En déclarant une variable globale",
+                "Avec une closure mais sans cache",
+                "Avec une classe"
+            ],
+            correctAnswer: "Avec un cache interne utilisant un objet ou Map"
+        },
+        {
+            statement: "Qu'est-ce que le currying ?",
+            answers: [
+                "Transformer une fonction à plusieurs arguments en fonctions imbriquées",
+                "Une erreur de syntaxe",
+                "Un design pattern de classe",
+                "Une méthode de tableau"
+            ],
+            correctAnswer: "Transformer une fonction à plusieurs arguments en fonctions imbriquées"
+        },
+        {
+            statement: "Comment créer une promesse qui se résout après 1 seconde ?",
+            answers: [
+                "new Promise(res =&gt; setTimeout(res, 1000))",
+                "delay(1000).then()",
+                "setTimeout.asPromise(1000)",
+                "Promise.wait(1000)"
+            ],
+            correctAnswer: "new Promise(res =&gt; setTimeout(res, 1000))"
+        },
+        {
+            statement: "Quel est l'avantage des WeakRef en JavaScript ?",
+            answers: [
+                "Ils permettent au garbage collector de récupérer des objets non utilisés",
+                "Ils accélèrent l'accès aux objets",
+                "Ils empêchent les fuites de mémoire",
+                "Ils remplacent complètement WeakMap"
+            ],
+            correctAnswer: "Ils permettent au garbage collector de récupérer des objets non utilisés"
+        },
+        {
+            statement: "Quelle approche moderne permet d'éviter le callback hell ?",
+            answers: [
+                "Utiliser les promesses",
+                "Utiliser async/await",
+                "Écrire tout le code en synchrone",
+                "Utiliser un setTimeout() pour chaque callback"
+            ],
+            correctAnswer: "Utiliser async/await"
+        },
+        {
+            statement: "Qu'est-ce qu'un WeakSet ?",
+            answers: [
+                "Un Set avec des références faibles",
+                "Un Set non ordonné",
+                "Un Set immutable",
+                "Un Set à clés uniques"
+            ],
+            correctAnswer: "Un Set avec des références faibles"
+        },
+        {
+            statement: "Quelle est la meilleure façon de détecter un clic droit en JavaScript ?",
+            answers: [
+                "event.button === 2",
+                "event.which(right)",
+                "event.clickRight === true",
+                "event.isRightClick()"
+            ],
+            correctAnswer: "event.button === 2"
+        },
+        {
+            statement: "Qu'est-ce que le Event Loop ?",
+            answers: [
+                "Le mécanisme de gestion des tâches asynchrones",
+                "Une boucle while(true)",
+                "Un design pattern",
+                "Une fonction récursive"
+            ],
+            correctAnswer: "Le mécanisme de gestion des tâches asynchrones"
+        },
+        {
+            statement: "Comment annuler un setTimeout en cours d'exécution ?",
+            answers: [
+                "clearTimeout(timeoutId)",
+                "timeoutId.cancel()",
+                "stopTimeout(timeoutId)",
+                "setTimeout(null)"
+            ],
+            correctAnswer: "clearTimeout(timeoutId)"
+        },
+        {
+            statement: "Quelle méthode permet de sérialiser une Date en JSON ?",
+            answers: [
+                "JSON.stringify() gère nativement les dates",
+                "Utiliser toISOString() avant",
+                "Impossible",
+                "Utiliser un reviver"
+            ],
+            correctAnswer: "Utiliser toISOString() avant"
+        },
+        {
+            statement: "Quelle est la meilleure façon de sélectionner tous les éléments d'une classe en JavaScript ?",
+            answers: [
+                "document.querySelectorAll('.maClasse')",
+                "document.getElementsByClassName('maClasse')",
+                "document.querySelector('.maClasse')",
+                "document.getElementById('maClasse')"
+            ],
+            correctAnswer: "document.querySelectorAll('.maClasse')"
+        },
+        {
+            statement: "Qu'est-ce qu'un tag function ?",
+            answers: [
+                "Une fonction qui traite des littéraux de template",
+                "Une fonction fléchée",
+                "Une méthode de débogage",
+                "Une fonction qui génère des identifiants uniques"
+            ],
+            correctAnswer: "Une fonction qui traite des littéraux de template"
+        },
+        {
+            statement: "Comment vérifier si un objet est un prototype d'un autre ?",
+            answers: [
+                "Object.prototype.isPrototypeOf()",
+                "Object.isIndependant()",
+                "Object.hasOwnProperty()",
+                "Object.getPrototypeOf() === autreObjet"
+            ],
+            correctAnswer: "Object.prototype.isPrototypeOf()"
+        },
+        {
+            statement: "Quelle API permet de copier du texte dans le presse-papier ?",
+            answers: [
+                "navigator.clipboard.writeText()",
+                "document.copyText()",
+                "window.clipboardCopy()",
+                "copyToClipboard()"
+            ],
+            correctAnswer: "navigator.clipboard.writeText()"
+        }
     ]
 };
 
