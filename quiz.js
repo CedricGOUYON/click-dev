@@ -2652,12 +2652,63 @@ const quizGitGithubIntermediate = {
     ]
 };
 
-//To check repartition of correct answer index :
+// Get chosen quiz
+
+let chosenBase;
+
+switch (localStorage.getItem("chosenTheme")) {
+    case htmlBasics :
+        console.log("Quiz html débutant");
+        chosenBase = quizHtmlBasics;
+        break;
+    case htmlIntermediate :
+        console.log("Quiz html Intermédiaire");
+        chosenBase = quizHtmlIntermediate;
+        break;
+    case cssBasics :
+        console.log("Quiz CSS Débutant");
+        chosenBase = quizCssBasics;
+        break;
+    case cssIntermediate :
+        console.log("Quiz CSS Intermédiaire");
+        chosenBase = quizCssIntermediate;
+        break;
+    case jsBasics :
+        console.log("Quiz JavaScript débutant");
+        chosenBase = quizJsBasics;
+        break;
+    case jsIntermediate :
+        console.log("Quiz JavaScript Intermédiaire");
+        chosenBase = quizJsIntermediate;
+        break;
+    case gitBasics :
+        console.log("Quiz Git/GitHub Débutant");
+        chosenBase = quizGitGithubBasics;
+        break;
+    case gitIntermediate :
+        console.log("Quiz Git/GitHub Intermédiaire");
+        chosenBase = quizGitGithubIntermediate;
+        break;
+    default :
+        console.log("Test issue Tom, no localStorage key detected");
+        break;
+};
+
+
+console.log(chosenBase);
+
+//To check repartition of correct-answer's index - TEST
 /* 
-let positions = tableau.map(q => q.answers.indexOf(q.correctAnswer));
+let positions = tableau.map(quest => quest.answers.indexOf(quest.correctAnswer));
+const countOccurrences = array => {
+  return array.reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+};
 let occurrences = countOccurrences(positions);
 console.log(occurrences);
- */
+*/
 
 // Generate random array of numb questions from the database
 
@@ -2671,9 +2722,10 @@ const shuffleArr = (array,numb) => {
     return shuffledArray.slice(0, numb)
 };
 
-const questionSampleArray = shuffleArr(quizGitGithubIntermediate.questions, 10);
-// Check console - To delete in final version TODO
-console.log(questionSampleArray);
+const questionSampleArray = shuffleArr(chosenBase.questions, 10);
+
+// Check console - TEST
+//console.log(questionSampleArray);
 
 // Declare score
 
@@ -2707,7 +2759,7 @@ let rk = 0;
 
 // Display Subject
 
-quizTitle.innerHTML = quizGitGithubIntermediate.title;
+quizTitle.innerHTML = chosenBase.title;
 
 // Function !Disable element (switch to lock/unlock if doesn't work well) TODO?
 
@@ -2718,13 +2770,12 @@ const disableFunc = elementSelector => {
     }
 }
 
-// Click on any answer-button :
-// - Unlock next-button
-// - Disable all answer-buttons
-// - Display the answer (black border)
-// - Update score
-// - Display right and wrong answers (green/red) - change colors TODO (update with nice colors)
-
+/* // Click on any answer-button :
+    - Unlock next-button
+    - Disable all answer-buttons
+    - Display the answer (black border)
+    - Update score
+    - Display right and wrong answers (green/red) - change colors TODO (update with nice colors) */
 
 answerButtons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -2759,18 +2810,18 @@ const fillQuestion = rk => {
     // Use a loop for answers better/worse performance ?  TODO (optimisation)
 };
 
-// Click on next-button :
-// - Increment question rank
-// - Fill next question
-// - Disable next-button
-// - Unable answer-buttons
-// - Reset initial style answer-buttons (initial colors & borders)
-// - Only display non-empty answer-buttons
-// - After last question : 
-//          - display final score
-//          - display message
-//          - display 2 buttons (retry & go back to menu)
-
+/* // Click on next-button :
+    - Increment question rank
+    - Fill next question
+    - Disable next-button
+    - Unable answer-buttons
+    - Reset initial style answer-buttons (initial colors & borders)
+    - Only display non-empty answer-buttons
+    - After last question : 
+          - display final score
+          - display message
+          - display 2 buttons (retry & go back to menu)
+ */
 
 nextButton.addEventListener("click", () => {
     rk++;
