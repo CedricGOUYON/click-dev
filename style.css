@@ -15,10 +15,10 @@ body {
 Add 2 new fonts : heading and body
  */
 @font-face {
-    font-family: "Bai Jamjuree", sans-serif;
+    font-family: "Bai Jamjuree";
     font-weight: 400;
     font-style: normal;
-    src: "./asset/fonts/BaiJamjuree-Regular.ttf";
+    src: url(./asset/fonts/BaiJamjuree-Regular.ttf) format(truetype);
 }
 
 :root {
@@ -164,7 +164,7 @@ main {
     margin: 111.2px auto 0;
 }
 
-@media screen and (width>992px) {
+@media screen and (width>650px) {
     main {
         margin: 76px auto 0;
     }
