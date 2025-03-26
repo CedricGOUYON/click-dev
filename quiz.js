@@ -1847,20 +1847,824 @@ const quizJsIntermediate = {
     ]
 };
 
+const quizGitGithubBasics = {
+    title: "Git et GitHub Débutant",
+    level: "novice",
+    questions: [
+        {
+            statement: "Git est ...",
+            answers: [
+                "...un système de gestion de bases de données",
+                "...un système de contrôle de version",
+                "...un langage de programmation",
+                "...un outil de déploiement"
+            ],
+            correctAnswer: "...un système de contrôle de version"
+        },
+        {
+            statement: "Quelle commande initialise un nouveau dépôt Git ?",
+            answers: ["git start", "git init", "git new", "git create"],
+            correctAnswer: "git init"
+        },
+        {
+            statement: "Que fait 'git clone https://url.com' ?",
+            answers: [
+                "Crée un nouveau dépôt",
+                "Copie un dépôt distant en local",
+                "Duplique un commit",
+                "Envoie une copie de nos fichiers locaux sur gitHub"
+            ],
+            correctAnswer: "Copie un dépôt distant en local"
+        },
+        {
+            statement: "Quelle commande ajoute un fichier à la zone de staging ?",
+            answers: ["git save", "git add", "git stage", "git commit"],
+            correctAnswer: "git add"
+        },
+        {
+            statement: "Comment enregistrer des modifications avec un message ?",
+            answers: [
+                "git save -m 'message'",
+                "git commit -m 'message'",
+                "git message 'message'",
+                "git push 'message'"
+            ],
+            correctAnswer: "git commit -m 'message'"
+        },
+        {
+            statement: "Que montre 'git status' ?",
+            answers: [
+                "L'historique des commits",
+                "L'état des fichiers modifiés/non suivis",
+                "La liste des branches",
+                "Les conflits résolus"
+            ],
+            correctAnswer: "L'état des fichiers modifiés/non suivis"
+        },
+        {
+            statement: "Comment voir l'historique des commits ?",
+            answers: ["git log", "git history", "git timeline", "git commits"],
+            correctAnswer: "git log"
+        },
+        {
+            statement: "Quelle commande crée simplement une nouvelle branche ?",
+            answers: ["git branch &lt;nom&t;", "git new &lt;nom&t;", "git checkout -b &lt;nom&t;", "git create &lt;nom&t;"],
+            correctAnswer: "git branch &lt;nom&t;"
+        },
+        {
+            statement: "Comment basculer sur une branche existante ?",
+            answers: ["git switch &lt;nom&t;", "git checkout -b &lt;nom&t;", "git move &lt;nom&t;", "git branch -d &lt;nom&t;"],
+            correctAnswer: "git switch &lt;nom&t;"
+        },
+        {
+            statement: "Que fait 'git merge &lt;branche&t;' ?",
+            answers: [
+                "Supprime une branche",
+                "Fusionne une branche dans la branche actuelle",
+                "Compare deux branches",
+                "Crée une branche"
+            ],
+            correctAnswer: "Fusionne une branche dans la branche actuelle"
+        },
+        {
+            statement: "À quoi sert 'git remote' ?",
+            answers: [
+                "Gérer les dépôts distants",
+                "Supprimer des fichiers",
+                "Annuler un commit",
+                "Modifier l'historique"
+            ],
+            correctAnswer: "Gérer les dépôts distants"
+        },
+        {
+            statement: "Que fait 'git pull' ?",
+            answers: [
+                "Télécharge les modifications du dépôt distant et les fusionne",
+                "Envoie les commits locaux",
+                "Crée une pull request",
+                "Affiche les différences"
+            ],
+            correctAnswer: "Télécharge les modifications du dépôt distant et les fusionne"
+        },
+        {
+            statement: "Comment envoyer des commits vers un dépôt distant ?",
+            answers: ["git push", "git upload", "git send", "git deploy"],
+            correctAnswer: "git push"
+        },
+        {
+            statement: "Quel fichier spécifie les fichiers à ignorer ?",
+            answers: [".gitignore", ".gitconfig", "ignore.txt", "git-exclude"],
+            correctAnswer: ".gitignore"
+        },
+        {
+            statement: "Que montre 'git diff' ?",
+            answers: [
+                "Les différences entre les fichiers modifiés et la dernière version",
+                "La liste des branches",
+                "Les clés SSH configurées",
+                "Les utilisateurs GitHub"
+            ],
+            correctAnswer: "Les différences entre les fichiers modifiés et la dernière version"
+        },
+        {
+            statement: "Comment annuler des modifications non commitées dans un fichier ?",
+            answers: [
+                "git undo &lt;fichier&t;",
+                "git checkout -- &lt;fichier&t;",
+                "git reset &lt;fichier&t;",
+                "git remove &lt;fichier&t;"
+            ],
+            correctAnswer: "git checkout -- &lt;fichier&t;"
+        },
+        {
+            statement: "Qu'est-ce que HEAD dans Git ?",
+            answers: [
+                "Un alias pour le dernier commit",
+                "Un tag système",
+                "La branche actuellement active",
+                "Un outil de fusion"
+            ],
+            correctAnswer: "La branche actuellement active"
+        },
+        {
+            statement: "Que permet de faire un fork d'un dépôt GitHub ?",
+            answers: [
+                "Le supprimer",
+                "Créer une copie personnelle indépendante",
+                "Le dupliquer en local",
+                "Signaler un problème"
+            ],
+            correctAnswer: "Créer une copie personnelle indépendante"
+        },
+        {
+            statement: "Qu'est-ce qu'une pull request ?",
+            answers: [
+                "Une demande de suppression de code",
+                "Une demande de fusion de modifications dans un dépôt",
+                "Un outil de débogage",
+                "Une commande Git"
+            ],
+            correctAnswer: "Une demande de fusion de modifications dans un dépôt"
+        },
+        {
+            statement: "Quelle commande met à jour les références distantes sans fusion ?",
+            answers: ["git fetch", "git pull", "git sync", "git refresh"],
+            correctAnswer: "git fetch"
+        },
+        {
+            statement: "Comment annuler un commit déjà poussé ?",
+            answers: [
+                "git undo",
+                "git revert &lt;commit-hash&t;",
+                "git delete",
+                "Impossible"
+            ],
+            correctAnswer: "git revert &lt;commit-hash&t;"
+        },
+        {
+            statement: "Qu'est-ce qu'un conflit de fusion ?",
+            answers: [
+                "Quand Git ne peut pas fusionner des modifications automatiquement",
+                "Une erreur de syntaxe",
+                "Un problème réseau",
+                "Un dépôt corrompu"
+            ],
+            correctAnswer: "Quand Git ne peut pas fusionner des modifications automatiquement"
+        },
+        {
+            statement: "Comment ajouter un dépôt distant nommé 'origin' ?",
+            answers: [
+                "git remote add origin &lt;url&t;",
+                "git origin &lt;url&t;",
+                "git add origin &lt;url&t;",
+                "git connect origin &lt;url&t;"
+            ],
+            correctAnswer: "git remote add origin &lt;url&t;"
+        },
+        {
+            statement: "Que fait 'git branch -d &lt;branche&t;' ?",
+            answers: [
+                "Supprime une branche",
+                "Compare deux branches",
+                "Renomme une branche",
+                "Affiche l'historique"
+            ],
+            correctAnswer: "Supprime une branche"
+        },
+        {
+            statement: "À quoi sert 'git stash' ?",
+            answers: [
+                "Enregistrer des modifications temporairement sans commiter",
+                "Supprimer l'historique",
+                "Créer un tag",
+                "Gérer les clés SSH"
+            ],
+            correctAnswer: "Enregistrer des modifications temporairement sans commiter"
+        },
+    {
+            statement: "Quelle commande montre les différences entre deux branches ?",
+            answers: ["git diff", "git compare", "git branch-diff", "git log"],
+            correctAnswer: "git diff"
+        },
+        {
+            statement: "Comment supprimer une branche locale ?",
+            answers: ["git branch -d", "git delete", "git remove", "git branch --remove"],
+            correctAnswer: "git branch -d"
+        },
+        {
+            statement: "Que fait 'git fetch' ?",
+            answers: [
+                "Télécharge les modifications mais ne les fusionne pas",
+                "Envoie les commits locaux",
+                "Fusionne toutes les branches",
+                "Supprime les fichiers non suivis"
+            ],
+            correctAnswer: "Télécharge les modifications mais ne les fusionne pas"
+        },
+        {
+            statement: "Quelle commande permet de renommer la branche actuelle ?",
+            answers: [
+                "git branch -m &lt;nouveau-nom&t;",
+                "git rename &lt;nouveau-nom&t;",
+                "git checkout -b &lt;nouveau-nom&t;",
+                "git mv &lt;nouveau-nom&t;"
+            ],
+            correctAnswer: "git branch -m &lt;nouveau-nom&t;"
+        },
+        {
+            statement: "Comment lister toutes les branches distantes ?",
+            answers: ["git branch -r", "git remote", "git list-remote", "git fetch --all"],
+            correctAnswer: "git branch -r"
+        },
+        {
+            statement: "Comment annuler le dernier commit sans perdre les modifications ?",
+            answers: [
+                "git reset --soft HEAD~1",
+                "git undo",
+                "git revert HEAD",
+                "git rollback"
+            ],
+            correctAnswer: "git reset --soft HEAD~1"
+        },
+        {
+            statement: "Que signifie 'origin' dans 'git push origin main' ?",
+            answers: [
+                "Le nom par défaut du dépôt distant",
+                "La branche principale",
+                "Un tag Git",
+                "Une commande spéciale"
+            ],
+            correctAnswer: "Le nom par défaut du dépôt distant"
+        },
+        {
+            statement: "À quoi sert un fichier .gitkeep ?",
+            answers: [
+                "À forcer Git à suivre un dossier vide",
+                "À ignorer un fichier spécifique",
+                "À stocker des métadonnées Git",
+                "À définir des permissions pour un dépôt"
+            ],
+            correctAnswer: "À forcer Git à suivre un dossier vide"
+        },
+        {
+            statement: "Quelle commande affiche les métadonnées d'un commit ?",
+            answers: ["git show", "git inspect", "git metadata", "git log -p"],
+            correctAnswer: "git show"
+        },
+        {
+            statement: "Quelle est la principale différence entre git fetch et git pull ?",
+            answers: [
+                "git fetch met à jour les références distantes sans fusionner, tandis que git pull récupère et fusionne les modifications",
+                "git fetch télécharge uniquement les commits sans les appliquer, tandis que git pull réécrit l'historique",
+                "git fetch est utilisé pour les branches locales, tandis que git pull ne fonctionne que sur les branches distantes",
+                "git fetch est plus rapide car il met directement à jour la branche actuelle, alors que git pull nécessite un merge manuel"
+            ],
+            correctAnswer: "git fetch met à jour les références distantes sans fusionner, tandis que git pull récupère et fusionne les modifications"
+        },
+        {
+            statement: "Que fait 'git rm --cached &lt;fichier&t;' ?",
+            answers: [
+                "Supprime le fichier du dépôt et du système de fichiers",
+                "Supprime le fichier du suivi Git mais le garde localement",
+                "Annule les modifications du fichier",
+                "Aucune de ces réponses"
+            ],
+            correctAnswer: "Supprime le fichier du suivi Git mais le garde localement"
+        },
+        {
+            statement: "Quels types de fichiers ne doivent pas forcément être ajoutés à .gitignore ?",
+            answers: [
+                "Les fichiers de configuration contenant des secrets (.env)",
+                "Les fichiers de dépendances comme node_modules/",
+                "Les fichiers de code source du projet",
+                "Les fichiers générés automatiquement (logs, builds, caches)"
+            ],
+            correctAnswer: "Les fichiers de code source du projet"
+        },
+        {
+            statement: "Quelle commande crée un alias pour une commande Git ?",
+            answers: [
+                "git config --global alias.&lt;alias&t; '&lt;commande&t;'",
+                "git alias &lt;alias&t; '&lt;commande&t;'",
+                "git create-alias &lt;alias&t; '&lt;commande&t;'",
+                "git shortcut &lt;alias&t; '&lt;commande&t;'"
+            ],
+            correctAnswer: "git config --global alias.&lt;alias&t; '&lt;commande&t;'"
+        },
+        {
+            statement: "Comment mettre à jour le dépôt local avec les modifications distantes ?",
+            answers: ["git pull", "git fetch", "git sync", "git refresh"],
+            correctAnswer: "git pull"
+        },
+        {
+            statement: "Quelle commande affiche la liste des dépôts distants ?",
+            answers: ["git remote -v", "git list-remote", "git origin", "git repo-list"],
+            correctAnswer: "git remote -v"
+        },
+    {
+        statement: "Quelle commande est utilisée pour modifier l'historique des commits ?",
+        answers: ["git amend", "git rebase", "git reset", "git rewrite"],
+        correctAnswer: "git rebase"
+    },
+    {
+        statement: "À quoi sert un fichier .gitattributes ?",
+        answers: [
+            "Définir des règles de fusion pour des fichiers",
+            "Ignorer des fichiers",
+            "Configurer des alias Git",
+            "Stocker des clés SSH"
+        ],
+        correctAnswer: "Définir des règles de fusion pour des fichiers"
+    },
+    {
+        statement: "Comment créer un tag annoté pour une version ?",
+        answers: [
+            "git tag v1.0",
+            "git tag -a v1.0 -m 'Message'",
+            "git version v1.0",
+            "git release v1.0"
+        ],
+        correctAnswer: "git tag -a v1.0 -m 'Message'"
+    },
+    {
+        statement: "GitHub Actions est ...",
+        answers: [
+            "...un outil de chat",
+            "...un système de CI/CD intégré à GitHub",
+            "...un type de pull request",
+            "...un gestionnaire de branches"
+        ],
+        correctAnswer: "...un système de CI/CD intégré à GitHub"
+    }
+    ]
+};
+
+const quizGitGithubIntermediate = {
+    title: "Git et GitHub Intermédiaire",
+    level: "intermediate",
+    questions: [
+        {
+            statement: "Quelle commande permet de réécrire l'historique des commits interactivement ?",
+            answers: ["git rebase -i", "git amend", "git reset --hard", "git reflog"],
+            correctAnswer: "git rebase -i"
+        },
+        {
+            statement: "Comment appliquer un commit spécifique d'une branche à une autre ?",
+            answers: ["git merge", "git rebase", "git cherry-pick", "git patch"],
+            correctAnswer: "git cherry-pick"
+        },
+        {
+            statement: "À quoi sert 'git bisect' ?",
+            answers: [
+                "Diviser un dépôt en sous-modules",
+                "Trouver quel commit a introduit un bug",
+                "Comparer deux branches",
+                "Supprimer l'historique"
+            ],
+            correctAnswer: "Trouver quel commit a introduit un bug"
+        },
+        {
+            statement: "Quelle commande crée un tag annoté avec un message ?",
+            answers: [
+                "git tag v1.0",
+                "git tag -a v1.0 -m 'Release'",
+                "git release v1.0",
+                "git annotate v1.0"
+            ],
+            correctAnswer: "git tag -a v1.0 -m 'Release'"
+        },
+        {
+            statement: "Que fait 'git worktree' ?",
+            answers: [
+                "Nettoyer le dépôt",
+                "Travailler sur plusieurs branches dans des répertoires séparés",
+                "Gérer les conflits",
+                "Synchroniser automatiquement les branches locales avec le dépôt distant"
+            ],
+            correctAnswer: "Travailler sur plusieurs branches dans des répertoires séparés"
+        },
+        {
+            statement: "Qu'est-ce qu'un hook Git ?",
+            answers: [
+                "Un crochet pour accrocher des scripts personnalisés avant/après des actions Git",
+                "Un outil de fusion",
+                "Une commande pour récupérer des commits",
+                "Une interface graphique"
+            ],
+            correctAnswer: "Un crochet pour accrocher des scripts personnalisés avant/après des actions Git"
+        },
+        {
+            statement: "Quelle commande permet de voir les commits d’une branche spécifique ?",
+            answers: [
+                "git log &lt;branche&gt;",
+                "git branch --log &lt;branche&gt;",
+                "git show-branch &lt;branche&gt;",
+                "git history &lt;branche&gt;"
+            ],
+            correctAnswer: "git log &lt;branche&gt;"
+        },
+        {
+            statement: "Qu'est-ce qu'un submodule Git ?",
+            answers: [
+                "Un sous-répertoire lié à un autre dépôt Git",
+                "Un module externe non versionné",
+                "Un type de tag",
+                "Une branche secondaire"
+            ],
+            correctAnswer: "Un sous-répertoire lié à un autre dépôt Git"
+        },
+        {
+            statement: "omment signer un commit avec GPG en ligne de commande ?",
+            answers: [
+                "git commit -S -m 'Message'",
+                "git gpg-sign 'Message'",
+                "git sign --gpg",
+                "Configurer GitHub uniquement"
+            ],
+            correctAnswer: "git commit -S -m 'Message'"
+        },
+        {
+            statement: "Que fait 'git blame' ?",
+            answers: [
+                "Affiche les auteurs de chaque ligne d'un fichier",
+                "Annule un commit",
+                "Gère les conflits",
+                "Supprime les modifications non suivies"
+            ],
+            correctAnswer: "Affiche les auteurs de chaque ligne d'un fichier"
+        },
+        {
+            statement: "Quelle commande GitHub CLI crée une pull request ?",
+            answers: ["gh pr create", "gh create pr", "github pr", "gh request"],
+            correctAnswer: "gh pr create"
+        },
+        {
+            statement: "Qu'est-ce qu'un fichier .gitkeep ?",
+            answers: [
+                "Un fichier pour forcer Git à suivre un dossier vide",
+                "Une alternative à .gitignore",
+                "Un hook personnalisé",
+                "Un tag système"
+            ],
+            correctAnswer: "Un fichier pour forcer Git à suivre un dossier vide"
+        },
+        {
+            statement: "Comment configurer Git pour ignorer les changements de permissions ?",
+            answers: [
+                "git config core.fileMode false",
+                "Ajouter * dans .gitignore",
+                "Utiliser chmod",
+                "Impossible"
+            ],
+            correctAnswer: "git config core.fileMode false"
+        },
+        {
+            statement: "Qu'est-ce qu'un 'stash' non appliqué ?",
+            answers: [
+                "Des modifications temporaires non commitées",
+                "Un commit non poussé",
+                "Une branche supprimée",
+                "Un conflit non résolu"
+            ],
+            correctAnswer: "Des modifications temporaires non commitées"
+        },
+        {
+            statement: "Comment lister toutes les branches distantes supprimées localement ?",
+            answers: [
+                "git fetch --prune",
+                "git branch -r",
+                "git remote update",
+                "git ls -branch"
+            ],
+            correctAnswer: "git fetch --prune"
+        },
+    {
+            statement: "Comment fusionner une branche en résolvant les conflits manuellement ?",
+            answers: [
+                "git merge --no-ff",
+                "git mergetool",
+                "git resolve",
+                "git conflict --fix"
+            ],
+            correctAnswer: "git mergetool"
+        },
+        {
+            statement: "Quelle commande permet de réécrire l'historique des commits ?",
+            answers: ["git amend", "git rebase", "git reset", "git rewrite"],
+            correctAnswer: "git rebase"
+        },
+        {
+            statement: "À quoi sert 'git reflog' ?",
+            answers: [
+                "Afficher l'historique des références (commits, branches, etc.)",
+                "Lister les fichiers ignorés",
+                "Gérer les tags",
+                "Restaurer automatiquement un commit supprimé"
+            ],
+            correctAnswer: "Afficher l'historique des références (commits, branches, etc.)"
+        },
+        {
+            statement: "Comment appliquer un commit spécifique d'une branche à une autre sans fusionner l'intégralité de la branche ?",
+            answers: ["git merge", "git rebase", "git cherry-pick", "git apply"],
+            correctAnswer: "git cherry-pick"
+        },
+        {
+            statement: "Quelle commande trouve le commit responsable d'un bug ?",
+            answers: ["git blame", "git bisect", "git debug", "git find-bug"],
+            correctAnswer: "git bisect"
+        },
+        {
+            statement: "Comment créer un tag pour un commit spécifique ?",
+            answers: [
+                "git tag v1.0 &lt;commit-hash&gt;",
+                "git tag --commit &lt;commit-hash&gt;",
+                "git mark v1.0 &lt;commit-hash&gt;",
+                "git release &lt;commit-hash&gt;"
+            ],
+            correctAnswer: "git tag v1.0 &lt;commit-hash&gt;"
+        },
+        {
+            statement: "Que fait 'git stash pop' ?",
+            answers: [
+                "Applique et supprime le dernier stash",
+                "Affiche la liste des stashes",
+                "Crée un nouveau stash",
+                "Annule le dernier commit"
+            ],
+            correctAnswer: "Applique et supprime le dernier stash"
+        },
+        {
+            statement: "Comment empêcher Git de suivre un fichier déjà versionné ?",
+            answers: [
+                "git rm --cached &lt;fichier&gt;",
+                "Ajouter le fichier à .gitignore",
+                "git untrack &lt;fichier&gt;",
+                "git remove-tracking &lt;fichier&gt;"
+            ],
+            correctAnswer: "git rm --cached &lt;fichier&gt;"
+        },
+        {
+            statement: "Qu'est-ce qu'un 'hook' pre-commit ?",
+            answers: [
+                "Un script exécuté avant chaque commit",
+                "Un outil de fusion",
+                "Un type de branche",
+                "Un fichier de configuration Git"
+            ],
+            correctAnswer: "Un script exécuté avant chaque commit"
+        },
+        {
+            statement: "Comment résoudre un conflit de fusion après un git pull ?",
+            answers: [
+                "Modifier les fichiers, puis git add et git commit",
+                "git abort",
+                "git reset --hard",
+                "git auto-resolve"
+            ],
+            correctAnswer: "Modifier les fichiers, puis git add et git commit"
+        },
+        {
+            statement: "Comment afficher uniquement les fichiers modifiés entre deux commits ?",
+            answers: [
+                "git diff --name-only &lt;commit1&gt; &lt;commit2&gt;",
+                "git log --stat &lt;commit1&gt; &lt;commit2&gt;",
+                "git show --files &lt;commit1&gt; &lt;commit2&gt;",
+                "git list-changes &lt;commit1&gt; &lt;commit2&gt;"
+            ],
+            correctAnswer: "git diff --name-only &lt;commit1&gt; &lt;commit2&gt;"
+        },
+        {
+            statement: "Comment supprimer une branche distante ?",
+            answers: [
+                "git push origin --delete &lt;branche&gt;",
+                "git branch -d origin/&lt;branche&gt;",
+                "git remote remove &lt;branche&gt;",
+                "git delete &lt;branche&gt;"
+            ],
+            correctAnswer: "git push origin --delete &lt;branche&gt;"
+        },
+        {
+            statement: "Quelle commande convertit un dépôt en bare repository ?",
+            answers: [
+                "git config --bool core.bare true",
+                "git bare-init",
+                "git convert --bare",
+                "git init --bare"
+            ],
+            correctAnswer: "git config --bool core.bare true"
+        },
+        {
+            statement: "Quelle syntaxe utilise GitHub pour référencer un issue dans un commit ?",
+            answers: ["#123", "GH-123", "Issue:123", "Fix #123"],
+            correctAnswer: "Fix #123"
+        },
+        {
+            statement: "Comment lister tous les alias Git configurés ?",
+            answers: [
+                "git config --get-regexp alias",
+                "git alias --list",
+                "git list-aliases",
+                "git help aliases"
+            ],
+            correctAnswer: "git config --get-regexp alias"
+        },
+        {
+            statement: "Comment vérifier si une branche a été fusionnée dans la branche actuelle ?",
+            answers: [
+                "git branch --merged",
+                "git branch --list",
+                "git merge --check",
+                "git check-merged"
+            ],
+            correctAnswer: "git branch --merged"
+        },
+        {
+            statement: "Quelle commande affiche les contributions de chaque auteur dans un projet Git ?",
+            answers: [
+                "git shortlog -s -n",
+                "git log --stat",
+                "git blame --all",
+                "git history --authors"
+            ],
+            correctAnswer: "git shortlog -s -n"
+        },
+        {
+            statement: "Quelle commande permet de comparer deux branches ?",
+            answers: [
+                "git diff &lt;branche1&gt; &lt;branche2&gt;",
+                "git compare &lt;branche1&gt; &lt;branche2&gt;",
+                "git branch --diff &lt;branche1&gt; &lt;branche2&gt;",
+                "git log --compare &lt;branche1&gt; &lt;branche2&gt;"
+            ],
+            correctAnswer: "git diff &lt;branche1&gt; &lt;branche2&gt;"
+        },
+        {
+            statement: "Comment renommer une branche locale ?",
+            answers: [
+                "git branch -m &lt;ancien-nom&gt; &lt;nouveau-nom&gt;",
+                "git rename-branch &lt;ancien-nom&gt; &lt;nouveau-nom&gt;",
+                "git branch --rename &lt;ancien-nom&gt; &lt;nouveau-nom&gt;",
+                "git move-branch &lt;ancien-nom&gt; &lt;nouveau-nom&gt;"
+            ],
+            correctAnswer: "git branch -m &lt;ancien-nom&gt; &lt;nouveau-nom&gt;"
+        },
+        {
+            statement: "Comment récupérer un fichier supprimé accidentellement mais toujours suivi par Git ?",
+            answers: [
+                "git checkout HEAD -- &lt;fichier&gt;",
+                "git restore &lt;fichier&gt;",
+                "git reset --soft &lt;fichier&gt;",
+                "git revert &lt;fichier&gt;"
+            ],
+            correctAnswer: "git checkout HEAD -- &lt;fichier&gt;"
+        },
+        {
+            statement: "Quelle commande permet d'afficher la différence entre l'index et la dernière validation ?",
+            answers: [
+                "git diff --cached",
+                "git log -p",
+                "git status --diff",
+                "git compare --staged"
+            ],
+            correctAnswer: "git diff --cached"
+        },
+        {
+            statement: "Comment définir un alias Git globalement ?",
+            answers: [
+                "git config --global alias.&lt;nom&gt; '&lt;commande&gt;'",
+                "git alias --global &lt;nom&gt; '&lt;commande&gt;'",
+                "git set-alias &lt;nom&gt; '&lt;commande&gt;'",
+                "git shortcut &lt;nom&gt; '&lt;commande&gt;'"
+            ],
+            correctAnswer: "git config --global alias.&lt;nom&gt; '&lt;commande&gt;'"
+        },
+        {
+            statement: "Comment récupérer une branche supprimée récemment ?",
+            answers: [
+                "git reflog && git checkout &lt;branche&gt;",
+                "git restore-branch &lt;branche&gt;",
+                "git recover &lt;branche&gt;",
+                "git undo-delete &lt;branche&gt;"
+            ],
+            correctAnswer: "git reflog && git checkout &lt;branche&gt;"
+        },
+        {
+            statement: "Que fait 'git fsck' ?",
+            answers: [
+                "Vérifie l'intégrité de la base de données Git",
+                "Optimise le dépôt Git",
+                "Nettoie les fichiers inutilisés",
+                "Synchronise les branches"
+            ],
+            correctAnswer: "Vérifie l'intégrité de la base de données Git"
+        },
+        {
+            statement: "Quelle commande permet d'initialiser un dépôt Git dans un répertoire existant sans réinitialiser l'historique ?",
+            answers: [
+                "git init",
+                "git reinit",
+                "git reset --init",
+                "git config --init"
+            ],
+            correctAnswer: "git init"
+        },
+        {
+            statement: "Comment afficher l'historique d'un fichier spécifique, même s'il a été renommé ?",
+            answers: [
+                "git log --follow &lt;fichier&gt;",
+                "git history &lt;fichier&gt;",
+                "git track &lt;fichier&gt;",
+                "git log --renamed &lt;fichier&gt;"
+            ],
+            correctAnswer: "git log --follow &lt;fichier&gt;"
+        },
+        {
+            statement: "Quelle commande supprime définitivement un commit de l'historique ?",
+            answers: [
+                "git rebase -i",
+                "git reset --hard HEAD~1",
+                "git filter-branch --force",
+                "git delete-commit"
+            ],
+            correctAnswer: "git filter-branch --force"
+        },
+        {
+            statement: "Comment créer une nouvelle branche et y basculer en une seule commande ?",
+            answers: [
+                "git checkout -b &lt;branche&gt;",
+                "git switch --create &lt;branche&gt;",
+                "git branch -n &lt;branche&gt;",
+                "git create-branch &lt;branche&gt;"
+            ],
+            correctAnswer: "git checkout -b &lt;branche&gt;"
+        },
+        {
+            statement: "Quelle commande permet de voir quels fichiers ont été modifiés dans un commit spécifique ?",
+            answers: [
+                "git show --name-only &lt;commit&gt;",
+                "git diff-tree --name-only &lt;commit&gt;",
+                "git log --files &lt;commit&gt;",
+                "git commit --list-files &lt;commit&gt;"
+            ],
+            correctAnswer: "git show --name-only &lt;commit&gt;"
+        },
+        {
+            statement: "Que fait 'git gc' ?",
+            answers: [
+                "Optimise la base de données Git",
+                "Supprime les branches non utilisées",
+                "Gère les commits en attente",
+                "Fusionne les commits en double"
+            ],
+            correctAnswer: "Optimise la base de données Git"
+        },
+        {
+            statement: "Comment afficher les fichiers non suivis par Git ?",
+            answers: [
+                "git status --untracked",
+                "git ls-files --others --exclude-standard",
+                "git show-untracked",
+                "git diff --untracked"
+            ],
+            correctAnswer: "git ls-files --others --exclude-standard"
+        }
+
+    ]
+};
+
 // Generate random array of numb questions from the database
 
 const shuffleArr = (array,numb) => {
-    let shuffledArray = array;
+    let shuffledArray = array.slice(0);
     // Shuffle : Fisher-Yates (Knuth)
     for (let i = shuffledArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
     };
-    shuffledArray = shuffledArray.slice(0, numb);
-    return shuffledArray
+    return shuffledArray.slice(0, numb)
 };
 
-const questionSampleArray = shuffleArr(quizHtmlBasics.questions, 10);
+const questionSampleArray = shuffleArr(quizGitGithubIntermediate.questions, 10);
 // Check console - To delete in final version TODO
 console.log(questionSampleArray);
 
@@ -1870,8 +2674,8 @@ let finalScore = 0;
 
 // Declare colors
 
-const rightAnswerColor = "rgba(161, 234, 31, 0.4)";
-const wrongAnswerColor = "rgba(234, 172, 131, 0.4)";
+const rightAnswerColor = "rgba(113, 193, 74, 0.4)";
+const wrongAnswerColor = "rgba(229, 141, 104, 0.4)";
 
 // Declare elements
 
@@ -1896,7 +2700,7 @@ let rk = 0;
 
 // Display Subject
 
-quizTitle.innerHTML = quizHtmlBasics.title;
+quizTitle.innerHTML = quizGitGithubIntermediate.title;
 
 // Function !Disable element (switch to lock/unlock if doesn't work well) TODO?
 
