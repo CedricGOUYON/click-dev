@@ -1,0 +1,107 @@
+/* Main */
+
+main {
+    margin: 111.2px auto 0;
+    max-width: 600px;
+    min-height: calc(100vh - 162.5px - 111.2px);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h2 {
+        margin: 0 auto;
+    }
+
+    .question-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        p {
+            max-width: 65ch;
+        }
+    }
+
+    .answer-container {
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+
+        /* 
+        legend {
+            margin: 0 auto;
+        }
+        */
+
+        .answer-button {
+            margin: 4px;
+            width: 100%;
+            height: 80px;
+            font-size: 20px;
+            background-color: var(--main-bloc-light-color);
+            border: 1px solid var(--background-light-color);
+            border-radius: 16px;
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    #next-button {
+        margin-left: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 25px;
+        border: none;
+        transition: 0.2s;
+        background-color: #d1fadf;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            filter: grayscale();
+            transform: scale(0.95);
+            background-color: transparent;
+        }
+
+        &:not(:disabled):hover {
+            transform: scale(1.05);
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .end-button {
+            margin: 8px;
+            padding: 16px;
+            width: 70%;
+            max-width: 160px;
+            text-decoration: none;
+            text-align: center;
+            background-color: var(--main-bloc-light-color);
+            border: 1px solid var(--background-light-color);
+            border-radius: 32px;
+
+            &:hover {
+                font-weight: 400;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media screen and (width>650px) {
+    main {
+        margin: 76px auto 0;
+        min-height: calc(100vh - 76px - 50px);
+    }
+}
