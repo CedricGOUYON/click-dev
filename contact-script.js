@@ -28,22 +28,20 @@ pour éviter de ne rentrer que des espaces*/
 })*/
 
 
-/* Affiche le message d'alerte dans un élément à part*/
+/* Affiche le message d'alerte dans <output></output> */
 
 sendButton.addEventListener("click", () => {
     if (nameInput.value.trim() === "")
-        document.getElementById("valideInput").textContent = "Merci d'indiquer votre nom";
+        document.getElementById("outputMessage").textContent = "Merci d'indiquer votre nom";
     else if (mailInput.value.trim() == "")
-        document.getElementById("valideInput").textContent = "Merci de renseigner une adresse mail"
+        document.getElementById("outputMessage").textContent = "Merci de renseigner une adresse mail"
     else if (!isValidEmail(mailInput.value.trim()))
-        document.getElementById("valideInput").textContent = "Merci d'indiquer une adresse mail valide"
+        document.getElementById("outputMessage").textContent = "Merci d'indiquer une adresse mail valide"
     else if (messageInput.value.trim() === "")
-        document.getElementById("valideInput").textContent = "Veuillez préciser votre demande"
+        document.getElementById("outputMessage").textContent = "Veuillez préciser votre demande"
     else {
-        document.getElementById("valideInput").textContent = "Votre message a bien été envoyé !"
+        document.getElementById("outputMessage").textContent = "Votre message a bien été envoyé !"
         document.getElementById("myform").reset();
     }
-
-
 })
 
