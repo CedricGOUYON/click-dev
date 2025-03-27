@@ -16,7 +16,6 @@ main section {
     display: flex;
     justify-content: center;
     width: 100%;
-    /*background-color: var(--background-light-color);*/
 }
 
 main h2 {
@@ -140,7 +139,7 @@ button a {
     button {
         display: flex;
         justify-content: center;
-        margin: 1rem 0rem 2rem;
+        margin: 1rem 0rem 1rem;
         padding: 0.5rem;
         transition: 0.2s;
 

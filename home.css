@@ -1,75 +1,65 @@
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  /*border: 1px solid black;*/
-}
-
-body {
-  background-color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
-  margin: 0px;
-  padding: 0px;
+.dark-mode {
+  main {
+    background-color: var(--background-dark-color);
+    h2,
+    a,
+    p {
+      color: var(--light-text-color);
+    }
+    cards,
+    article {
+      background-color: var(--main-bloc-dark-color);
+    }
+  }
 }
 
 main {
   margin: 111.2px auto 0;
-}
 
-@media screen and (width>650px) {
-  main {
-    margin: 76px auto 0;
+  img {
+    width: 100%;
   }
-}
 
-main > img {
-  width: 100%;
-}
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 50px;
+  }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 50px;
-}
+  article {
+    background-color: var(--background-light-color);
+    min-height: 400px;
+    width: 350px;
+    padding: 20px;
+  }
 
-article {
-  background-color: var(--background-light-color);
-  min-height: 400px;
-  width: 350px;
-  padding: 20px;
-}
-article > h2 {
-  text-align: center;
-  font-size: 20px;
-  padding: 10px;
-}
+  article > h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
 
-article > p {
-  text-align: center;
-  padding: 20px;
-}
+  article > p {
+    text-align: center;
+    padding: 20px;
+  }
 
-a > p {
-  text-align: center;
-}
+  a > p {
+    text-align: center;
+  }
 
-article > .lala {
-  width: 310px;
-  height: 310px;
-}
-
-cards {
-  background-color: var(--background-light-color);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 400px;
-  gap: 40px;
-  width: 350px;
-  padding: 20px;
+  cards {
+    background-color: var(--background-light-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 400px;
+    gap: 40px;
+    width: 350px;
+    padding: 20px;
+  }
 }
 cards > a > img {
   margin-top: 10px;
@@ -77,6 +67,16 @@ cards > a > img {
   height: 64px;
 }
 
+cards > a {
+  text-decoration: none;
+}
+
 cards > h2 {
   text-align: center;
+}
+
+@media screen and (width>650px) {
+  main {
+    margin: 76px auto 0;
+  }
 }
