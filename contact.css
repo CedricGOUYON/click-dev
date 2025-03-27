@@ -1,22 +1,23 @@
 .dark-mode {
     main {
-      background-color: var(--background-dark-color);
-      h2,
-      h3,
-      a,
-      p {
-        color: var(--light-text-color);
-      }
-  
-    form, 
-    h2 {
-        background-color: var(--main-bloc-dark-color);
-      }
+        background-color: var(--background-dark-color);
+
+        h2,
+        h3,
+        a,
+        p {
+            color: var(--light-text-color);
+        }
+
+        form,
+        h2 {
+            background-color: var(--main-bloc-dark-color);
+        }
     }
 
     #sendButton {
         color: var(--light-text-color);
-        background-color: var(--background-dark-color) ;
+        background-color: var(--background-dark-color);
     }
 }
 
@@ -93,7 +94,7 @@ form {
     form {
         width: 200%;
         padding: 2rem 2rem 3rem 2rem;
-        margin: 0rem 2rem 2rem 0rem;
+        margin: 2rem 2rem 2rem 0rem;
     }
 
 
