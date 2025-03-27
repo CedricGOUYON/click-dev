@@ -1,19 +1,19 @@
 //quiz ouverts niveau 1
 const htmlOne = document.querySelector("#html-n1");
 htmlOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizHtmlBasics");
+  localStorage.setItem("chosenTheme", "htmlBasics");
   // document.location.href = "./quiz.html";
 });
 
 const cssOne = document.querySelector("#css-n1");
 cssOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "cssBasics");
   // document.location.href = "./quiz.html";
 });
 
 const javascriptOne = document.querySelector("#javascript-n1");
 javascriptOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "jsBasics");
   // document.location.href = "./quiz.html";
 });
 
