@@ -2694,7 +2694,6 @@ switch (localStorage.getItem("chosenTheme")) {
         break;
 };
 
-
 console.log(chosenBase);
 
 //To check repartition of correct-answer's index - TEST
