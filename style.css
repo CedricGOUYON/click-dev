@@ -18,7 +18,7 @@ Add 2 new fonts : heading and body
   font-family: "Bai Jamjuree";
   font-weight: 400;
   font-style: normal;
-  src: url(./asset/fonts/BaiJamjuree-Regular.ttf) format(truetype);
+  src: url(./assets/fonts/BaiJamjuree-Regular.ttf) format(truetype);
 }
 
 :root {
@@ -84,8 +84,20 @@ button {
   footer {
     background-color: var(--main-bloc-dark-color);
     h1,
-    a {
+    a,
+    p {
       color: var(--light-text-color);
+    }
+
+    #icon-container {
+      .github-link {
+        fill: var(--light-text-color);
+      }
+      .wild-link {
+        .cls-3 {
+          fill: var(--light-text-color);
+        }
+      }
     }
   }
 }
