@@ -41,7 +41,9 @@ sendButton.addEventListener("click", () => {
         document.getElementById("valideInput").textContent = "Veuillez préciser votre demande"
     else {
         document.getElementById("valideInput").textContent = "Votre message a bien été envoyé !"
+        document.getElementById("myform").reset();
     }
+
 
 })
 
