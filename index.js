@@ -32,19 +32,19 @@ htmlTwo.addEventListener("click", () => {
 });
 
 const cssTwo = document.querySelector("#css-n2");
-htmlOne.addEventListener("click", () => {
+cssTwo.addEventListener("click", () => {
   localStorage.setItem("chosenTheme", "cssIntermediate");
   // document.location.href = "./quiz.html";
 });
 
 const javascriptTwo = document.querySelector("#javascript-n2");
-htmlOne.addEventListener("click", () => {
+javascriptTwo.addEventListener("click", () => {
   localStorage.setItem("chosenTheme", "jsIntermediate");
   // document.location.href = "./quiz.html";
 });
 
 const gitTwo = document.querySelector("#git-n2");
-htmlOne.addEventListener("click", () => {
+gitTwo.addEventListener("click", () => {
   localStorage.setItem("chosenTheme", "gitIntermediate");
   // document.location.href = "./quiz.html";
 });
