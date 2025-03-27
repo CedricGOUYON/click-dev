@@ -1,17 +1,3 @@
-/* * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-} */
-
-/* body {
-  background-color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
-  margin: 0px;
-  padding: 0px;
-} */
-
 .dark-mode {
   main {
     background-color: var(--background-dark-color);
@@ -62,11 +48,6 @@ main {
 
   a > p {
     text-align: center;
-  }
-
-  article > .lala {
-    width: 310px;
-    height: 310px;
   }
 
   cards {

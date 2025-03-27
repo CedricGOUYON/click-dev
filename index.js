@@ -3,7 +3,7 @@ const html-deb = document.querySelector("#html-n1");
 html-n1.addEventListener("click", () => {
     body.classList.toggle("dark-mode"); // a finir  - changer la requte
 
-const css-deb = document.querySelector("#css-n1");
+const css-deb = document.querySelector("#css-n1");  
 css-n1.addEventListener("click", () => {
     body.classList.toggle("dark-mode");// a finir  - changer la requte
 
