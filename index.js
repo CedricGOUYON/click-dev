@@ -19,7 +19,7 @@ javascriptOne.addEventListener("click", () => {
 
 const gitOne = document.querySelector("#git-n1");
 gitOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "gitBasics");
   // document.location.href = "./quiz.html";
 });
 
@@ -27,25 +27,25 @@ gitOne.addEventListener("click", () => {
 
 const htmlTwo = document.querySelector("#html-n2");
 htmlTwo.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "htmlIntermediate");
   // document.location.href = "./quiz.html";
 });
 
 const cssTwo = document.querySelector("#css-n2");
 htmlOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "cssIntermediate");
   // document.location.href = "./quiz.html";
 });
 
 const javascriptTwo = document.querySelector("#javascript-n2");
 htmlOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "jsIntermediate");
   // document.location.href = "./quiz.html";
 });
 
 const gitTwo = document.querySelector("#git-n2");
 htmlOne.addEventListener("click", () => {
-  localStorage.setItem("chosenTheme", "quizCssBasics");
+  localStorage.setItem("chosenTheme", "gitIntermediate");
   // document.location.href = "./quiz.html";
 });
 

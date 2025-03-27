@@ -1,11 +1,36 @@
+.dark-mode {
+    main {
+      background-color: var(--background-dark-color);
+      h2,
+      h3,
+      a,
+      p {
+        color: var(--light-text-color);
+      }
+  
+    form, 
+    h2 {
+        background-color: var(--main-bloc-dark-color);
+      }
+    }
+
+    #sendButton {
+        color: var(--light-text-color);
+        background-color: var(--background-dark-color) ;
+    }
+}
+
 main {
     margin: auto;
     margin: 111.2px auto 0;
+    min-height: calc(100vh - 162.5px - 111.2px);
 
 }
 
 @media screen and (min-width: 650px) {
     main {
+        margin: 76px auto 0;
+        min-height: calc(100vh - 76px - 50px);
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -54,6 +79,7 @@ form h3 {
 
 
 form {
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     margin: 2rem 4rem 2rem 4rem;
@@ -66,7 +92,7 @@ form {
 
     form {
         width: 200%;
-        padding: 2rem 8rem 3rem 2rem;
+        padding: 2rem 2rem 3rem 2rem;
         margin: 0rem 2rem 2rem 0rem;
     }
 
@@ -90,7 +116,7 @@ input {
 @media screen and (min-width: 650px) {
 
     input {
-        width: 50%;
+        width: 75%;
     }
 }
 
