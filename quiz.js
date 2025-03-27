@@ -1800,8 +1800,8 @@ const quizGitGithubIntermediate = {
     },
     {
       statement: "Qu'est-ce qu'un hook Git ?",
-      answers: ["Un outil de fusion", "Un crochet pour accrocher des scripts personnalisés avant/après des actions Git", "Une commande pour récupérer des commits", "Une interface graphique"],
-      correctAnswer: "Un crochet pour accrocher des scripts personnalisés avant/après des actions Git",
+      answers: ["Un outil de fusion", "Un crochet pour accrocher des scripts personnalisés avant et après des actions Git", "Une commande pour récupérer des commits", "Une interface graphique"],
+      correctAnswer: "Un crochet pour accrocher des scripts personnalisés avant et après des actions Git",
     },
     {
       statement: "Quelle commande permet de voir les commits d’une branche spécifique ?",
@@ -1895,8 +1895,8 @@ const quizGitGithubIntermediate = {
     },
     {
       statement: "Comment résoudre un conflit de fusion après un git pull ?",
-      answers: ["git abort", "git reset --hard", "git auto-resolve", "Modifier les fichiers, puis git add et git commit"],
-      correctAnswer: "Modifier les fichiers, puis git add et git commit",
+      answers: ["git abort", "git reset --hard", "git auto-resolve", "Modifier les fichiers puis git add et git commit"],
+      correctAnswer: "Modifier les fichiers puis git add et git commit",
     },
     {
       statement: "Comment afficher uniquement les fichiers modifiés entre deux commits ?",
@@ -2078,7 +2078,7 @@ const shuffleArr = (array, numb) => {
 const questionSampleArray = shuffleArr(chosenBase.questions, 10);
 
 // Check console - TEST
-//console.log(questionSampleArray);
+console.log(questionSampleArray);
 
 // Declare score
 
@@ -2136,15 +2136,15 @@ answerButtons.forEach((btn) => {
     disableFunc("#next-button");
     disableFunc(".answer-button");
     // Update score
-    if (btn.innerHTML === questionSampleArray[rk].correctAnswer) {
+    if (btn.innerHTML === questionSampleArray[rk-1].correctAnswer) {
       finalScore++;
       console.log(`current score is : ${finalScore}`);
     }
     // Display right and wrong answers (green/red)
-    answerOne.style.backgroundColor = answerOne.innerHTML === questionSampleArray[rk].correctAnswer ? rightAnswerColor : wrongAnswerColor;
-    answerTwo.style.backgroundColor = answerTwo.innerHTML === questionSampleArray[rk].correctAnswer ? rightAnswerColor : wrongAnswerColor;
-    answerThree.style.backgroundColor = answerThree.innerHTML === questionSampleArray[rk].correctAnswer ? rightAnswerColor : wrongAnswerColor;
-    answerFour.style.backgroundColor = answerFour.innerHTML === questionSampleArray[rk].correctAnswer ? rightAnswerColor : wrongAnswerColor;
+    answerOne.style.backgroundColor = answerOne.innerHTML === questionSampleArray[rk-1].correctAnswer ? rightAnswerColor : wrongAnswerColor;
+    answerTwo.style.backgroundColor = answerTwo.innerHTML === questionSampleArray[rk-1].correctAnswer ? rightAnswerColor : wrongAnswerColor;
+    answerThree.style.backgroundColor = answerThree.innerHTML === questionSampleArray[rk-1].correctAnswer ? rightAnswerColor : wrongAnswerColor;
+    answerFour.style.backgroundColor = answerFour.innerHTML === questionSampleArray[rk-1].correctAnswer ? rightAnswerColor : wrongAnswerColor;
   });
 });
 
@@ -2154,12 +2154,12 @@ const fillQuestion = (rk) => {
   // Question
   questionNumber.innerText = "Question " + rk;
   // Statement
-  questionStatement.innerHTML = questionSampleArray[rk].statement;
+  questionStatement.innerHTML = questionSampleArray[rk-1].statement;
   // Answers
-  answerOne.innerHTML = questionSampleArray[rk].answers[0] || "";
-  answerTwo.innerHTML = questionSampleArray[rk].answers[1] || "";
-  answerThree.innerHTML = questionSampleArray[rk].answers[2] || "";
-  answerFour.innerHTML = questionSampleArray[rk].answers[3] || "";
+  answerOne.innerHTML = questionSampleArray[rk-1].answers[0] || "";
+  answerTwo.innerHTML = questionSampleArray[rk-1].answers[1] || "";
+  answerThree.innerHTML = questionSampleArray[rk-1].answers[2] || "";
+  answerFour.innerHTML = questionSampleArray[rk-1].answers[3] || "";
   // Use a loop for answers better/worse performance ?  TODO (optimisation)
 };
 
@@ -2178,7 +2178,7 @@ const fillQuestion = (rk) => {
 
 nextButton.addEventListener("click", () => {
   rk++;
-  if (rk < questionSampleArray.length) {
+  if (rk <= questionSampleArray.length) {
     // If another question exists
     fillQuestion(rk);
     disableFunc("#next-button");

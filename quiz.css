@@ -1,5 +1,22 @@
 /* Main */
 
+.dark-mode {
+    main {
+      background-color: none;
+      h2,
+      h3,
+      a,
+      p,
+      button {
+        color: var(--light-text-color);
+      }
+  
+      article {
+        background-color: var(--main-bloc-dark-color);
+      }
+    }
+  }
+
 main {
     margin: 111.2px auto 0;
     max-width: 600px;

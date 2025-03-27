@@ -8,6 +8,8 @@
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="./assets/img/favicon/favicon-32x32.svg">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./contact.css"> <!-- style propre à la page à compléter -->
+    <script src="./script.js" defer></script>
+    <script src="./contact-script.js" defer></script>
 </head>
 
 <body>
@@ -107,11 +109,12 @@
         <!-- Menu -->
         <nav>
             <ul>
-                <li class="nav-item uppercase"><a href="#">Accueil</a></li>
-                <li class="nav-item uppercase"><a href="#">L'équipe</a></li>
-                <li class="nav-item uppercase"><a href="#">Contact</a></li>
+                <li class="nav-item uppercase"><a href="./index.html">Accueil</a></li>
+                <li class="nav-item uppercase"><a href="./team.html">L'équipe</a></li>
+                <li class="nav-item uppercase"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button id="darkMode" class="toggle-btn">🌒</button>
     </header>
 
     <main>
@@ -137,7 +140,7 @@
                 <textarea class="input" type="text" placeholder="Votre message*" name="message" id="message"
                     required></textarea>
                 <section class="button">
-                    <button type="button" id="sendButton"><a href="#">Envoyer</a></button>
+                    <button type="button" id="sendButton">Envoyer</button>
                 </section>
             </form>
         </section>
@@ -203,7 +206,6 @@
             </a>
         </section>
     </footer>
-    <script src="contact-script.js"></script>
 </body>
 
 </html>
