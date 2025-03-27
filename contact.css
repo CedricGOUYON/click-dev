@@ -1,0 +1,151 @@
+main {
+    margin: auto;
+    margin: 111.2px auto 0;
+
+}
+
+@media screen and (min-width: 650px) {
+    main {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main h2 {
+    display: flex;
+    width: 300px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f7f1;
+}
+
+@media screen and (min-width: 650px) {
+    main section h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 125px;
+        margin-top: 0;
+
+    }
+
+}
+
+
+form h3 {
+    display: flex;
+    padding: 0rem 2rem 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 4rem 2rem 4rem;
+    padding: 1rem;
+    background-color: #f9f7f1;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 650px) {
+
+    form {
+        width: 200%;
+        padding: 2rem 8rem 3rem 2rem;
+        margin: 0rem 2rem 2rem 0rem;
+    }
+
+
+}
+
+p {
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0px 8px 0px;
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+@media screen and (min-width: 650px) {
+
+    input {
+        width: 50%;
+    }
+}
+
+.input {
+    height: 150px;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    margin: 0.5em 0em;
+}
+
+form section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 650px) {
+    form section {
+        justify-content: right;
+    }
+
+
+}
+
+button {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    width: 125px;
+    border-radius: 30px;
+    border: none;
+    background-color: #c6baa3;
+    transition: 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+button a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 650px) {
+    button {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem 1rem;
+        padding: 0.5rem;
+        transition: 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+}
