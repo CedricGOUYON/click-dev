@@ -6,7 +6,7 @@
     p {
       color: var(--light-text-color);
     }
-    cards,
+
     article {
       background-color: var(--main-bloc-dark-color);
     }
@@ -50,28 +50,26 @@ main {
     text-align: center;
   }
 
-  cards {
+  article {
     background-color: var(--background-light-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 400px;
-    gap: 40px;
+    gap: 30px;
     width: 350px;
     padding: 20px;
   }
 }
-cards > a > img {
-  margin-top: 10px;
+article > a > img {
   width: 64px;
   height: 64px;
 }
 
-cards > a {
+article > a {
   text-decoration: none;
 }
 
-cards > h2 {
+article > h2 {
   text-align: center;
 }
 
