@@ -79,6 +79,14 @@ button {
     .logo-clicdev {
       fill: var(--light-text-color);
     }
+
+    .nav-item {
+      a{
+        &:after {
+          background-color: var(--light-text-color);
+        }
+      }
+    }
   }
 
   footer {
