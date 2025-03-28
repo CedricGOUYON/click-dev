@@ -69,10 +69,21 @@ main {
         opacity: 0.9;
 
     }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    
+    }
 }
 
 @media screen and (width>650px) {
     main {
+        h2 {
+            width: 30%;
+            margin: 100px auto;
+        }
         margin: 76px auto 0;
         min-height: calc(100vh - 76px - 50px);
         article {
