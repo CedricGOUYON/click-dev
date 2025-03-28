@@ -317,7 +317,7 @@ const quizHtmlIntermediate = {
       correctAnswer: "&lt;option&gt;",
     },
     {
-      statement: "Quelle API permet le drag & drop ?",
+      statement: "Quelle API permet le drag &amp drop ?",
       answers: ["DragAPI", "EventListeners", "HTML5 DnD", "MouseEvents"],
       correctAnswer: "HTML5 DnD",
     },
@@ -1194,8 +1194,8 @@ const quizJsBasics = {
     },
     {
       statement: "Quel opérateur logique retourne vrai si les deux opérandes sont vrais ?",
-      answers: ["||", "&&", "??", "!"],
-      correctAnswer: "&&",
+      answers: ["||", "&amp;&amp;", "??", "!"],
+      correctAnswer: "&amp;&amp;",
     },
     {
       statement: "Quelle syntaxe utilise correctement l'opérateur ternaire ?",
@@ -1381,7 +1381,7 @@ const quizJsIntermediate = {
     },
     {
       statement: "Quel opérateur permet d'accéder à une propriété optionnelle sans erreur ?",
-      answers: ["??", "?.", "&&", "!== undefined"],
+      answers: ["??", "?.", "&amp;&amp;", "!== undefined"],
       correctAnswer: "?.",
     },
     {
@@ -1583,16 +1583,16 @@ const quizGitGithubBasics = {
     },
     {
       statement: "Quelle commande crée simplement une nouvelle branche ?",
-      answers: ["git new &lt;nom&t;", "git checkout -b &lt;nom&t;", "git branch &lt;nom&t;", "git create &lt;nom&t;"],
-      correctAnswer: "git branch &lt;nom&t;",
+      answers: ["git new &lt;nom&gt;", "git checkout -b &lt;nom&gt;", "git branch &lt;nom&gt;", "git create &lt;nom&gt;"],
+      correctAnswer: "git branch &lt;nom&gt;",
     },
     {
       statement: "Comment basculer sur une branche existante ?",
-      answers: ["git checkout -b &lt;nom&t;", "git move &lt;nom&t;", "git switch &lt;nom&t;", "git branch -d &lt;nom&t;"],
-      correctAnswer: "git switch &lt;nom&t;",
+      answers: ["git checkout -b &lt;nom&gt;", "git move &lt;nom&gt;", "git switch &lt;nom&gt;", "git branch -d &lt;nom&gt;"],
+      correctAnswer: "git switch &lt;nom&gt;",
     },
     {
-      statement: "Que fait 'git merge &lt;branche&t;' ?",
+      statement: "Que fait 'git merge &lt;branche&gt;' ?",
       answers: ["Supprime une branche", "Fusionne une branche dans la branche actuelle", "Compare deux branches", "Crée une branche"],
       correctAnswer: "Fusionne une branche dans la branche actuelle",
     },
@@ -1623,8 +1623,8 @@ const quizGitGithubBasics = {
     },
     {
       statement: "Comment annuler des modifications non commitées dans un fichier ?",
-      answers: ["git undo &lt;fichier&t;", "git reset &lt;fichier&t;", "git remove &lt;fichier&t;", "git checkout -- &lt;fichier&t;"],
-      correctAnswer: "git checkout -- &lt;fichier&t;",
+      answers: ["git undo &lt;fichier&gt;", "git reset &lt;fichier&gt;", "git remove &lt;fichier&gt;", "git checkout -- &lt;fichier&gt;"],
+      correctAnswer: "git checkout -- &lt;fichier&gt;",
     },
     {
       statement: "Qu'est-ce que HEAD dans Git ?",
@@ -1648,8 +1648,8 @@ const quizGitGithubBasics = {
     },
     {
       statement: "Comment annuler un commit déjà poussé ?",
-      answers: ["git undo", "git revert &lt;commit-hash&t;", "git delete", "Impossible"],
-      correctAnswer: "git revert &lt;commit-hash&t;",
+      answers: ["git undo", "git revert &lt;commit-hash&gt;", "git delete", "Impossible"],
+      correctAnswer: "git revert &lt;commit-hash&gt;",
     },
     {
       statement: "Qu'est-ce qu'un conflit de fusion ?",
@@ -1658,11 +1658,11 @@ const quizGitGithubBasics = {
     },
     {
       statement: "Comment ajouter un dépôt distant nommé 'origin' ?",
-      answers: ["git origin &lt;url&t;", "git add origin &lt;url&t;", "git connect origin &lt;url&t;", "git remote add origin &lt;url&t;"],
-      correctAnswer: "git remote add origin &lt;url&t;",
+      answers: ["git origin &lt;url&gt;", "git add origin &lt;url&gt;", "git connect origin &lt;url&gt;", "git remote add origin &lt;url&gt;"],
+      correctAnswer: "git remote add origin &lt;url&gt;",
     },
     {
-      statement: "Que fait 'git branch -d &lt;branche&t;' ?",
+      statement: "Que fait 'git branch -d &lt;branche&gt;' ?",
       answers: ["Compare deux branches", "Renomme une branche", "Affiche l'historique", "Supprime une branche"],
       correctAnswer: "Supprime une branche",
     },
@@ -1688,8 +1688,8 @@ const quizGitGithubBasics = {
     },
     {
       statement: "Quelle commande permet de renommer la branche actuelle ?",
-      answers: ["git branch -m &lt;nouveau-nom&t;", "git rename &lt;nouveau-nom&t;", "git checkout -b &lt;nouveau-nom&t;", "git mv &lt;nouveau-nom&t;"],
-      correctAnswer: "git branch -m &lt;nouveau-nom&t;",
+      answers: ["git branch -m &lt;nouveau-nom&gt;", "git rename &lt;nouveau-nom&gt;", "git checkout -b &lt;nouveau-nom&gt;", "git mv &lt;nouveau-nom&gt;"],
+      correctAnswer: "git branch -m &lt;nouveau-nom&gt;",
     },
     {
       statement: "Comment lister toutes les branches distantes ?",
@@ -1722,7 +1722,7 @@ const quizGitGithubBasics = {
       correctAnswer: "git fetch met à jour les références distantes sans fusionner, tandis que git pull récupère et fusionne les modifications",
     },
     {
-      statement: "Que fait 'git rm --cached &lt;fichier&t;' ?",
+      statement: "Que fait 'git rm --cached &lt;fichier&gt;' ?",
       answers: ["Supprime le fichier du dépôt et du système de fichiers", "Supprime le fichier du suivi Git mais le garde localement", "Annule les modifications du fichier", "Aucune de ces réponses"],
       correctAnswer: "Supprime le fichier du suivi Git mais le garde localement",
     },
@@ -1733,8 +1733,8 @@ const quizGitGithubBasics = {
     },
     {
       statement: "Quelle commande crée un alias pour une commande Git ?",
-      answers: ["git config --global alias.&lt;alias&t; '&lt;commande&t;'", "git alias &lt;alias&t; '&lt;commande&t;'", "git create-alias &lt;alias&t; '&lt;commande&t;'", "git shortcut &lt;alias&t; '&lt;commande&t;'"],
-      correctAnswer: "git config --global alias.&lt;alias&t; '&lt;commande&t;'",
+      answers: ["git config --global alias.&lt;alias&gt; '&lt;commande&gt;'", "git alias &lt;alias&gt; '&lt;commande&gt;'", "git create-alias &lt;alias&gt; '&lt;commande&gt;'", "git shortcut &lt;alias&gt; '&lt;commande&gt;'"],
+      correctAnswer: "git config --global alias.&lt;alias&gt; '&lt;commande&gt;'",
     },
     {
       statement: "Comment mettre à jour le dépôt local avec les modifications distantes ?",
@@ -1773,7 +1773,7 @@ const quizGitGithubIntermediate = {
   title: "Git et GitHub Intermédiaire",
   level: "intermediate",
   questions: [
-    {
+     {
       statement: "Quelle commande permet de réécrire l'historique des commits interactivement ?",
       answers: ["git amend", "git rebase -i", "git reset --hard", "git reflog"],
       correctAnswer: "git rebase -i",
@@ -1960,8 +1960,8 @@ const quizGitGithubIntermediate = {
     },
     {
       statement: "Comment récupérer une branche supprimée récemment ?",
-      answers: ["git reflog && git checkout &lt;branche&gt;", "git restore-branch &lt;branche&gt;", "git recover &lt;branche&gt;", "git undo-delete &lt;branche&gt;"],
-      correctAnswer: "git reflog && git checkout &lt;branche&gt;",
+      answers: ["git restore-branch &lt;branche&gt;", "git recover &lt;branche&gt;", "git reflog &amp;&amp; git checkout &lt;branche&gt;", "git undo-delete &lt;branche&gt;"],
+      correctAnswer: "git reflog &amp;&amp; git checkout &lt;branche&gt;",
     },
     {
       statement: "Que fait 'git fsck' ?",
@@ -2052,7 +2052,7 @@ console.log(chosenBase);
 
 //To check distribution of correct-answer's index - TEST
 /* 
-let positions = tableau.map(quest => quest.answers.indexOf(quest.correctAnswer));
+let positions = (quizGitGithubIntermediate.questions).map(quest => quest.answers.indexOf(quest.correctAnswer));
 const countOccurrences = array => {
   return array.reduce((acc, value) => {
     acc[value] = (acc[value] || 0) + 1;
@@ -2061,7 +2061,7 @@ const countOccurrences = array => {
 };
 let occurrences = countOccurrences(positions);
 console.log(occurrences);
-*/
+ */
 
 // Generate random array of numb questions from the database
 
@@ -2192,17 +2192,18 @@ nextButton.addEventListener("click", () => {
   } else {
     // If it was the last question
     questionNumber.innerText = "";
-    const scorePercent = Math.floor((100 * finalScore) / rk);
+    const scorePercent = Math.floor((100 * finalScore) / (rk-1));
+    console.log(`scorepercent : ${scorePercent} -- finalScore : ${finalScore} -- rk : ${rk - 1}`);
     if (scorePercent === 100) {
-      questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Un.e vrai.e champion.ne, rien ne t'arrête !`;
+      questionStatement.innerHTML = `Score final : ${finalScore}/${rk - 1} <br> Un.e vrai.e champion.ne, rien ne t'arrête !`;
     } else if (scorePercent >= 80) {
-      questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Presque parfait ! Encore un petit effort et ce sera du 100% !`;
+      questionStatement.innerHTML = `Score final : ${finalScore}/${rk - 1} <br> Presque parfait ! Encore un petit effort et ce sera du 100% !`;
     } else if (scorePercent >= 50) {
-      questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Pas mal ! Tu es à mi-chemin, continue comme ça, tu es sur la bonne voie !`;
+      questionStatement.innerHTML = `Score final : ${finalScore}/${rk - 1} <br> Pas mal ! Tu es à mi-chemin, continue comme ça, tu es sur la bonne voie !`;
     } else if (scorePercent >= 20) {
-      questionStatement.innerHTML = `Score final : ${scorePercent}% <br> C’est en forgeant qu’on devient forgeron ! Ne lâche rien !`;
+      questionStatement.innerHTML = `Score final : ${finalScore}/${rk - 1} <br> C’est en forgeant qu’on devient forgeron ! Ne lâche rien !`;
     } else {
-      questionStatement.innerHTML = `Score final : ${scorePercent}% <br> Tous les champions ont commencé quelque part ! Ce n’est qu’un début, tu vas y arriver ! `;
+      questionStatement.innerHTML = `Score final : ${finalScore}/${rk - 1} <br> Tous les champions ont commencé quelque part ! Ce n’est qu’un début, tu vas y arriver ! `;
     }
     answerButtons.forEach((btn) => {
       btn.style.display = "none";
