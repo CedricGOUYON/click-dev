@@ -149,7 +149,7 @@ button {
     width: 125px;
     border-radius: 30px;
     border: none;
-    background-color: #c6baa3;
+    background-color: var(--background-light-color);
     transition: 0.2s;
 
     &:hover {

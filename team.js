@@ -11,7 +11,7 @@ commentairebutton.addEventListener ("click",()=>{
     } 
 
     const commentaire = prompt('Ecrivez votre commentaire!');
-    
+    document.getElementById("outputMessage").textContent = nom.valueOf() + " : " + commentaire.valueOf()
    if (commentaire === ""){
     alert ("Le commentaire est vide");
     return;
