@@ -30,10 +30,14 @@ main {
   }
 
   article {
-    background-color: var(--background-light-color);
+    background-color: var(--main-bloc-light-color);
     min-height: 400px;
     width: 350px;
     padding: 20px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   article > h2 {
@@ -51,15 +55,6 @@ main {
     text-align: center;
   }
 
-  article {
-    background-color: var(--background-light-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    width: 350px;
-    padding: 20px;
-  }
 }
 article > a > img {
   width: 64px;
