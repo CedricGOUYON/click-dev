@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz | Click Dev'</title>
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="./assets/img/favicon/favicon-32x32.svg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="team.css"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./team.css"> 
+    <script src="./script.js" defer></script>
     <script src="team.js" defer></script>
 </head>
 
@@ -75,44 +76,49 @@
       <!-- Menu -->
       <nav>
         <ul>
-          <li class="nav-item uppercase"><a href="#">Accueil</a></li>
-          <li class="nav-item uppercase"><a href="#">L'équipe</a></li>
-          <li class="nav-item uppercase"><a href="#">Contact</a></li>
+          <li class="nav-item uppercase"><a href="./index.html">Accueil</a></li>
+          <li class="nav-item uppercase"><a href="./team.html">L'équipe</a></li>
+          <li class="nav-item uppercase"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
+      <button id="darkMode" class="toggle-btn">🌒</button>
     </header>
 
     <main>
 
         <h2>L'équipe</h2>
 
-            <article>
+        <article>
 
-                <section class="Vincent">
-                    <img src="assets/img/team/avatar_Vincent.jpg" alt="Photo de Vincent">
-                    <a href="https://github.com/Vinzifinz" target="_blank">Vincent <br> Luccioni</a>
-                </section>
+            <section class="Vincent">
+                <img src="assets/img/team/avatar_Vincent.jpg" alt="Photo de Vincent">
+                <a href="https://github.com/Vinzifinz" target="_blank">Vincent <br> Luccioni</a>
+            </section>
 
-                <section class="Thomas">
-                    <img src="assets/img/team/avatar_thomas.jpg" alt="Photo de Thomas">
-                    <a href="https://github.com/tomabadie" target="_blank">Thomas <br>Abadie</a>
-                </section>
-           
-                <section class="Cédric">
-                    <img  src="assets/img/team/avatar_cédric.jpg" alt="Photo de Cédric">
-                    <a href="https://github.com/CedricGOUYON/click-dev" target="_blank">Cédric <br> Gouyon</a>
-                </section>
-               
-                <section class="Eulalie">
-                    <img  src="assets/img/team/avatar_eula.jpg" alt="Photo de Eulalie">
-                    <a href="https://github.com/Eula-Coly" target="_blank">Eulalie <br> Coly</a>
-                 </section>
-            </article>
+            <section class="Thomas">
+                <img src="assets/img/team/avatar_thomas.jpg" alt="Photo de Thomas">
+                <a href="https://github.com/tomabadie" target="_blank">Thomas <br>Abadie</a>
+            </section>
+        
+            <section class="Cédric">
+                <img  src="assets/img/team/avatar_cédric.jpg" alt="Photo de Cédric">
+                <a href="https://github.com/CedricGOUYON/click-dev" target="_blank">Cédric <br> Gouyon</a>
+            </section>
+            
+            <section class="Eulalie">
+                <img  src="assets/img/team/avatar_eula.jpg" alt="Photo de Eulalie">
+                <a href="https://github.com/Eula-Coly" target="_blank">Eulalie <br> Coly</a>
+              </section>
+        </article>
           
-        <section id="commentairebutton"><button >Laisser un commentaire</button></section> 
+        <section>
+          <button id="commentairebutton">Laisser un commentaire</button>
+          <output id="outputMessage"></output>
+        </section> 
         
 
-</main>
+
+    </main>
 
     <footer>
       <section id="footer-legals" aria-label="Informations légales">

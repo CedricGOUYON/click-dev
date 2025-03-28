@@ -2012,43 +2012,43 @@ let chosenBase;
 
 switch (localStorage.getItem("chosenTheme")) {
   case "htmlBasics":
-    console.log("Quiz html débutant");
+    //console.log("Quiz html débutant");
     chosenBase = quizHtmlBasics;
     break;
   case "htmlIntermediate":
-    console.log("Quiz html Intermédiaire");
+    //console.log("Quiz html Intermédiaire");
     chosenBase = quizHtmlIntermediate;
     break;
   case "cssBasics":
-    console.log("Quiz CSS Débutant");
+    //console.log("Quiz CSS Débutant");
     chosenBase = quizCssBasics;
     break;
   case "cssIntermediate":
-    console.log("Quiz CSS Intermédiaire");
+    //console.log("Quiz CSS Intermédiaire");
     chosenBase = quizCssIntermediate;
     break;
   case "jsBasics":
-    console.log("Quiz JavaScript débutant");
+    //console.log("Quiz JavaScript débutant");
     chosenBase = quizJsBasics;
     break;
   case "jsIntermediate":
-    console.log("Quiz JavaScript Intermédiaire");
+    //console.log("Quiz JavaScript Intermédiaire");
     chosenBase = quizJsIntermediate;
     break;
   case "gitBasics":
-    console.log("Quiz Git/GitHub Débutant");
+    //console.log("Quiz Git/GitHub Débutant");
     chosenBase = quizGitGithubBasics;
     break;
   case "gitIntermediate":
-    console.log("Quiz Git/GitHub Intermédiaire");
+    //console.log("Quiz Git/GitHub Intermédiaire");
     chosenBase = quizGitGithubIntermediate;
     break;
   default:
-    console.log("Test issue Tom, no localStorage key detected");
+    console.log("Test issue, no localStorage key detected");
     break;
 }
 
-console.log(chosenBase);
+//console.log(chosenBase);
 
 //To check distribution of correct-answer's index - TEST
 /* 
@@ -2078,7 +2078,7 @@ const shuffleArr = (array, numb) => {
 const questionSampleArray = shuffleArr(chosenBase.questions, 10);
 
 // Check console - TEST
-console.log(questionSampleArray);
+//console.log(questionSampleArray);
 
 // Declare score
 
