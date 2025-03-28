@@ -2193,7 +2193,7 @@ nextButton.addEventListener("click", () => {
     // If it was the last question
     questionNumber.innerText = "";
     const scorePercent = Math.floor((100 * finalScore) / (rk-1));
-    console.log(`scorepercent : ${scorePercent} -- finalScore : ${finalScore} -- rk : ${rk - 1}`);
+    //console.log(`scorepercent : ${scorePercent} -- finalScore : ${finalScore} -- rk : ${rk - 1}`);
     if (scorePercent === 100) {
       questionStatement.innerHTML = `Score final : ${finalScore}/${rk - 1} <br> Un.e vrai.e champion.ne, rien ne t'arrête !`;
     } else if (scorePercent >= 80) {
